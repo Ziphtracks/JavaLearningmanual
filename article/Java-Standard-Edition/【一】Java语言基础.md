@@ -1,7 +1,3 @@
-[TOC]
-
-------
-
 
 
 ## 一、变量
@@ -22,15 +18,14 @@
 | 声明并赋值 | 数据类型 变量名=值; |
 | 多个同类型变量的声明与赋值 | 数据类型 变量1,变量2=值 |
 
-
 ***
 
 ## 二、数据类型
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200311233632451.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDE3MDIyMQ==,size_16,color_FFFFFF,t_70)
+
 
 大家在后面的介绍取值范围内容要注意区分-和~
 
-
+![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200503170511)
 
 ### 2.1 整数（基本数据类型）
 
@@ -271,6 +266,5 @@ class Order {
 
 <font color="red">**注意：**</font>如果输入了不匹配的数据，则会在终端产生java.util.InputMismatchException的报错信息！
 ***
-
 
 
