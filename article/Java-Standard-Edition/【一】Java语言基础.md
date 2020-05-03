@@ -45,7 +45,11 @@
 ## 二、数据类型
 
 大家在后面的介绍取值范围内容要注意区分-和~
-<img src="https://gitee.com/Ziphtracks/JavaLearningmanual/raw/master/media/pictures/Java-Standard-Edition/数据类型.png" alt="数据类型">
+
+
+
+<p align="left"><img src="https://gitee.com/Ziphtracks/JavaLearningmanual/raw/master/media/pictures/Java-Standard-Edition/数据类型.png" alt="数据类型">
+</p>
 
 
 
