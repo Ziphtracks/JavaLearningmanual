@@ -1,4 +1,4 @@
-![logo](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/media/logo.png)
+<p align="center"><img src="https://gitee.com/Ziphtracks/JavaLearningmanual/raw/master/media/logo.png" alt="Logo"></p>
 <p align="right">——Java学习手册</p>
 <hr/>
 <br />
