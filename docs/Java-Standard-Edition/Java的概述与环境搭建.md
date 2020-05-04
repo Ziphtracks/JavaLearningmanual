@@ -19,7 +19,7 @@
 ## 二、Java之父（被我们著称的“高司令”）
 作为了解就好，别学半天Java不知道Java之父是谁，所以我在这里添加到这知识点章节的内容里！
 
-![Java之父](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200503181318)
+![高司令](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504104054.png)
 
 詹姆斯·高斯林 （James Gosling）是一名软件专家，1955年5月19日出生于加拿大，Java编程语言的共同创始人之一，一般公认他为“Java之父”。
 
@@ -44,7 +44,7 @@
  - 先编译、再解释：
 	* 将源文件编译成字节码文件（平台中立文件.class），再将字节码文件进行解释执行
 	* Java的设计理念：Write Once Run Anywhere
-![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200503180348)
+![java的执行机制](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504104115.png)
 ***
 
 ## 五、Java的环境搭建
@@ -60,18 +60,18 @@
 ### 5.2 配置环境变量
 
 右击我的电脑--属性--高级系统设置--环境变量--并操作以下内容步骤
-![配置环境变量](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200503180529)
+![配置环境变量](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504104126.png)
 
 ### 5.3 测试JDK是否安装成功
 
 打开cmd窗口--输入命令java -version--出现版本则安装成功
-![在这里插入图片描述](D:\GitHub\Java-Learning-manual\media\pictures\Java-Standard-Edition\jdk是否成功.png)
+![jdk是否成功](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504104145.png)
 
 ### 5.4 常用DOS命令操作
 
  - Windows键 + R——快捷键呼出运行窗口
  - 再输入cmd并回车打开DOS命令窗口
-![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200503180805)
+![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504104359.png)
  - 常见命令
 	* 更换盘符：d:
 	* 查看当前目录下的文件及文件夹：dir

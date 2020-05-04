@@ -51,8 +51,6 @@
 
 > JavaSE基础章节记录了一系列理论与小练习案例知识，主要是为了给JavaWeb及以后做铺垫。此章节涉及到的内容不涉及源码剖析，只是“师傅领进门”说法，后来的修行还得靠个人。由浅入深就是这个道理。所以此章节只记录浅层JavaSE基础内容。不喜勿喷！谢谢大家！
 
-
-
 #### 📚  JavaSE基础章节总目录
 
 - [Java的概述与环境搭建](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java的概述与环境搭建.md)
