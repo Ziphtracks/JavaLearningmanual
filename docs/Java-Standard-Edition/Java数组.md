@@ -40,7 +40,9 @@
  - 有效下标范围：0~(数组长度-1)
 
 <font color="red">**注意：**</font>**如果访问无效的下标，会导致数组下标越界，终端异常会出现Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException：6（数字说明是你访问的这个下标是无效的下标）**
-![在这里插入图片描述](D:\GitHub\Java-Learning-manual\media\pictures\Java-Standard-Edition\数组的异常错误.png)
+
+![数组的异常错误](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504095009.png)
+
 ***
 <a id="5"> </a>
 ## 五、数组的遍历

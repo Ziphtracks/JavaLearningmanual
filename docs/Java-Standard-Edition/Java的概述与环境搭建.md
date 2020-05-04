@@ -90,7 +90,7 @@
 <font color="red">**注意：**</font>Java语言严格区分大小写，写错一点，就有可能会造成程序的报错！
 
 创建以.java结尾的源文件： 
-![在这里插入图片描述](D:\GitHub\Java-Learning-manual\media\pictures\Java-Standard-Edition\Java源文件示例.png)
+![Java源文件示例](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504095301.png)
 第一个程序代码的解释：
 
  > Class：类（代码的容器）
@@ -110,10 +110,10 @@ class First {
 
  - 编译：
 	* javac 源文件名称 .java
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200311215815978.png)
+![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504095336.png)
  - 运行：
 	* java 类名
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200311215915938.png)
+![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504095401.png)
 
 #### 6.2.1 类的介绍
 

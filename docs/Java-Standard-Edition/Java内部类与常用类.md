@@ -535,7 +535,7 @@ class Student {
 
 ### 6.1 BigDecimal
 
-![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200503204838.png)
+![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504094419.png)
 
  - **位置：** java.math包中
  - **作用：** 精确计算浮点数

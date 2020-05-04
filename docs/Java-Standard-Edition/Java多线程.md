@@ -4,7 +4,7 @@
 
 ## 一、什么是线程
 ### 1.1 什么是进程
-![在这里插入图片描述](D:\GitHub\Java-Learning-manual\media\pictures\Java-Standard-Edition\Java多线程\什么是进程.png)
+![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200504094318.png)
 
 
 
