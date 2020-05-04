@@ -561,7 +561,7 @@ class Student {
 
 
 
-> 上一章[【Java接口】]()
+> 上一章[【Java接口】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java接口.md)
 
-> 下一章[【Java集合】]()
+> 下一章[【Java集合】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java集合.md)
 

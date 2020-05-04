@@ -220,6 +220,6 @@
 
 
 
-> 上一章[【Java面向对象】]()
+> 上一章[【Java面向对象】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象.md)
 
-> 下一章[【Java三个修饰符】]()
+> 下一章[【Java三个修饰符】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java三个修饰符.md)

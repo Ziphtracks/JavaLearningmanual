@@ -383,6 +383,6 @@ public class TestYangHui {
 
 
 
-> 上一章[【Java函数】]()
+> 上一章[【Java函数】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java函数.md)
 
-> 下一章[【Java面向对象】]()
+> 下一章[【Java面向对象】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象.md)

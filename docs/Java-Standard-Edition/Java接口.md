@@ -113,6 +113,6 @@
 
 
 
-> 上一章[【Java三个修饰符】]()
+> 上一章[【Java三个修饰符】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java三个修饰符.md)
 
-> 下一章[【Java内部类与常用类】]()
+> 下一章[【Java内部类与常用类】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java内部类与常用类.md)

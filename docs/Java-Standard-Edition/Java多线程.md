@@ -1154,6 +1154,6 @@ public class TestQueue {
 
 
 
-> 上一章[【Java异常】]()
+> 上一章[【Java异常】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java异常.md)
 
-> 下一章[【JavaIO流】]()
+> 下一章[【JavaIO流】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/JavaIO流.md)

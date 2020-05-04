@@ -168,7 +168,7 @@
 
 
 
-> 上一章[【Java面向对象三大特性】]()
+> 上一章[【Java面向对象三大特性】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象三大特性.md)
 
-> 下一章[【Java接口】]()
+> 下一章[【Java接口】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java接口.md)
 

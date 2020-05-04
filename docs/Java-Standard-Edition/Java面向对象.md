@@ -151,7 +151,7 @@
 
 
 
-> 上一章[【Java数组】]()
+> 上一章[【Java数组】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java数组.md)
 
-> 下一章[【Java面向对象三大特性】]()
+> 下一章[【Java面向对象三大特性】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象三大特性.md)
 

@@ -496,4 +496,4 @@ class Singleton {
 
 
 
-> 上一篇[【Java网络编程】]()
+> 上一篇[【Java网络编程】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java网络编程.md)

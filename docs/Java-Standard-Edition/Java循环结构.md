@@ -89,6 +89,6 @@
 
 
 
-> 上一章[【Java选择结构与分支结构】]()
+> 上一章[【Java选择结构与分支结构】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java选择结构与分支结构.md)
 
-> 下一章[【Java函数】]()
+> 下一章[【Java函数】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java函数.md)	

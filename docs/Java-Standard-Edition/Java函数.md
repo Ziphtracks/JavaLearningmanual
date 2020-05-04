@@ -146,6 +146,6 @@ Exception in thread "main" java.lang.StackOverflowError（内存溢出）**
 
 
 
-> 上一章[【Java循环结构】]()
+> 上一章[【Java循环结构】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java循环结构.md)
 
-> 下一章[【Java数组】]()
+> 下一章[【Java数组】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java数组.md)

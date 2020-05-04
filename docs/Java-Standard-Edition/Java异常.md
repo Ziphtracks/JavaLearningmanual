@@ -232,6 +232,6 @@ class Student{
 
 
 
-> 上一章[【Java集合】]()
+> 上一章[【Java集合】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java集合.md)
 
-> 下一章[【Java多线程】]()
+> 下一章[【Java多线程】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java多线程.md)

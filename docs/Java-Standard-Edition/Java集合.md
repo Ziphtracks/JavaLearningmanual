@@ -194,6 +194,6 @@ for(数据类型 变量名 : 容器名称){ //可遍历集合或数组（常用�
 
 
 
-> 上一章[【Java内部类与常用类】]()
+> 上一章[【Java内部类与常用类】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java内部类与常用类.md)
 
-> 下一章[【Java异常】]()
+> 下一章[【Java异常】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java异常.md)

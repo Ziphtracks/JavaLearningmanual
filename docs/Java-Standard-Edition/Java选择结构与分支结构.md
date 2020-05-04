@@ -124,6 +124,6 @@ switch(变量|表达式){ //可操作变量类型byte short int char String
 
 
 
-> 上一章[【Java语言基础】]()
+> 上一章[【Java语言基础】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java语言基础.md)
 
-> 下一章[【Java循环结构】]()
+> 下一章[【Java循环结构】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java循环结构.md)
