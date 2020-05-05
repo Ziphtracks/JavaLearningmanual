@@ -7,8 +7,11 @@
   <a href="">
 		<img src="https://img.shields.io/badge/WeChat-apeng0418-lightgrey.svg" alt="License">
 	</a>
-  <a href="https://blog.csdn.net/weixin_44170221">
+  <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/materials">
 		<img src="https://img.shields.io/badge/文档资料-downloads-blue.svg" alt="License">
+	</a>
+  <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20package%20library">
+		<img src="https://img.shields.io/badge/jar包库-downloads-green.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
 		<img src="https://img.shields.io/badge/CSDN-@Ziph-red.svg" alt="License">
