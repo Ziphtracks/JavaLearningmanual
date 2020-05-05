@@ -3,7 +3,6 @@
 <hr/>
 <br />
 <p align="center">
-		<img src="https://img.shields.io/badge/Language-Java-green" alt="License">
   <a href="">
 		<img src="https://img.shields.io/badge/WeChat-apeng0418-lightgrey.svg" alt="License">
 	</a>
