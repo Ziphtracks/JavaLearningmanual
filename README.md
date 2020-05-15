@@ -54,27 +54,11 @@
 
 > JavaSE基础章节记录了一系列理论与小练习案例知识，主要是为了给JavaWeb及以后做铺垫。此章节涉及到的内容不涉及源码剖析，只是“师傅领进门”说法，后来的修行还得靠个人。由浅入深就是这个道理。所以此章节只记录浅层JavaSE基础内容。不喜勿喷！谢谢大家！
 
-#### 📚  JavaSE基础章节总目录
+#### 📚  JavaSE基础
 
-- [Java的概述与环境搭建](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java的概述与环境搭建.md)
-- [语言基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java语言基础.md)
-- [选择结构与分支结构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java选择结构与分支结构.md)
-- [循环结构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java循环结构.md)
-- [函数](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java函数.md)
-- [数组](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java数组.md)
-- [面向对象](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象.md)
-- [面向对象三大特性](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象三大特性.md)
+- JavaSE基础目录版
 
-- [三个修饰符](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java三个修饰符.md)
-- [接口](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java接口.md)
-- [内部类与常用类](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java内部类与常用类.md)
-- [集合](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java集合.md)
-- [异常](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java异常.md)
-- [多线程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java多线程.md)
-- [IO流](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/JavaIO流.md)
-- [网络编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java网络编程.md)
-- [反射](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射.md)
+#### 💻  JavaWeb基础
 
-#### 📚  JavaWeb章节总目录
-
+- 
 
