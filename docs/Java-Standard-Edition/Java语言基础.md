@@ -52,8 +52,8 @@
 
 
 
-<p align="left"><img src="https://gitee.com/Ziphtracks/JavaLearningmanual/raw/master/media/pictures/Java-Standard-Edition/数据类型.png" alt="数据类型">
-</p>
+![数据类型](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200524201241.png)
+
 
 
 
