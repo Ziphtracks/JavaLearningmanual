@@ -1,10 +1,9 @@
 ------
 
-![学习教育](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200515154726.svg)
-
 # ⚙JavaSE基础目录
 
 - [Java的概述与环境搭建](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java的概述与环境搭建.md)
+  - 讲述Java的由来、语言特点、Java的安装使用、了解Java的基本语言规范
 - [语言基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java语言基础.md)
 - [选择结构与分支结构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java选择结构与分支结构.md)
 - [循环结构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java循环结构.md)

@@ -1,6 +1,6 @@
 <p align="center"><img src="https://gitee.com/Ziphtracks/JavaLearningmanual/raw/master/media/logo.png" alt="Logo"></p>
-<p align="right">——Java学习手册</p>
 <hr/>
+
 <br />
 <p align="center">
   <a href="">
@@ -56,7 +56,7 @@
 
 #### 📚  JavaSE基础
 
-- JavaSE基础目录版
+- [JavaSE基础目录](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/directory/JavaSE基础目录.md)
 
 #### 💻  JavaWeb基础
 
