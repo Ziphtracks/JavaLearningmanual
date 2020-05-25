@@ -3,18 +3,19 @@
 
 <p align="center">
   <a href="">
-		<img src="https://img.shields.io/badge/WeChat-apeng0418-lightgrey.svg" alt="License">
+		<img src="https://img.shields.io/badge/WeChat-apeng0418-right.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/materials">
-		<img src="https://img.shields.io/badge/文档资料-downloads-blue.svg" alt="License">
+		<img src="https://img.shields.io/badge/文档资料-downloads-green.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20package%20library">
-		<img src="https://img.shields.io/badge/jar包库-downloads-green.svg" alt="License">
+		<img src="https://img.shields.io/badge/jar包库-downloads-blue.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
-		<img src="https://img.shields.io/badge/CSDN-@Ziph-red.svg" alt="License">
+		<img src="https://img.shields.io/badge/@Ziph-CSDN-red.svg" alt="License">
 	</a>
 </p>
+
 <br />
 
 # 前言
@@ -29,7 +30,7 @@
 
 
 
-<font color="red">**⚠温馨提示：** </font> **我记录的知识是一个从无到有、由浅入深的过程，我深知自己的技术和文章不如大咖分享的技术文，所以还请客官们谅解，不喜勿喷！😁** 
+<font color="red">**⚠温馨提示：** </font> **我记录的知识是一个从无到有、由浅入深的过程，我深知自己的技术和文章不如大咖分享的技术文，所以还请客官们谅解！😁** 
 
 ------
 
