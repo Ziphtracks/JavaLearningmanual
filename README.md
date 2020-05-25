@@ -40,23 +40,23 @@
 
 #### 📚  JavaSE基础
 
-- [Java的概述与环境搭建](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java的概述与环境搭建.md)（了解Java的发展史、执行机制、语言规范；编写第一个Java程序；初识包和类）
-- [语言基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java语言基础.md)（认识变量；讲解多种数据类型与转换、提升；运算符分门别类；学会使用控制台输入）
-- [选择结构与分支结构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java选择结构与分支结构.md)（if else选择结构的介绍与使用；了解switch分支结构的用法；认识局部变量）
-- [循环结构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java循环结构.md)（了解循环结构；while、do while和for循环的使用讲解；break与continue的流程控制介绍）
-- [函数](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java函数.md)（掌握函数、函数的组成、形参、实参、返回值、函数调用和递归）
-- [数组](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java数组.md)（讲解一维数组和二维数组的创建、声明、赋值、遍历、扩容、可变长参数以及“杨辉三角”等）
-- [面向对象](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象.md)（了解程序员眼中的对象；学习类、类与对象关系；掌握实例变量和对象、方法重载与构造方法）
-- [面向对象三大特性](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象三大特性.md)（传递封装思想；访问修饰符介绍；封装、继承、多态的学习）
-- [三个修饰符](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java三个修饰符.md)（传递封装思想；访问修饰符介绍；封装、继承、多态的学习）
-- [接口](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java接口.md)（认识接口；了解接口的规范与思想；讲解接口与接口回调的应用）
-- [内部类与常用类](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java内部类与常用类.md)（四大内部类的使用；掌握基类Object基本使用；讲解包装类、String类与BigDecemal类）
-- [集合](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java集合.md)（了解Collection体类集合；List、Set、Map接口与实现类的讲解；泛型与集合的认知）
-- [异常](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java异常.md)（认识Java中的异常、异常的作用、异常的基本分类与处理以及自定义异常）
-- [多线程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java多线程.md)（认识线程与进程；掌握多种线程状态与方法；解决线程安全问题；讲解线程安全集合和线程池）
-- [IO流](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/JavaIO流.md)（掌握IO流的概念与分类；了解对象序列化、编码与解码；使用流操作文件等）
-- [网络编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java网络编程.md)（了解计算机网络、多种网路模型、网络通信、IP和端口；学习Socket网络编程）
-- [反射](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射.md)（了解类对象、类加载与反射常用方法；简单介绍工厂设计模式和单例设计模式）
+- [Java的概述与环境搭建](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java的概述与环境搭建.md)
+- [语言基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java语言基础.md)
+- [选择结构与分支结构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java选择结构与分支结构.md)
+- [循环结构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java循环结构.md)
+- [函数](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java函数.md)
+- [数组](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java数组.md)
+- [面向对象](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象.md)
+- [面向对象三大特性](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java面向对象三大特性.md)
+- [三个修饰符](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java三个修饰符.md)
+- [接口](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java接口.md)
+- [内部类与常用类](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java内部类与常用类.md)
+- [集合](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java集合.md)
+- [异常](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java异常.md)
+- [多线程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java多线程.md)
+- [IO流](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/JavaIO流.md)
+- [网络编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java网络编程.md)
+- [反射](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射.md)
 
 #### 💻  JavaWeb基础
 
