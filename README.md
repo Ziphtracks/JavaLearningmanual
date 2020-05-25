@@ -1,7 +1,8 @@
-<p align="center"><img src="https://gitee.com/Ziphtracks/JavaLearningmanual/raw/master/media/logo.png" alt="Logo"></p>
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
 <hr/>
 
 <br />
+
 <p align="center">
   <a href="">
 		<img src="https://img.shields.io/badge/WeChat-apeng0418-lightgrey.svg" alt="License">
@@ -16,8 +17,6 @@
 		<img src="https://img.shields.io/badge/CSDN-@Ziph-red.svg" alt="License">
 	</a>
 </p>
-
-
 <br />
 
 # 前言
