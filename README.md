@@ -60,5 +60,9 @@
 
 #### 💻  JavaWeb基础
 
-- 
+- 文章虽在，需要时间添加......
+
+#### 📐设计模式
+
+[01-单例设计模式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.单例设计模式.md)
 
