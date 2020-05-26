@@ -1,6 +1,4 @@
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
-<br />
-
 <p align="center">
   <a href="">
 		<img src="https://img.shields.io/badge/WeChat-apeng0418-right.svg" alt="License">
@@ -30,7 +28,7 @@
 
 ------
 
-#### 📌**送给大家的一段话** 
+### 📌**送给大家的一段话** 
 
 **持续努力，变平凡为不凡：** 梦想与现实之间的巨大落差常令人烦躁不安。然而，人生就是”今天”的不断积累，就是“现在”这一刻的不断延续，如此而已。 然而，不错过今天，认真工作就能看清明天，明天再认真工作就能看清后面的一周，一周认真工作，就能看清后面的一月...就是说，即使不去探索遥远的未来，只要全身贯注于眼前的每一个瞬间，以前看不清楚的未来的景象就会自然地呈现在你眼前。 与其莫名其妙为明天而烦恼，与其苦思冥想去制定长远的计划，还不如全力过好今天这一天。这才是实现理想最切实的办法。 ——稻盛和夫《活着》 
 
@@ -38,7 +36,9 @@
 
 # 文章目录
 
-#### 📚  JavaSE基础
+
+
+### 📚  JavaSE基础
 
 - [Java的概述与环境搭建教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java的概述与环境搭建.md)
 - [Java的语言基础学习](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java语言基础.md)
@@ -58,11 +58,15 @@
 - [学习计算机网络通信、IP、端口以及Socket编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java网络编程.md)
 - [Java反射机制与常用方法](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射.md)
 
-#### 💻  JavaWeb基础
+
+
+### 💻  JavaWeb基础
 
 - 文章虽在，需要时间添加......
 
-#### 📐设计模式
+
+
+### 📐设计模式
 
 [01-单例设计模式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.单例设计模式.md)
 
