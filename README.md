@@ -41,13 +41,15 @@
 - [学习计算机网络通信、IP、端口以及Socket编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java网络编程.md)
 - [Java反射机制与常用方法](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射.md)
 
+## 🔢MySQL数据库
+
+- [MySQL基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/MySQL数据库.md)
+
 ## 💻  JavaWeb基础
 
 - 文章虽在，需要时间添加......
 
-## 🔢MySQL数据库
-
-- [MySQL基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/MySQL数据库.md)
+- 
 
 ## 📐设计模式
 
