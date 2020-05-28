@@ -45,7 +45,11 @@
 
 - 文章虽在，需要时间添加......
 
+## 🔢MySQL数据库
+
+- MySQL基础快速入门
+
 ## 📐设计模式
 
-[01-单例设计模式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.单例设计模式.md)
+- [01-单例设计模式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.单例设计模式.md)
 
