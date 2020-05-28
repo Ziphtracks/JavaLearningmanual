@@ -47,7 +47,7 @@
 
 ## 🔢MySQL数据库
 
-- MySQL基础快速入门
+- [MySQL基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/MySQL数据库.md)
 
 ## 📐设计模式
 
