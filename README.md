@@ -42,9 +42,9 @@
 - [Java反射机制](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射.md)
 - 待添加注解和枚举类......
 
-## 🔢MySQL数据库
+## 🛢数据库
 
-- [MySQL基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/MySQL数据库.md)
+- [MySQL数据库基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md)
 
 - 待添加MySQL索引......
 
@@ -52,6 +52,10 @@
 
 - [HTML和CSS基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/HTML和CSS基础.md)
 - 待添加JavaScript......
+
+## 💾服务器
+
+- [tomact服务器基础和开发步骤](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Server/tomact%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E5%92%8C%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4.md)
 
 ## 💻  JavaWeb基础
 
