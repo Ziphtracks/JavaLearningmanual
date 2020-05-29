@@ -39,11 +39,19 @@
 - [Java多线程入门](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java多线程.md)
 - [JavaIO流](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/JavaIO流.md)
 - [Java网络编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java网络编程.md)
-- [Java反射](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射.md)
+- [Java反射机制](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射.md)
+- 待添加注解和枚举类......
 
 ## 🔢MySQL数据库
 
 - [MySQL基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/MySQL数据库.md)
+
+- 待添加MySQL索引......
+
+## 🎨前端开发
+
+- [HTML和CSS基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/HTML和CSS基础.md)
+- 待添加JavaScript......
 
 ## 💻  JavaWeb基础
 
@@ -55,4 +63,4 @@
 
 - [00-设计模式基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/00.设计模式基础.md)
 - [01-单例设计模式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.单例设计模式.md)
-- ......
+- 待添加第二设计模式......
