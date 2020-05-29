@@ -1220,8 +1220,6 @@ e.printStackTrace();
 
 
 
-
-
 ### <span id="head46"> 十一、ORM</span>
 
 ------
@@ -1586,7 +1584,7 @@ users.forEach(System.out::println);
 }
 ```
 
-**再次练习详解地址：** JDBC采用DAO和Entity层完成增删改查（提供DateUtils转换工具类、DBUtils数据库连接工具类）(https://blog.csdn.net/weixin_44170221/article/details/105231252)
+
 
 ### <span id="head50"> 十三、日期类型</span>
 
@@ -3527,7 +3525,7 @@ AccountServiceImpl accountService = new AccountServiceImpl();
 >   - mysql连接驱动mysql-connector-java-5.1.25-bin.jar
 >   - druid-1.1.5.jar
 >   - database.properties配置文件
->   - [commons-dbutils-1.6.jar]()
+>   - commons-dbutils-1.6.jar
 
 
 

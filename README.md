@@ -47,9 +47,9 @@
 
 ## 💻  JavaWeb基础
 
-- 文章虽在，需要时间添加......
+- [JDBC数据库连接](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JDBC数据库连接.md)
 
-- 
+- 文章虽在，需要时间添加......
 
 ## 📐设计模式
 
