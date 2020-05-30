@@ -189,11 +189,19 @@
 > **下面是一个HTTP请求的例子：**
 >
 > POST/hello HTTP/1.1
+>
 > Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+>
 > Accept-Language:zh-CN,zh;q=0.8,en-GB;q=0.6,en;q=0.4
+>
 > Connection:Keep-Alive
+>
 > Host:localhost:8080
-> User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+>
+> User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+>
+> Chrome/59.0.3071.115 Safari/537.36
+>
 > Accept-Encoding:gzip, deflate, br
 >
 > （空白行）
@@ -223,25 +231,43 @@
 > **下面是一个HTTP响应的例子：**
 >
 > HTTP/1.1 200 OK   //状态行
+>
 > Server: nginx
+>
 > Date: Tue, 31 May 2016 02:09:24 GMT
+>
 > Content-Type: text/html;charset=UTF-8
+>
 > Connection: keep-alive
+>
 > Vary: Accept-Encoding
+>
 > Access-Control-Allow-Origin: *
+>
 > Access-Control-Allow-Headers: X-Requested-With,access_token,access-token,content-type,multipart/form-data,application/x-www-form-urlencoded
+>
 > Access-Control-Allow-Methods: GET,POST,OPTIONS
+>
 > Content-Length: 49
 >
 > \<!DOCTYPE html>   //正文
+>
 > \<html> 
-> 	\<head>
-> 		\<title>网页标题\</title>
-> 		\<meta charset="utf-8">
-> 	\</head>
-> 	\<body>
-> 		网页内容
-> 	\</body>
+>
+> ​	\<head>
+>
+> ​		\<title>网页标题\</title>
+>
+> ​		\<meta charset="utf-8">
+>
+> ​	\</head>
+>
+> ​	\<body>
+>
+> ​		网页内容
+>
+> ​	\</body>
+>
 > \</html>
 
 
