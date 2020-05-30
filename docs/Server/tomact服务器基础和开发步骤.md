@@ -161,7 +161,7 @@
 > 1. 将下载好的tomact解压到一个盘的文件夹中
 > 2. 保证我们jdk是用JAVA_HOME形式配置的（tomact依赖jdk的这种形式）；在tomcat的安装目录bin文件夹下的catalina.bat中使用了JAVA_HOME，所以，安装 tomcat必须要求系统配置中有JAVA_HOME，如果没有配置，执行startup.bat文件时会 出现闪退效果
 > 3. 端口号配置；tomcat默认使用的8080端口，可以进行端口号的修改，修改tomcat的端口号，在 tomcat\conf\server.xml文件, 可以添加80端口,80是http协议默认的端口
-> 4. 测试是否安装配置成功；在tomcat的安装目录下有一个bin目录 ，在目录中有一个startup.bat文件执行它。（窗口乱码无视即可）打开浏览器，在浏览器的地址栏上输入 http://localhost:8080。 会出现一个猫的界面，打开了即为成功，打不开不能访问页面则失败！
+> 4. 测试是否安装配置成功；在tomcat的安装目录下有一个bin目录 ，在目录中有一个startup.bat文件执行它。（窗口乱码无视即可）打开浏览器，在浏览器的地址栏上输入 `http://localhost:8080`。 会出现一个猫的界面，打开了即为成功，打不开不能访问页面则失败！
 > 5. 注意：在tomact安装路径下打开DOS命令窗口，输入startup.bat，按下Enter也可以启动服务器！
 
 ![1586436210934](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200529185513.png)
