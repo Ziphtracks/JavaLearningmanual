@@ -151,6 +151,8 @@
 > 对于tomact来说，我们常用的版本只有7.0和8.5版本，而7.0版本存在问题，所有我们下载8.5版本
 
 > tomact8.5官网下载地址：[https://tomcat.apache.org/download-80.cgi](https://tomcat.apache.org/download-80.cgi )（下载解压即可）
+>
+> tomact源码下载地址：[http://archive.apache.org/dist/tomcat/](http://archive.apache.org/dist/tomcat/)
 
 
 
@@ -168,7 +170,7 @@
 
 #### <span id="head15">2.7 关于tomact地址问题</span>
 
-> 我们在使用tomact时会在浏览器地址栏中输入此内容：http://localhost:8080/（htttp协议://ip:端口号/资源名称）
+> 我们在使用tomact时会在浏览器地址栏中输入此内容：`http://localhost:8080/`（htttp协议://ip:端口号/资源名称）
 >
 > 而我们自己的ip地址可以通过DOS命令下键入ipconfig来查询本机ip地址。
 >
@@ -275,7 +277,7 @@
 
 > **temp：** 存放Tomcat的临时文件，这个目录下的东西可以在停止Tomcat后删除！
 
-> **webapps：** 存放web项目的目录，其中每个文件夹都是一个项目；如果这个目录下已经存在了目录，那么都是tomcat自带的项目。其中ROOT是一个特殊的项目，在地址栏中没有给出项目目录时，对应的就是ROOT项目。http://localhost:8080/firstweb，进入示例项目。其中firstweb就是项目名，即文件夹的名字。
+> **webapps：** 存放web项目的目录，其中每个文件夹都是一个项目；如果这个目录下已经存在了目录，那么都是tomcat自带的项目。其中ROOT是一个特殊的项目，在地址栏中没有给出项目目录时，对应的就是ROOT项目。`http://localhost:8080/firstweb`，进入示例项目。其中firstweb就是项目名，即文件夹的名字。
 
 > **work：** 运行时生成的文件，最终运行的文件都在这里。通过webapps中的项目生成的！可以把这个目录下的内容删除，再次运行时会生再次生成work目录。当客户端用户访问一个JSP文件时，Tomcat会通过JSP生成Java文件，然后再编译Java文件生成class文件，生成的java和class文件都会存放到这个目录下。
 
@@ -340,10 +342,10 @@
 
 > 二、访问步骤
 
-1. 先访问到tomcat容器：http://localhost:8080/
-2. 访问到项目：http://localhost:8080/dynamicproject/
-3. 访问到资源：http://localhost:8080/dynamicproject/a.jpg（输入地址即可访问a.jpg图片，举一反三访问txt、html）
-4. 注意事项：如果访问路径只写到http://localhost:8080/dynamicproject/，默认访问index开头的html文件或jsp文件...
+1. 先访问到tomcat容器：`http://localhost:8080/`
+2. 访问到项目：`http://localhost:8080/dynamicproject/`
+3. 访问到资源：`http://localhost:8080/dynamicproject/a.jpg`（输入地址即可访问a.jpg图片，举一反三访问txt、html）
+4. 注意事项：如果访问路径只写到`http://localhost:8080/dynamicproject/`，默认访问index开头的html文件或jsp文件...
 
 
 
@@ -357,7 +359,7 @@
 <Context docBase="磁盘路径" path="/项目的访问名称" />
 ```
 
-**经过以上配置后,在浏览器上可以输入http://localhost/hello来访问。但是，在tomcat6以后已经不建议使用了。改动了tomcat的server.xml文件，一旦出错，tomcat容器就炸了! 会有大麻烦的！让你吃不了兜着走！**
+**经过以上配置后,在浏览器上可以输入`http://localhost/hello`来访问。但是，在tomcat6以后已经不建议使用了。改动了tomcat的server.xml文件，一旦出错，tomcat容器就炸了! 会有大麻烦的！让你吃不了兜着走！**
 
 
 
@@ -369,7 +371,7 @@
 
 ![1586439194739](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200529185516.png)
 
-> 三、重启服务器后，打开网页，地址栏输入http://localhost:8080/hello/a.txt即可访问项目中txt文件
+> 三、重启服务器后，打开网页，地址栏输入`http://localhost:8080/hello/a.txt`即可访问项目中txt文件
 
 
 
@@ -385,7 +387,7 @@
 <Context docBase="磁盘路径" />
 ```
 
-**这种方案配置，xml文件的名称就是访问路径，在浏览器中访问http://localhost/good就可以。** 
+**这种方案配置，xml文件的名称就是访问路径，在浏览器中访问`http://localhost/good`就可以。** 
 
 注意：只需要写入一个docBase即可
 
@@ -405,7 +407,7 @@
 
 ![1586440187018](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200529185517.png)
 
-> 三、重启服务器后，打开网页，地址栏输入http://localhost:8080/good/即可访问项目中默认的index.html网页
+> 三、重启服务器后，打开网页，地址栏输入`http://localhost:8080/good/`即可访问项目中默认的index.html网页
 
 注意：这时候访问地址就变成了xml文件名称了，此例子中变为了good。举一反三，good/a.txt即可访问文本
 
@@ -413,7 +415,7 @@
 
 #### <span id="head35">6.5 Web动态项目的相关配置</span>
 
-> 问题：默认Web访问地址http://localhost:8080/dynamicproject为什么默认访问index.html或index.jsp呢？（http://localhost:8080/dynamicproject/index.html、http://localhost:8080/dynamicproject/index.jsp）
+> 问题：默认Web访问地址`http://localhost:8080/dynamicproject`为什么默认访问index.html或index.jsp呢？（`http://localhost:8080/dynamicproject/index.html`、`http://localhost:8080/dynamicproject/index.jsp`）
 
 > 查看tomact安装目录：tomact\conf\web.xml文件，打开xml文件展示出的信息如下：
 
@@ -555,6 +557,8 @@
 ![1586575970922](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200529185530.png)
 
 > 五、你发现没为什么tomact左上角有一个红色的小叉号❌呢？是因为你没有指定要部署的文件也就是war包，那我们就添加了它！
+>
+> **注意：IDEA开发使用默认war包即可，这里我只是演示war包的生成与添加过程，后面我会讲到war包的作用与好处！** 
 
 ![1586526880546](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200529185531.png)
 
@@ -588,9 +592,11 @@
 
 #### <span id="head45">7.4 idea中打包成war包和默认war包的解释</span>
 
-> 因为idea的功能比较强大，所以tomact部署后的项目会存在idea中，储存在out文件的artifacts文件中。而在这个文件中存在就就是war包的形式。如图两个war包，第一个是自己添加的war包，一会我讲它的好处，第二个就是默认的war包了！
+> 因为idea的功能比较强大，所以tomact部署后的项目会存在idea中，储存在out文件的artifacts文件中。而在这个文件中存在就是war包的形式。如图两个war包，第一个是自己添加的war包，一会我讲它的好处，第二个就是默认的war包了！
 >
-> **war包的好处就是：** 当我们不使用idea来进行部署的时候，我们的项目是默认放在tomact中的webapps文件中的，那我们就必须复制粘贴这整个文件夹了！如果我们打包成war包，在idea目录中复制粘贴war包到tomact的wabapps文件夹中，然后启动服务器，tomact服务器会自动的帮我们解压war包并部署该项目！而我们放入的是war包，不是在idea内，所以部署该项目的浏览器访问路径会随之变成[localhost:8080/项目名称_war/]()
+> **注意：我们一般都是使用IDEA开发，所以在此不需要重新生成war包，使用默认war包就OK的！** 
+>
+> **war包的好处就是：** 当我们不使用idea来进行部署的时候，我们的项目是默认放在tomact中的webapps文件中的，那我们就必须复制粘贴这整个文件夹了！如果我们打包成war包，在idea目录中复制粘贴war包到tomact的wabapps文件夹中，然后启动服务器，tomact服务器会自动的帮我们解压war包并部署该项目！而我们放入的是war包，不是在idea内，所以部署该项目的浏览器访问路径会随之变成`localhost:8080/项目名称_war/`
 
 ![1586621655932](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200529185538.png)
 
