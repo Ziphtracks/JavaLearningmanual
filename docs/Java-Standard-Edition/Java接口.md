@@ -105,6 +105,210 @@
  - **先有接口的使用者，后有接口的实现者**
  - **宏观概念：接口是一种标准**
 ![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200503204240.png)
+
+**接口回调案例：探究Comparable接口中CompareTo的方法，模拟利用其中的Arrays.sort进行排序** 
+
+底层原理只是让我们学习了解找到自己学习的思路，其实jdk都已经在1998年帮后人写好了，我们去实现写好的jdk接口就可以。其中最下面还有一个实现jdk提供的接口来进行学生数组排序的方式！（TestStudentSort）
+
+- Comparable接口
+- Tools工具类
+- TestCallback学生测试类（先看它，它是故事的开始，当然也是故事的结束）
+
+```java
+/**
+ * @Author Ziph
+ * @date 2020/2/26
+ * @Email mylifes1110@163.com
+ * 
+ * 初衷（目的）：
+ * 模仿jdk的API底层原理的写法，寻找自己学习接口的思路
+ * 我们要具体实现用数组进行存储学生信息，通过实现接口，调用工具的排序方法对学生成绩的排序
+ * 进而打印排序后的所有学生信息
+ */
+public class TestCallback {
+    public static void main(String[] args) {
+    	/**
+		 * 2.创建学生数组并添加数组元素（学生姓名、年龄、姓名）
+		 */
+        Student[] students = new Student[] {
+                new Student("Ziph", 21, 99),
+                new Student("Tom", 20, 88),
+                new Student("Marry", 22, 92),
+                new Student("Eav", 25, 66)
+        };
+
+        /**
+		 * 7.调用排序工具对学生对象进行排序
+		 */
+        Tools.sort(students);//默认升序
+
+        /**
+		 * 8.打印学生按成绩排序后的信息
+		 */
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i].name + "   "
+                    + students[i].age + "岁   "
+                    + students[i].score  + "分");
+        }
+    }
+}
+
+/**
+ * 1.创建学生类，创建属性并写上构造方法
+ */
+class Student implements Comparable<Student> {	/**
+												 * 5.让学生类实现接口
+ 												 */
+    String name;
+    int age;
+    double score;
+
+    public Student() {
+    }
+
+    public Student(String name, int age, double score) {
+        this.name = name;
+        this.age = age;
+        this.score = score;
+    }
+
+    /**
+	 * 6.既然学生类已经实现了接口，那么我们就要实现接口中的方法
+ 	 */
+    public int compareTo(Student student) {
+        //根据学生成绩进行升序
+        if (this.score > student.score) {
+            return 1;//还记API中的定义吗，返回正整数是升序
+        } else if (this.score < student.score) {
+            return -1;//返回正负数是降序
+        }
+        return 0;//那当然返回0就是位置不发生改变了
+    }
+}
+```
+**Comparable接口**
+```java
+/**
+ * @Author Ziph
+ * @date 2020/2/26
+ * @Email mylifes1110@163.com
+ *
+ * 接口等价于标准
+ * 只有实现接口的对象才能排序
+ * 所以我们要先制定一个排序标准
+ *
+ * 探究Comparable<T>的底层原理
+ * 而Interface Comparable<T>位于JDK-API中的java.lang包下
+ *
+ * 以下是jdk中的说辞：
+ * public interface Comparable<T>
+ * 此接口对实现它的每个类的对象进行了总排序。这个顺序被称为类的空自然排序，和类的 compareTo方法称为空自然比较方法。
+ *
+ * int compareTo(T o)
+ * 将此对象与指定的对象进行比较，以。返回一个负整数、零或一个正整数，因为这个对象小于、等于或大于指定的对象。
+ *
+ * 我们要知道数组排序就是Arrays.sort，而Arrays.sort就是利用此接口传入对象（泛型标准对象）利用Arrays中写的sort方法进行排序的
+ * 那下一步我们要模仿着底层原理，再去创建一个Arrays类，这里我创建一个Tools类代表
+ *
+ */
+ 
+/**
+ * 3.写一个接口对实现Student类的对象进行总排序
+ */
+public interface Comparable<T> {
+    public int compareTo(T student);
+}
+```
+**Tools工具类**
+
+```java
+/**
+ * @Author Ziph
+ * @date 2020/2/26
+ * @Email mylifes1110@163.com
+ *
+ * 此类可以被称为工具类，简单来说就是排序方法所在的类，就是一个需要传入对象的排序工具
+ *
+ * 当写完工具之后就要想，工具是用来用的，即为调用，所以我们就要返回TestCallback类中了（去寻找第5步）
+ */
+ 
+/**
+ * 4.写一个像Arrays一样的类，定义一个排序方法sort，这样也可以像Arrays.sort一样的调用排序方法了
+ */
+public class Tools {
+    public static void sort(Student[] student) {
+        //这里利用了简单易懂的冒泡排序，进行多轮对象的排序
+        //虽然说时间复杂度有点高，但是冒泡排序法都明白，通俗易懂
+        for (int i = 0; i < student.length - 1; i++) {
+            for (int j = 0; j < student.length - 1; j++) {
+                //在这里我们传入制定的标准对象（接口中制定排序需要传入的对象，即泛型），即：Student数组中的学生对象
+                //传入对象之后并做了一个强转
+                //就是把学生数组里面的值强转成为接口定义的泛型标准（制定排序中的泛型标准对象）
+                Comparable currentStudent = (Comparable) student[j];
+                //因为交换是需要两个值判断条件之后交换的，所以student[i]是第一个判断是否交换的对象
+                //利用n接收另一个需要交换的对象，即student[i + 1]
+                //返回整数this靠后，也就是要接收student[i + 1]，返回了整数即为升序
+                //而返回负数呢，就要接收一个student[i]就可以了，即为降序
+                int n = currentStudent.compareTo(student[j + 1]);
+                //两值交换的条件，注意n>0是接口中定义的升序标准（升序）
+                if (n > 0) {
+                    //利用临时变量temp进行两值交换
+                    Student temp = student[j];
+                    student[j] = student[j + 1];
+                    student[j + 1] = temp;
+                }
+            }
+        }
+    }
+}
+```
+
+![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530133931.png)
+
+**TestStudentSort**
+
+```java
+import java.util.Arrays;
+
+/** 
+* @author Ziph
+* @date 2020年2月26日
+* @Email mylifes1110@163.com
+*/
+public class TestStudentSort {
+	public static void main(String[] args) {
+		Student[] students = new Student[] {
+			new Student("Ziph", 99),
+			new Student("Marry", 66),
+			new Student("Tom", 88)
+		};
+		Arrays.sort(students);
+		for (int i = 0; i < students.length; i++) {
+			System.out.println(students[i].name + "  成绩：" + students[i].score);
+		}
+	}
+}
+
+class Student implements Comparable<Student> {
+	String name;
+	double score;
+	
+	public Student(String name, double score) {
+		this.name = name;
+		this.score = score;
+	}
+	
+	public int compareTo(Student stu) {
+		if (this.score > stu.score) {
+			return 1;
+		} else if (this.score < stu.score) {
+			return -1;
+		}
+		return 0;
+	}
+}
+```
+
 ***
 <a id="7"> </a>
 
