@@ -1,144 +1,145 @@
-- [Java Web之JSP](#head1)
-	- [ 一、JSP简介](#head2)
-		- [1.1 什么是JSP？](#head3)
-		- [1.2 JSP的特点](#head4)
-		- [1.3 JSP为什么也是Servlet](#head5)
-		- [1.4 tomact服务器中的资源分析](#head6)
-			- [1.4.1 tomact服务器中的静态资源分析](#head7)
-			- [1.4.2 tomact服务器中的动态资源分析](#head8)
-		- [1.5 为什么要使用JSP](#head9)
-		- [1.6 JSP的优点](#head10)
-		- [1.7 JSP的原理](#head11)
-	- [ 二、JSP的基本结构](#head12)
-		- [2.1 JSP的结构](#head13)
-		- [2.2 JSP脚本元素](#head14)
-			- [2.2.1 JSP脚本的作用](#head15)
-			- [2.2.2 JSP脚本的分类](#head16)
-				- [2.2.2.1 声明脚本](#head17)
-				- [2.2.2.2 片段脚本](#head18)
-				- [2.2.2.3 输出脚本](#head19)
-		- [2.3 JSP页面中的注释](#head20)
-			- [2.3.1 JSP页面中的注释分类](#head21)
-			- [2.3.2 Java代码注释](#head22)
-			- [2.3.3 HTML网页注释](#head23)
-			- [2.3.4 JSP页面注释](#head24)
-		- [2.4 JSP指令](#head25)
-			- [2.4.1 JSP中指令分类](#head26)
-			- [2.4.2 JSP中的指令的作用](#head27)
-			- [2.4.3 page指令](#head28)
-			- [2.4.4 taglib指令](#head29)
-			- [2.4.5 include指令](#head30)
-				- [2.4.5.1 include指令引入静态资源](#head31)
-				- [2.4.5.2 include指令引入动态资源](#head32)
-		- [2.5 JSP的九大内置对象](#head33)
-			- [2.5.1 jsp的out和getWriter()方法的区别](#head34)
-			- [2.5.2 为什么jsp可以直接使用内置对象](#head35)
-			- [2.5.3 怎样找到jsp页面的class文件](#head36)
-		- [2.6 JSP中的域对象](#head37)
-			- [2.6.1 JSP中有哪几个域对象](#head38)
-			- [2.6.2 JSP四大域对象的作用范围及描述](#head39)
-			- [2.6.3 pageContext域对象获取内置对象和操作其他域对象](#head40)
-	- [ 三、EL表达式](#head41)
-		- [3.1 什么是EL表达式](#head42)
-		- [3.2 了解EL表达式和注意事项](#head43)
-		- [3.3 EL表达式获取域数据](#head44)
-			- [3.3.1 EL表达式基本获取域数据](#head45)
-			- [3.3.2 EL表达式简单获取域数据](#head46)
-			- [3.3.3 EL表达式获取复杂域数据（数组、集合、Java对象）](#head47)
-		- [3.4 使用EL表达式执行运算](#head48)
-		- [3.5 EL表达式中的Empty关键字的使用](#head49)
-		- [3.6 EL表达式中11个的Web对象](#head50)
-	- [ 四、JSTL标签库](#head51)
-		- [4.1 什么是JSTL标签库](#head52)
-		- [4.2 JSTL标签库的作用](#head53)
-		- [4.3 JSTL标签库的使用](#head54)
-		- [4.3 JSTL核心标签](#head55)
-		- [4.4 JSTL综合案例 ](#head56)
-			- [ c3p0配置文件](#head57)
-			- [ MySQL数据库库表操作](#head58)
-			- [ DBUtils连接池工具类](#head59)
-			- [ Product实体类](#head60)
-			- [ Dao层接口](#head61)
-			- [ Dao层实现类](#head62)
-			- [ Dao层单元测试](#head63)
-			- [ ProductServlet](#head64)
-			- [ productList.jsp页面](#head65)
-	- [ 五、JSP开发模型](#head66)
-		- [5.1 JSP Model1开发模型](#head67)
-			- [5.1.1 JSP Model1开发模型的优缺点](#head68)
-		- [5.2 JSP Model1优化版开发模型](#head69)
-			- [5.2.1 JSP Model1优化版开发模型的优缺点](#head70)
-		- [5.3 JSP Model2开发模型](#head71)
-			- [5.4 JSP Model2开发模型优缺点](#head72)
-	- [ 六、BeanUtils工具类的使用](#head73)
-		- [6.1 参数问题](#head74)
-		- [6.2 beanutils.jar工具类jar包的下载](#head75)
-		- [6.3 第三方jar包beanutils工具类使用](#head76)
-			- [ User实体类](#head77)
-			- [ JSP注册页面](#head78)
-			- [ Servlet](#head79)
-		- [6.4 自定义beanutils工具类](#head80)
-			- [ register注册页面](#head81)
-			- [ RegisterServlet](#head82)
-			- [ 自定义MyBeanUtils工具类](#head83)
-	- [ 七、MVC模式](#head84)
-		- [7.1 什么是MVC模式](#head85)
-		- [7.2 MVC模式详解](#head86)
-		- [7.3 什么是MVC架构模型](#head87)
-		- [7.4 MVC架构和三层架构的区别](#head88)
-			- [7.4.1 架构模式思想](#head89)
-			- [7.4.2 剖析架构主体](#head90)
-			- [7.4.3 架构和模式划分](#head91)
-			- [7.4.4 架构和设计模式的区别](#head92)
-		- [7.5 基于MAC的三层架构实现](#head93)
-		- [7.6 MAC高级框架应用](#head94)
-	- [ 八、分页](#head95)
-		- [8.1 生活中的分页](#head96)
-		- [8.2 为什么要有分页？](#head97)
-		- [8.3 分页的分类](#head98)
-			- [8.3.1 什么是逻辑分页？](#head99)
-				- [8.3.1.1 逻辑分页的优缺点](#head100)
-			- [8.3.2 什么是物理分页？（常用）](#head101)
-				- [8.3.2.1 物理分页的优缺点](#head102)
-				- [8.3.2.2 物理分页SQL语句实现](#head103)
-				- [8.3.2.3 SQL语句分页举例](#head104)
-		- [8.1 分页查询流程分析与问题](#head105)
-			- [8.1.1 分页的两种情况](#head106)
-			- [8.1.2 分页的流程步骤](#head107)
-			- [8.1.3 分页查询在Web项目中的一些问题](#head108)
-			- [8.1.4 分页查询的综合案例](#head109)
-				- [ IDEA架构与jar包展示](#head110)
-				- [ 库表操作](#head111)
-				- [ c3p0.properties](#head112)
-				- [ 连接池工具类DBUtils](#head113)
-				- [ 实体类User](#head114)
-				- [ 登录页面login.jsp](#head115)
-				- [ 分页查询显示页面index.jsp](#head116)
-				- [ 封装好的PageBean对象](#head117)
-				- [ 通用Servlet](#head118)
-				- [ UserServlet](#head119)
-				- [ 访问资源登录校验LoginFilter](#head120)
-				- [ Dao层接口](#head121)
-				- [ Dao层实现类](#head122)
-				- [ Service层接口](#head123)
-				- [ Service层实现类](#head124)
-# <span id="head1">Java Web之JSP</span>
+* [Java Web之JSP](#java-web%E4%B9%8Bjsp)
+    * [一、JSP简介](#%E4%B8%80jsp%E7%AE%80%E4%BB%8B)
+      * [1\.1 什么是JSP？](#11-%E4%BB%80%E4%B9%88%E6%98%AFjsp)
+      * [1\.2 JSP的特点](#12-jsp%E7%9A%84%E7%89%B9%E7%82%B9)
+      * [1\.3 JSP为什么也是Servlet](#13-jsp%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B9%9F%E6%98%AFservlet)
+      * [1\.4 tomact服务器中的资源分析](#14-tomact%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E8%B5%84%E6%BA%90%E5%88%86%E6%9E%90)
+        * [1\.4\.1 tomact服务器中的静态资源分析](#141-tomact%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E5%88%86%E6%9E%90)
+        * [1\.4\.2 tomact服务器中的动态资源分析](#142-tomact%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%AD%E7%9A%84%E5%8A%A8%E6%80%81%E8%B5%84%E6%BA%90%E5%88%86%E6%9E%90)
+      * [1\.5 为什么要使用JSP](#15-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8jsp)
+      * [1\.6 JSP的优点](#16-jsp%E7%9A%84%E4%BC%98%E7%82%B9)
+      * [1\.7 JSP的原理](#17-jsp%E7%9A%84%E5%8E%9F%E7%90%86)
+    * [二、JSP的基本结构](#%E4%BA%8Cjsp%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84)
+      * [2\.1 JSP的结构](#21-jsp%E7%9A%84%E7%BB%93%E6%9E%84)
+      * [2\.2 JSP脚本元素](#22-jsp%E8%84%9A%E6%9C%AC%E5%85%83%E7%B4%A0)
+        * [2\.2\.1 JSP脚本的作用](#221-jsp%E8%84%9A%E6%9C%AC%E7%9A%84%E4%BD%9C%E7%94%A8)
+        * [2\.2\.2 JSP脚本的分类](#222-jsp%E8%84%9A%E6%9C%AC%E7%9A%84%E5%88%86%E7%B1%BB)
+          * [2\.2\.2\.1 声明脚本](#2221-%E5%A3%B0%E6%98%8E%E8%84%9A%E6%9C%AC)
+          * [2\.2\.2\.2 片段脚本](#2222-%E7%89%87%E6%AE%B5%E8%84%9A%E6%9C%AC)
+          * [2\.2\.2\.3 输出脚本](#2223-%E8%BE%93%E5%87%BA%E8%84%9A%E6%9C%AC)
+      * [2\.3 JSP页面中的注释](#23-jsp%E9%A1%B5%E9%9D%A2%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A)
+        * [2\.3\.1 JSP页面中的注释分类](#231-jsp%E9%A1%B5%E9%9D%A2%E4%B8%AD%E7%9A%84%E6%B3%A8%E9%87%8A%E5%88%86%E7%B1%BB)
+        * [2\.3\.2 Java代码注释](#232-java%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A)
+        * [2\.3\.3 HTML网页注释](#233-html%E7%BD%91%E9%A1%B5%E6%B3%A8%E9%87%8A)
+        * [2\.3\.4 JSP页面注释](#234-jsp%E9%A1%B5%E9%9D%A2%E6%B3%A8%E9%87%8A)
+      * [2\.4 JSP指令](#24-jsp%E6%8C%87%E4%BB%A4)
+        * [2\.4\.1 JSP中指令分类](#241-jsp%E4%B8%AD%E6%8C%87%E4%BB%A4%E5%88%86%E7%B1%BB)
+        * [2\.4\.2 JSP中的指令的作用](#242-jsp%E4%B8%AD%E7%9A%84%E6%8C%87%E4%BB%A4%E7%9A%84%E4%BD%9C%E7%94%A8)
+        * [2\.4\.3 page指令](#243-page%E6%8C%87%E4%BB%A4)
+        * [2\.4\.4 taglib指令](#244-taglib%E6%8C%87%E4%BB%A4)
+        * [2\.4\.5 include指令](#245-include%E6%8C%87%E4%BB%A4)
+          * [2\.4\.5\.1 include指令引入静态资源](#2451-include%E6%8C%87%E4%BB%A4%E5%BC%95%E5%85%A5%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90)
+          * [2\.4\.5\.2 include指令引入动态资源](#2452-include%E6%8C%87%E4%BB%A4%E5%BC%95%E5%85%A5%E5%8A%A8%E6%80%81%E8%B5%84%E6%BA%90)
+      * [2\.5 JSP的九大内置对象](#25-jsp%E7%9A%84%E4%B9%9D%E5%A4%A7%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1)
+        * [2\.5\.1 jsp的out和getWriter()方法的区别](#251-jsp%E7%9A%84out%E5%92%8Cgetwriter%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB)
+        * [2\.5\.2 为什么jsp可以直接使用内置对象](#252-%E4%B8%BA%E4%BB%80%E4%B9%88jsp%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1)
+        * [2\.5\.3 怎样找到jsp页面的class文件](#253-%E6%80%8E%E6%A0%B7%E6%89%BE%E5%88%B0jsp%E9%A1%B5%E9%9D%A2%E7%9A%84class%E6%96%87%E4%BB%B6)
+      * [2\.6 JSP中的域对象](#26-jsp%E4%B8%AD%E7%9A%84%E5%9F%9F%E5%AF%B9%E8%B1%A1)
+        * [2\.6\.1 JSP中有哪几个域对象](#261-jsp%E4%B8%AD%E6%9C%89%E5%93%AA%E5%87%A0%E4%B8%AA%E5%9F%9F%E5%AF%B9%E8%B1%A1)
+        * [2\.6\.2 JSP四大域对象的作用范围及描述](#262-jsp%E5%9B%9B%E5%A4%A7%E5%9F%9F%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%BD%9C%E7%94%A8%E8%8C%83%E5%9B%B4%E5%8F%8A%E6%8F%8F%E8%BF%B0)
+        * [2\.6\.3 pageContext域对象获取内置对象和操作其他域对象](#263-pagecontext%E5%9F%9F%E5%AF%B9%E8%B1%A1%E8%8E%B7%E5%8F%96%E5%86%85%E7%BD%AE%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%93%8D%E4%BD%9C%E5%85%B6%E4%BB%96%E5%9F%9F%E5%AF%B9%E8%B1%A1)
+    * [三、EL表达式](#%E4%B8%89el%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+      * [3\.1 什么是EL表达式](#31-%E4%BB%80%E4%B9%88%E6%98%AFel%E8%A1%A8%E8%BE%BE%E5%BC%8F)
+      * [3\.2 了解EL表达式和注意事项](#32-%E4%BA%86%E8%A7%A3el%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+      * [3\.3 EL表达式获取域数据](#33-el%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%8E%B7%E5%8F%96%E5%9F%9F%E6%95%B0%E6%8D%AE)
+        * [3\.3\.1 EL表达式基本获取域数据](#331-el%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E6%9C%AC%E8%8E%B7%E5%8F%96%E5%9F%9F%E6%95%B0%E6%8D%AE)
+        * [3\.3\.2 EL表达式简单获取域数据](#332-el%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AE%80%E5%8D%95%E8%8E%B7%E5%8F%96%E5%9F%9F%E6%95%B0%E6%8D%AE)
+        * [3\.3\.3 EL表达式获取复杂域数据（数组、集合、Java对象）](#333-el%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%8E%B7%E5%8F%96%E5%A4%8D%E6%9D%82%E5%9F%9F%E6%95%B0%E6%8D%AE%E6%95%B0%E7%BB%84%E9%9B%86%E5%90%88java%E5%AF%B9%E8%B1%A1)
+      * [3\.4 使用EL表达式执行运算](#34-%E4%BD%BF%E7%94%A8el%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%89%A7%E8%A1%8C%E8%BF%90%E7%AE%97)
+      * [3\.5 EL表达式中的Empty关键字的使用](#35-el%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%AD%E7%9A%84empty%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%BF%E7%94%A8)
+      * [3\.6 EL表达式中11个的Web对象](#36-el%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%AD11%E4%B8%AA%E7%9A%84web%E5%AF%B9%E8%B1%A1)
+    * [四、JSTL标签库](#%E5%9B%9Bjstl%E6%A0%87%E7%AD%BE%E5%BA%93)
+      * [4\.1 什么是JSTL标签库](#41-%E4%BB%80%E4%B9%88%E6%98%AFjstl%E6%A0%87%E7%AD%BE%E5%BA%93)
+      * [4\.2 JSTL标签库的作用](#42-jstl%E6%A0%87%E7%AD%BE%E5%BA%93%E7%9A%84%E4%BD%9C%E7%94%A8)
+      * [4\.3 JSTL标签库的使用](#43-jstl%E6%A0%87%E7%AD%BE%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8)
+      * [4\.3 JSTL核心标签](#43-jstl%E6%A0%B8%E5%BF%83%E6%A0%87%E7%AD%BE)
+      * [4\.4 JSTL综合案例](#44-jstl%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B)
+          * [c3p0配置文件](#c3p0%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+          * [MySQL数据库库表操作](#mysql%E6%95%B0%E6%8D%AE%E5%BA%93%E5%BA%93%E8%A1%A8%E6%93%8D%E4%BD%9C)
+          * [DBUtils连接池工具类](#dbutils%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%B7%A5%E5%85%B7%E7%B1%BB)
+          * [Product实体类](#product%E5%AE%9E%E4%BD%93%E7%B1%BB)
+          * [Dao层接口](#dao%E5%B1%82%E6%8E%A5%E5%8F%A3)
+          * [Dao层实现类](#dao%E5%B1%82%E5%AE%9E%E7%8E%B0%E7%B1%BB)
+          * [Dao层单元测试](#dao%E5%B1%82%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
+          * [ProductServlet](#productservlet)
+          * [productList\.jsp页面](#productlistjsp%E9%A1%B5%E9%9D%A2)
+    * [五、JSP开发模型](#%E4%BA%94jsp%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B)
+      * [5\.1 JSP Model1开发模型](#51-jsp-model1%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B)
+        * [5\.1\.1 JSP Model1开发模型的优缺点](#511-jsp-model1%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9)
+      * [5\.2 JSP Model1优化版开发模型](#52-jsp-model1%E4%BC%98%E5%8C%96%E7%89%88%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B)
+        * [5\.2\.1 JSP Model1优化版开发模型的优缺点](#521-jsp-model1%E4%BC%98%E5%8C%96%E7%89%88%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9)
+      * [5\.3 JSP Model2开发模型](#53-jsp-model2%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B)
+        * [5\.4 JSP Model2开发模型优缺点](#54-jsp-model2%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B%E4%BC%98%E7%BC%BA%E7%82%B9)
+    * [六、BeanUtils工具类的使用](#%E5%85%ADbeanutils%E5%B7%A5%E5%85%B7%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8)
+      * [6\.1 参数问题](#61-%E5%8F%82%E6%95%B0%E9%97%AE%E9%A2%98)
+      * [6\.2 beanutils\.jar工具类jar包的下载](#62-beanutilsjar%E5%B7%A5%E5%85%B7%E7%B1%BBjar%E5%8C%85%E7%9A%84%E4%B8%8B%E8%BD%BD)
+      * [6\.3 第三方jar包beanutils工具类使用](#63-%E7%AC%AC%E4%B8%89%E6%96%B9jar%E5%8C%85beanutils%E5%B7%A5%E5%85%B7%E7%B1%BB%E4%BD%BF%E7%94%A8)
+          * [User实体类](#user%E5%AE%9E%E4%BD%93%E7%B1%BB)
+          * [JSP注册页面](#jsp%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2)
+          * [Servlet](#servlet)
+      * [6\.4 自定义beanutils工具类](#64-%E8%87%AA%E5%AE%9A%E4%B9%89beanutils%E5%B7%A5%E5%85%B7%E7%B1%BB)
+          * [register注册页面](#register%E6%B3%A8%E5%86%8C%E9%A1%B5%E9%9D%A2)
+          * [RegisterServlet](#registerservlet)
+          * [自定义MyBeanUtils工具类](#%E8%87%AA%E5%AE%9A%E4%B9%89mybeanutils%E5%B7%A5%E5%85%B7%E7%B1%BB)
+    * [七、MVC模式](#%E4%B8%83mvc%E6%A8%A1%E5%BC%8F)
+      * [7\.1 什么是MVC模式](#71-%E4%BB%80%E4%B9%88%E6%98%AFmvc%E6%A8%A1%E5%BC%8F)
+      * [7\.2 MVC模式详解](#72-mvc%E6%A8%A1%E5%BC%8F%E8%AF%A6%E8%A7%A3)
+      * [7\.3 什么是MVC架构模型](#73-%E4%BB%80%E4%B9%88%E6%98%AFmvc%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%9E%8B)
+      * [7\.4 MVC架构和三层架构的区别](#74-mvc%E6%9E%B6%E6%9E%84%E5%92%8C%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84%E7%9A%84%E5%8C%BA%E5%88%AB)
+        * [7\.4\.1 架构模式思想](#741-%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F%E6%80%9D%E6%83%B3)
+        * [7\.4\.2 剖析架构主体](#742-%E5%89%96%E6%9E%90%E6%9E%B6%E6%9E%84%E4%B8%BB%E4%BD%93)
+        * [7\.4\.3 架构和模式划分](#743-%E6%9E%B6%E6%9E%84%E5%92%8C%E6%A8%A1%E5%BC%8F%E5%88%92%E5%88%86)
+        * [7\.4\.4 架构和设计模式的区别](#744-%E6%9E%B6%E6%9E%84%E5%92%8C%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB)
+      * [7\.5 基于MAC的三层架构实现](#75-%E5%9F%BA%E4%BA%8Emac%E7%9A%84%E4%B8%89%E5%B1%82%E6%9E%B6%E6%9E%84%E5%AE%9E%E7%8E%B0)
+      * [7\.6 MAC高级框架应用](#76-mac%E9%AB%98%E7%BA%A7%E6%A1%86%E6%9E%B6%E5%BA%94%E7%94%A8)
+    * [八、分页](#%E5%85%AB%E5%88%86%E9%A1%B5)
+      * [8\.1 生活中的分页](#81-%E7%94%9F%E6%B4%BB%E4%B8%AD%E7%9A%84%E5%88%86%E9%A1%B5)
+      * [8\.2 为什么要有分页？](#82-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%9C%89%E5%88%86%E9%A1%B5)
+      * [8\.3 分页的分类](#83-%E5%88%86%E9%A1%B5%E7%9A%84%E5%88%86%E7%B1%BB)
+        * [8\.3\.1 什么是逻辑分页？](#831-%E4%BB%80%E4%B9%88%E6%98%AF%E9%80%BB%E8%BE%91%E5%88%86%E9%A1%B5)
+          * [8\.3\.1\.1 逻辑分页的优缺点](#8311-%E9%80%BB%E8%BE%91%E5%88%86%E9%A1%B5%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9)
+        * [8\.3\.2 什么是物理分页？（常用）](#832-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%A9%E7%90%86%E5%88%86%E9%A1%B5%E5%B8%B8%E7%94%A8)
+          * [8\.3\.2\.1 物理分页的优缺点](#8321-%E7%89%A9%E7%90%86%E5%88%86%E9%A1%B5%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9)
+          * [8\.3\.2\.2 物理分页SQL语句实现](#8322-%E7%89%A9%E7%90%86%E5%88%86%E9%A1%B5sql%E8%AF%AD%E5%8F%A5%E5%AE%9E%E7%8E%B0)
+          * [8\.3\.2\.3 SQL语句分页举例](#8323-sql%E8%AF%AD%E5%8F%A5%E5%88%86%E9%A1%B5%E4%B8%BE%E4%BE%8B)
+      * [8\.1 分页查询流程分析与问题](#81-%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90%E4%B8%8E%E9%97%AE%E9%A2%98)
+        * [8\.1\.1 分页的两种情况](#811-%E5%88%86%E9%A1%B5%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%83%85%E5%86%B5)
+        * [8\.1\.2 分页的流程步骤](#812-%E5%88%86%E9%A1%B5%E7%9A%84%E6%B5%81%E7%A8%8B%E6%AD%A5%E9%AA%A4)
+        * [8\.1\.3 分页查询在Web项目中的一些问题](#813-%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2%E5%9C%A8web%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98)
+        * [8\.1\.4 分页查询的综合案例](#814-%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2%E7%9A%84%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B)
+          * [IDEA架构与jar包展示](#idea%E6%9E%B6%E6%9E%84%E4%B8%8Ejar%E5%8C%85%E5%B1%95%E7%A4%BA)
+          * [库表操作](#%E5%BA%93%E8%A1%A8%E6%93%8D%E4%BD%9C)
+          * [c3p0\.properties](#c3p0properties)
+          * [连接池工具类DBUtils](#%E8%BF%9E%E6%8E%A5%E6%B1%A0%E5%B7%A5%E5%85%B7%E7%B1%BBdbutils)
+          * [实体类User](#%E5%AE%9E%E4%BD%93%E7%B1%BBuser)
+          * [登录页面login\.jsp](#%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2loginjsp)
+          * [分页查询显示页面index\.jsp](#%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2%E6%98%BE%E7%A4%BA%E9%A1%B5%E9%9D%A2indexjsp)
+          * [封装好的PageBean对象](#%E5%B0%81%E8%A3%85%E5%A5%BD%E7%9A%84pagebean%E5%AF%B9%E8%B1%A1)
+          * [通用Servlet](#%E9%80%9A%E7%94%A8servlet)
+          * [UserServlet](#userservlet)
+          * [访问资源登录校验LoginFilter](#%E8%AE%BF%E9%97%AE%E8%B5%84%E6%BA%90%E7%99%BB%E5%BD%95%E6%A0%A1%E9%AA%8Cloginfilter)
+          * [Dao层接口](#dao%E5%B1%82%E6%8E%A5%E5%8F%A3-1)
+          * [Dao层实现类](#dao%E5%B1%82%E5%AE%9E%E7%8E%B0%E7%B1%BB-1)
+          * [Service层接口](#service%E5%B1%82%E6%8E%A5%E5%8F%A3)
+          * [Service层实现类](#service%E5%B1%82%E5%AE%9E%E7%8E%B0%E7%B1%BB)
+
+# Java Web之JSP
 
 ------
 
 
 
-### <span id="head2"> 一、JSP简介</span>
+### 一、JSP简介
 
 
 
-#### <span id="head3">1.1 什么是JSP？</span>
+#### 1.1 什么是JSP？
 
 > JSP全称Java Server Pages，是一种动态网页开发技术。它使用JSP标签在HTML网页中插入Java代码。标签通常以<%开头以%>结束。
 
 
 
-#### <span id="head4">1.2 JSP的特点</span>
+#### 1.2 JSP的特点
 
 > JSP是一种Java servlet，主要用于实现Java web应用程序的用户界面部分。可以通过结合HTML代码、XHTML代码、XML元素以及嵌入JSP操作和命令来编写JSP。
 >
@@ -148,7 +149,7 @@
 
 
 
-#### <span id="head5">1.3 JSP为什么也是Servlet</span>
+#### 1.3 JSP为什么也是Servlet
 
 > - 当jsp页面显示后，会在在tomcat中有一个目录叫work，它里面就存储了jsp页面生成的源代码。jsp文件会转义成对应的java文件
 >
@@ -156,13 +157,13 @@
 
 
 
-#### <span id="head6">1.4 tomact服务器中的资源分析</span>
+#### 1.4 tomact服务器中的资源分析
 
 > tomact服务器资源中可以分为静态技术资源和动态技术资源
 
 
 
-##### <span id="head7">1.4.1 tomact服务器中的静态资源分析</span>
+##### 1.4.1 tomact服务器中的静态资源分析
 
 > - 静态资源分为：
 >   * HTML：静态页面
@@ -171,7 +172,7 @@
 
 
 
-##### <span id="head8">1.4.2 tomact服务器中的动态资源分析</span>
+##### 1.4.2 tomact服务器中的动态资源分析
 
 > - Servlet：运行在服务器上的Java小程序。适合编写Java代码，适合业务处理，写网页比较困难
 >   * Servlet的三个用途：接受浏览器发送的数据、负责调用业务层、请求转发及重定向的使用
@@ -179,7 +180,7 @@
 
 
 
-#### <span id="head9">1.5 为什么要使用JSP</span>
+#### 1.5 为什么要使用JSP
 
 > 1. JSP性能好，可以在html页面中动态嵌入元素
 > 2. 服务器调用的是已经编译好的JSP文件
@@ -188,7 +189,7 @@
 
 
 
-#### <span id="head10">1.6 JSP的优点</span>
+#### 1.6 JSP的优点
 
 > 与纯 Servlet 相比：JSP可以很方便的编写或者修改HTML网页而不用去面对大量的println语句
 >
@@ -198,7 +199,7 @@
 
 
 
-#### <span id="head11">1.7 JSP的原理</span>
+#### 1.7 JSP的原理
 
 > 1. 当在浏览器上输入`http://localhost/jspdemo/index.jsp`
 > 2. 服务器tomcat得到请示，会通过JspServlet将后缀名是.jsp的请求处理
@@ -209,11 +210,11 @@
 
 
 
-### <span id="head12"> 二、JSP的基本结构</span>
+### 二、JSP的基本结构
 
 
 
-#### <span id="head13">2.1 JSP的结构</span>
+#### 2.1 JSP的结构
 
 > JSP页面中可以包含指令、Java语句、变量、方法或表达式、静态内容(HTML、CSS、Java Script)
 >
@@ -224,15 +225,15 @@
 
 
 
-#### <span id="head14">2.2 JSP脚本元素</span>
+#### 2.2 JSP脚本元素
 
-##### <span id="head15">2.2.1 JSP脚本的作用</span>
+##### 2.2.1 JSP脚本的作用
 
 > 可以在页面上编写java代码，实现页面与Java代码数据的交互
 
 
 
-##### <span id="head16">2.2.2 JSP脚本的分类</span>
+##### 2.2.2 JSP脚本的分类
 
 > **声明脚本：** <%! Java代码 %>
 >
@@ -242,7 +243,7 @@
 
 
 
-###### <span id="head17">2.2.2.1 声明脚本</span>
+###### 2.2.2.1 声明脚本
 
 > 声明脚本里的变量是全局变量，也就是在jsp对应java类中，生成一个成员变量
 
@@ -254,7 +255,7 @@
 
 
 
-###### <span id="head18">2.2.2.2 片段脚本</span>
+###### 2.2.2.2 片段脚本
 
 > 在jsp对应的java类的_jspService方法中，生成一个局部变量
 
@@ -264,7 +265,7 @@
 
 
 
-###### <span id="head19">2.2.2.3 输出脚本</span>
+###### 2.2.2.3 输出脚本
 
 > 向浏览器输出内容，相当于response.getWriter().write()
 >
@@ -276,15 +277,15 @@
 
 
 
-#### <span id="head20">2.3 JSP页面中的注释</span>
+#### 2.3 JSP页面中的注释
 
-##### <span id="head21">2.3.1 JSP页面中的注释分类</span>
+##### 2.3.1 JSP页面中的注释分类
 
 > JSP页面中可以包含以下几种注释种类：Java代码注释、HTML网页注释、JSP页面注释
 
 
 
-##### <span id="head22">2.3.2 Java代码注释</span>
+##### 2.3.2 Java代码注释
 
 > Java代码注释用来注释Java代码，会将注释内容生成到jsp对应的java文件中。也就是说注释内容在Java文件中可见。所以**不安全** 、比较**耗费流量** 
 
@@ -294,7 +295,7 @@
 
 
 
-##### <span id="head23">2.3.3 HTML网页注释</span>
+##### 2.3.3 HTML网页注释
 
 > HTML网页注释用来注释HTML代码，会将注释内容生成到jsp对应的java文件中。也就是说和HTML文件类似，在网页查看源代码中，注释可见。所以**不安全** 、比较**耗费流量** 
 
@@ -304,7 +305,7 @@
 
 
 
-##### <span id="head24">2.3.4 JSP页面注释</span>
+##### 2.3.4 JSP页面注释
 
 > JSP页面注释用来注释HTML代码，不会将注释内容生成到jsp对应的java文件中。所以，安全、省流量、仅在JSP文件中可见
 
@@ -314,21 +315,21 @@
 
 
 
-#### <span id="head25">2.4 JSP指令</span>
+#### 2.4 JSP指令
 
-##### <span id="head26">2.4.1 JSP中指令分类</span>
+##### 2.4.1 JSP中指令分类
 
 > JSP中的指令分为三种：page指令、taglib指令、include指令
 
 
 
-##### <span id="head27">2.4.2 JSP中的指令的作用</span>
+##### 2.4.2 JSP中的指令的作用
 
 > JSP指令用于指示jsp执行某些操作 、用于指示jsp表现特定行为或效果
 
 
 
-##### <span id="head28">2.4.3 page指令</span>
+##### 2.4.3 page指令
 
 > page指令用于定义JSP页面的各种属性
 
@@ -343,7 +344,7 @@
 | isELIgnored  | 是否支持EL表达式。 默认是false，支持表达式；true表示不支持表达式；例如：${1+1}; 为false时，输出结果为2；为true时按照原样输出 |
 |    import    | 与Java代码中无差别，等价于导包；例如：<%@ page import="java.util.Date,java.util.List"%> 或者分开导入需要的包<%@ page import="java.util.List"%> |
 
-##### <span id="head29">2.4.4 taglib指令</span>
+##### 2.4.4 taglib指令
 
 > taglib指令用于在当前jsp页面中导入jstl标签库
 
@@ -355,13 +356,13 @@
 
 
 
-##### <span id="head30">2.4.5 include指令</span>
+##### 2.4.5 include指令
 
 > include指令用于将外部引入到jsp文件中
 
 
 
-###### <span id="head31">2.4.5.1 include指令引入静态资源</span>
+###### 2.4.5.1 include指令引入静态资源
 
 > 例如：引入静态资源
 
@@ -371,7 +372,7 @@
 
 
 
-###### <span id="head32">2.4.5.2 include指令引入动态资源</span>
+###### 2.4.5.2 include指令引入动态资源
 
 > 例如：引入动态资源
 
@@ -381,7 +382,7 @@
 
 
 
-#### <span id="head33">2.5 JSP的九大内置对象</span>
+#### 2.5 JSP的九大内置对象
 
 |   对象名    | 描述               | 类型                                                    |
 | :---------: | ------------------ | ------------------------------------------------------- |
@@ -397,64 +398,64 @@
 
 ```jsp
 <%--
-Created by IntelliJ IDEA.
-User: Ziph
-Date: 2020/4/27
-Time: 12:40
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Ziph
+  Date: 2020/4/27
+  Time: 12:40
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isErrorPage="true" %>
 <html>
 <head>
-<title>jsp九大内置对象的使用</title>
+    <title>jsp九大内置对象的使用</title>
 </head>
 <body>
 <%
-/**
-* Request对象
-* 在地址栏中以GET请求的方式拼即可获取到request对象中的username参数
-*/
-String username = request.getParameter("username");
-System.out.println(username);
-/**
-* Response对象
-* 可以实现响应浏览器内容
-*/
-response.getWriter().println("username : " + username);
-/**
-* Session对象
-* 在Session域中存储username，可以实现在另一个jsp中取出Session域中的username参数
-*/
-request.getSession().setAttribute("username", "ziph");
-/**
-* application对象（ServletContext）
-* 在application对象中存储一个username参数，可以实现在另一个jsp中取出application对象中的username参数
-*/
-application.setAttribute("username", "ziph");
-/**
-* 使用out对象在浏览器上输出内容
-*/
-out.write("<br>out : ziph");
-/**
-* config配置对象
-* 可以获取初始化参数ServletName名称为jsp
-*/
-System.out.println("config : " + config.getServletName());
-/**
-* exception异常对象
-* 可以获取异常对象（此时没有异常对象所以打印null）
-*/
-System.out.println("exception : " + exception);
-/**
-* page当前页面对象
-* 打印了当前页面对象
-*/
-System.out.println(page.getClass());
-/**
-* pageContext页面上下文对象
-*/
-pageContext.setAttribute("pageContext", "ziph");
-System.out.println(pageContext.getAttribute("pageContext"));
+    /**
+     * Request对象
+     * 在地址栏中以GET请求的方式拼即可获取到request对象中的username参数
+     */
+    String username = request.getParameter("username");
+    System.out.println(username);
+    /**
+     * Response对象
+     * 可以实现响应浏览器内容
+     */
+    response.getWriter().println("username : " + username);
+    /**
+     * Session对象
+     * 在Session域中存储username，可以实现在另一个jsp中取出Session域中的username参数
+     */
+    request.getSession().setAttribute("username", "ziph");
+    /**
+     * application对象（ServletContext）
+     * 在application对象中存储一个username参数，可以实现在另一个jsp中取出application对象中的username参数
+     */
+    application.setAttribute("username", "ziph");
+    /**
+     * 使用out对象在浏览器上输出内容
+     */
+    out.write("<br>out : ziph");
+    /**
+     * config配置对象
+     * 可以获取初始化参数ServletName名称为jsp
+     */
+    System.out.println("config : " + config.getServletName());
+    /**
+     * exception异常对象
+     * 可以获取异常对象（此时没有异常对象所以打印null）
+     */
+    System.out.println("exception : " + exception);
+    /**
+     * page当前页面对象
+     * 打印了当前页面对象
+     */
+    System.out.println(page.getClass());
+    /**
+     * pageContext页面上下文对象
+     */
+    pageContext.setAttribute("pageContext", "ziph");
+    System.out.println(pageContext.getAttribute("pageContext"));
 %>
 </body>
 </html>
@@ -464,22 +465,22 @@ System.out.println(pageContext.getAttribute("pageContext"));
 
 ```jsp
 <%
-/**
-* 可以取出另一个jspSession中域中的username参数值
-*/
-String username = (String) request.getSession().getAttribute("username");
-System.out.println("Session : " + username);
-/**
-* 可以取出application对象中的username参数值
-*/
-String applicationAttribute = (String) application.getAttribute("username");
-System.out.println("application : " + applicationAttribute);
+    /**
+     * 可以取出另一个jspSession中域中的username参数值
+     */
+    String username = (String) request.getSession().getAttribute("username");
+    System.out.println("Session : " + username);
+    /**
+     * 可以取出application对象中的username参数值
+     */
+    String applicationAttribute = (String) application.getAttribute("username");
+    System.out.println("application : " + applicationAttribute);
 %>
 ```
 
 
 
-##### <span id="head34">2.5.1 jsp的out和getWriter()方法的区别</span>
+##### 2.5.1 jsp的out和getWriter()方法的区别
 
 > - out是JspWriter类型；getWriter()是PrintWriter类型
 > - out输出到缓冲区中，没有写到response中；getWriter()直接写到response中
@@ -487,7 +488,7 @@ System.out.println("application : " + applicationAttribute);
 
 
 
-##### <span id="head35">2.5.2 为什么jsp可以直接使用内置对象</span>
+##### 2.5.2 为什么jsp可以直接使用内置对象
 
 > 在jsp对应的java文件中，已经提前声明好了这些内置对象，所以可以直接使用
 
@@ -495,7 +496,7 @@ System.out.println("application : " + applicationAttribute);
 
 
 
-##### <span id="head36">2.5.3 怎样找到jsp页面的class文件</span>
+##### 2.5.3 怎样找到jsp页面的class文件
 
 > jsp页面的class文件一般都保存在tomact目录下的，路径为：\apache-tomcat-8.5.45\work ；是在work文件夹中
 >
@@ -509,15 +510,15 @@ C:\Users\Ziph\AppData\Local\JetBrains\IntelliJIdea2020.1\tomcat\Tomcat_8_5_45_we
 
 
 
-#### <span id="head37">2.6 JSP中的域对象</span>
+#### 2.6 JSP中的域对象
 
-##### <span id="head38">2.6.1 JSP中有哪几个域对象</span>
+##### 2.6.1 JSP中有哪几个域对象
 
 > jsp中有四个域对象分别是pageContext、request、session、application
 
 
 
-##### <span id="head39">2.6.2 JSP四大域对象的作用范围及描述</span>
+##### 2.6.2 JSP四大域对象的作用范围及描述
 
 |   域对象    | 域对象描述                    | 作用范围 | 应用场景                               |
 | :---------: | ----------------------------- | -------- | -------------------------------------- |
@@ -530,7 +531,7 @@ C:\Users\Ziph\AppData\Local\JetBrains\IntelliJIdea2020.1\tomcat\Tomcat_8_5_45_we
 
 
 
-##### <span id="head40">2.6.3 pageContext域对象获取内置对象和操作其他域对象</span>
+##### 2.6.3 pageContext域对象获取内置对象和操作其他域对象
 
 > - pageContext域对象可以获取其他内置域对象
 > - pageContext域对象不仅可以操作page域对象，还可以操作request、session和application域对象
@@ -539,66 +540,66 @@ C:\Users\Ziph\AppData\Local\JetBrains\IntelliJIdea2020.1\tomcat\Tomcat_8_5_45_we
 
 ```jsp
 <%--
-Created by IntelliJ IDEA.
-User: Ziph
-Date: 2020/4/27
-Time: 13:36
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Ziph
+  Date: 2020/4/27
+  Time: 13:36
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>pageContext域对象</title>
+    <title>pageContext域对象</title>
 </head>
 <body>
 <%
-/**
-* pageContext域对象获取jsp中九大内置对象
-*/
-pageContext.getPage();
-pageContext.getRequest();
-pageContext.getResponse();
-pageContext.getSession();
-pageContext.getServletConfig();
-pageContext.getServletContext();
-pageContext.getException();
-pageContext.getOut();
+    /**
+     * pageContext域对象获取jsp中九大内置对象
+     */
+    pageContext.getPage();
+    pageContext.getRequest();
+    pageContext.getResponse();
+    pageContext.getSession();
+    pageContext.getServletConfig();
+    pageContext.getServletContext();
+    pageContext.getException();
+    pageContext.getOut();
 %>
 
 <%
-/**
-* 操作Request域对象
-* <p>
-* 方法：setAttribute(String name, Object value, int scope);
-* 参数说明：
-* String name：参数名称
-* Object value：参数值
-* int scope：操作的域
-* <p>
-* 指定操作域的参数，可以传入操作域对象的对应数字编号
-* public static final int PAGE_SCOPE = 1;
-* public static final int REQUEST_SCOPE = 2;
-* public static final int SESSION_SCOPE = 3;
-* public static final int APPLICATION_SCOPE = 4;
-* <p>
-* 也可以使用PageContext域对象获取该参数传入
-* 例如：PageContext.REQUEST_SCOPE
-*/
-pageContext.setAttribute("request", "request", PageContext.REQUEST_SCOPE);
-//因为本次操作的是Request对象，操作页面的默认重定向是不在Request对象的作用范围的，所以我们使用请求转发
-//Request对象作用范围是一次请求；请求转发是内部操作，所以符合Request对象的作用范围
+    /**
+     * 操作Request域对象
+     * <p>
+     * 方法：setAttribute(String name, Object value, int scope);
+     * 参数说明：
+     * String name：参数名称
+     * Object value：参数值
+     * int scope：操作的域
+     * <p>
+     * 指定操作域的参数，可以传入操作域对象的对应数字编号
+     * public static final int PAGE_SCOPE = 1;
+     * public static final int REQUEST_SCOPE = 2;
+     * public static final int SESSION_SCOPE = 3;
+     * public static final int APPLICATION_SCOPE = 4;
+     * <p>
+     * 也可以使用PageContext域对象获取该参数传入
+     * 例如：PageContext.REQUEST_SCOPE
+     */
+    pageContext.setAttribute("request", "request", PageContext.REQUEST_SCOPE);
+    //因为本次操作的是Request对象，操作页面的默认重定向是不在Request对象的作用范围的，所以我们使用请求转发
+    //Request对象作用范围是一次请求；请求转发是内部操作，所以符合Request对象的作用范围
 	pageContext.forward("/test.jsp");
-//等价于request.getRequestDispatcher("/test.jsp").forward(request, response);
+    //等价于request.getRequestDispatcher("/test.jsp").forward(request, response);
 
-/**
-* 操作Session域对象
-*/
-pageContext.setAttribute("session", "session", PageContext.SESSION_SCOPE);
+    /**
+     * 操作Session域对象
+     */
+    pageContext.setAttribute("session", "session", PageContext.SESSION_SCOPE);
 
-/**
-* 操作application域对象
-*/
-pageContext.setAttribute("application", "application", PageContext.APPLICATION_SCOPE);
+    /**
+     * 操作application域对象
+     */
+    pageContext.setAttribute("application", "application", PageContext.APPLICATION_SCOPE);
 %>
 </body>
 </html>
@@ -608,41 +609,41 @@ pageContext.setAttribute("application", "application", PageContext.APPLICATION_S
 
 ```jsp
 <%
-/**
-* 操作Reuqest域对象（获取）
-*/
-String requestAttribute = (String) request.getAttribute("request");
-System.out.println(requestAttribute);
-String pageContextAttribute = (String) pageContext.getAttribute("request", PageContext.REQUEST_SCOPE);
-System.out.println(pageContextAttribute);
+    /**
+     * 操作Reuqest域对象（获取）
+     */
+    String requestAttribute = (String) request.getAttribute("request");
+    System.out.println(requestAttribute);
+    String pageContextAttribute = (String) pageContext.getAttribute("request", PageContext.REQUEST_SCOPE);
+    System.out.println(pageContextAttribute);
 
-/**
-* 操作Session域对象（获取）
-*/
-String pageContextAttribute1 = (String) pageContext.getAttribute("session", PageContext.SESSION_SCOPE);
-System.out.println(pageContextAttribute1);
+    /**
+     * 操作Session域对象（获取）
+     */
+    String pageContextAttribute1 = (String) pageContext.getAttribute("session", PageContext.SESSION_SCOPE);
+    System.out.println(pageContextAttribute1);
 
-/**
-* 操作application域对象（获取）
-*/
-String pageContextAttribute2 = (String) pageContext.getAttribute("application", PageContext.APPLICATION_SCOPE);
-System.out.println(pageContextAttribute2);
+    /**
+     * 操作application域对象（获取）
+     */
+    String pageContextAttribute2 = (String) pageContext.getAttribute("application", PageContext.APPLICATION_SCOPE);
+    System.out.println(pageContextAttribute2);
 %>
 ```
 
 
 
-### <span id="head41"> 三、EL表达式</span>
+### 三、EL表达式
 
 
 
-#### <span id="head42">3.1 什么是EL表达式</span>
+#### 3.1 什么是EL表达式
 
 > **表达式**语言（Expression Language），或称**EL表达式**，简称**EL**，是Java中的一种特殊的通用编程语言，借鉴于JavaScript和XPath。 主要作用是在Java Web应用程序嵌入到网页（如JSP）中，用以访问页面的上下文以及不同作用域中的对象，取得对象属性的值，或执行简单的运算或判断操作。 
 
 
 
-#### <span id="head43">3.2 了解EL表达式和注意事项</span>
+#### 3.2 了解EL表达式和注意事项
 
 > EL表达式简化JSP中Java代码开发，代替脚本表达式<%=输出脚本%>。它不是一种开发语言，是jsp中获取数据的一种规范。**格式：**  `${EL表达式} `等价于`pageContext.findAttribute(name)`
 
@@ -650,7 +651,7 @@ System.out.println(pageContextAttribute2);
 
 
 
-#### <span id="head44">3.3 EL表达式获取域数据</span>
+#### 3.3 EL表达式获取域数据
 
 > **注意：** 使用el表达式获取时，如果没有查找到结果，返回的不是null，而是一个""
 
@@ -661,7 +662,7 @@ System.out.println(pageContextAttribute2);
 |   session域   | ${sessionScope.name}     |
 | application域 | ${applicationScope.name} |
 
-##### <span id="head45">3.3.1 EL表达式基本获取域数据</span>
+##### 3.3.1 EL表达式基本获取域数据
 
 > 使用最基本的方式来获取域数据
 
@@ -669,18 +670,18 @@ System.out.println(pageContextAttribute2);
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>EL获取域数据</title>
+    <title>EL获取域数据</title>
 </head>
 <body>
 <%
-//设置page域
-pageContext.setAttribute("username1", "pageScope");
-//设置request域
-request.setAttribute("username2", "request");
-//设置session域
-session.setAttribute("username3", "session");
-//设置application域
-application.setAttribute("username4", "application");
+    //设置page域
+    pageContext.setAttribute("username1", "pageScope");
+    //设置request域
+    request.setAttribute("username2", "request");
+    //设置session域
+    session.setAttribute("username3", "session");
+    //设置application域
+    application.setAttribute("username4", "application");
 %>
 <%--使用el表达式从page域中获取usernmae1变量--%>
 ${pageScope.username1}<br>
@@ -697,7 +698,7 @@ ${applicationScope.username4}<br>
 
 
 
-##### <span id="head46">3.3.2 EL表达式简单获取域数据</span>
+##### 3.3.2 EL表达式简单获取域数据
 
 > 使用简单的方法来获取域数据
 >
@@ -707,11 +708,11 @@ ${applicationScope.username4}<br>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>EL表达式获取域数据</title>
+    <title>EL表达式获取域数据</title>
 </head>
 <body>
 <%
-request.setAttribute("username", "request");
+    request.setAttribute("username", "request");
 %>
 <%--自动精确匹配：从pageScope、requestScope、sessionScope、applicationScope逐个找拥有username变量的域数据--%>
 ${username}
@@ -721,7 +722,7 @@ ${username}
 
 
 
-##### <span id="head47">3.3.3 EL表达式获取复杂域数据（数组、集合、Java对象）</span>
+##### 3.3.3 EL表达式获取复杂域数据（数组、集合、Java对象）
 
 > 使用EL表达式获取数组、List集合、Map集合和Java对象
 
@@ -731,22 +732,22 @@ ${username}
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.HashMap" %>
 <%@ page import="com.mylifes1110.java.bean.User" %><%--
-Created by IntelliJ IDEA.
-User: Ziph
-Date: 2020/4/27
-Time: 20:19
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Ziph
+  Date: 2020/4/27
+  Time: 20:19
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>EL表达式获取域数据</title>
+    <title>EL表达式获取域数据</title>
 </head>
 <body>
 <%--数组--%>
 <%
-String[] username = {"Ziph", "Join", "Marry", "Jack"};
-pageContext.setAttribute("username", username);
+    String[] username = {"Ziph", "Join", "Marry", "Jack"};
+    pageContext.setAttribute("username", username);
 %>
 <%--JSP输出脚本取出数组中下标0的username值--%>
 <%--步骤：取数组中的域数据、强转为字符串数组、取出下标为0的域数据--%>
@@ -757,11 +758,11 @@ ${username[0]}
 
 <%--List集合--%>
 <%
-List<String> fruits = new ArrayList<>();
-fruits.add("苹果");
-fruits.add("香蕉");
-fruits.add("橘子");
-request.setAttribute("fruitsName", fruits);
+    List<String> fruits = new ArrayList<>();
+    fruits.add("苹果");
+    fruits.add("香蕉");
+    fruits.add("橘子");
+    request.setAttribute("fruitsName", fruits);
 %>
 <%--取出List的集合中的第一个数据--%>
 <%=
@@ -773,11 +774,11 @@ ${fruitsName[0]}
 
 <%--Map集合--%>
 <%
-Map<String, String> vegetables = new HashMap<>();
-vegetables.put("tomato", "西红柿");
-vegetables.put("cucumber", "黄瓜");
-vegetables.put("lettuce", "莴笋");
-session.setAttribute("vegetablesName", vegetables);
+    Map<String, String> vegetables = new HashMap<>();
+    vegetables.put("tomato", "西红柿");
+    vegetables.put("cucumber", "黄瓜");
+    vegetables.put("lettuce", "莴笋");
+    session.setAttribute("vegetablesName", vegetables);
 %>
 <%--取出Map集合中的西红柿--%>
 <%=
@@ -787,8 +788,8 @@ ${vegetablesName.tomato}
 
 <%--Java对象--%>
 <%
-User user = new User(1, "Ziph", "123456");
-application.setAttribute("user", user);
+    User user = new User(1, "Ziph", "123456");
+    application.setAttribute("user", user);
 %>
 <%--获取User对象的用户名--%>
 <%=
@@ -801,38 +802,38 @@ ${user.username}
 
 ```java
 public class User {
-private int    id;
-private String username;
-private String password;
+    private int    id;
+    private String username;
+    private String password;
 
-public User(int id, String username, String password) {
-this.id = id;
-this.username = username;
-this.password = password;
-}
+    public User(int id, String username, String password) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
 
-public int getId() {
-return id;
-}
+    public int getId() {
+        return id;
+    }
 
-public String getUsername() {
-return username;
-}
+    public String getUsername() {
+        return username;
+    }
 
-public String getPassword() {
-return password;
-}
+    public String getPassword() {
+        return password;
+    }
 
-@Override
-public String toString() {
-return "User{" + "id=" + id + ", username='" + username + '\'' + ", password='" + password + '\'' + '}';
-}
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", username='" + username + '\'' + ", password='" + password + '\'' + '}';
+    }
 }
 ```
 
 
 
-#### <span id="head48">3.4 使用EL表达式执行运算</span>
+#### 3.4 使用EL表达式执行运算
 
 > - 算数运算符：`+` 、`-` 、`*` 、`/(div)` 、`%（mod）` 
 >   * 注意在el表达式中不能使用+号进行字符串的拼接，只能执行加法操作
@@ -846,7 +847,7 @@ return "User{" + "id=" + id + ", username='" + username + '\'' + ", password='" 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>EL执行运算</title>
+    <title>EL执行运算</title>
 </head>
 <body>
 <%--算数运算--%>
@@ -883,29 +884,29 @@ ${not true}<br/>
 
 
 
-#### <span id="head49">3.5 EL表达式中的Empty关键字的使用</span>
+#### 3.5 EL表达式中的Empty关键字的使用
 
 > 被empty关键字修饰的EL表达式中，只要内容是空，结果就为true，反之，为false
 
 ```jsp
 <%--
-Created by IntelliJ IDEA.
-User: Ziph
-Date: 2020/4/27
-Time: 21:52
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Ziph
+  Date: 2020/4/27
+  Time: 21:52
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>EL表达式中使用Empty关键字</title>
+    <title>EL表达式中使用Empty关键字</title>
 </head>
 <body>
 <%
-String username = "ziph";
-String password = null;
-pageContext.setAttribute("username", username);
-pageContext.setAttribute("password", password);
+    String username = "ziph";
+    String password = null;
+    pageContext.setAttribute("username", username);
+    pageContext.setAttribute("password", password);
 %>
 ${empty username}<br>
 ${empty password}<br>
@@ -915,7 +916,7 @@ ${empty password}<br>
 
 
 
-#### <span id="head50">3.6 EL表达式中11个的Web对象</span>
+#### 3.6 EL表达式中11个的Web对象
 
 > 常用操作：
 >
@@ -938,23 +939,23 @@ ${empty password}<br>
 
 
 
-### <span id="head51"> 四、JSTL标签库</span>
+### 四、JSTL标签库
 
 
 
-#### <span id="head52">4.1 什么是JSTL标签库</span>
+#### 4.1 什么是JSTL标签库
 
 > JSP标准标签库（JSP Standard Tag Library ）是一个JSP标签集合，它封装了JSP应用的通用核心功能。 JSTL支持通用的、结构化的任务，比如迭代，条件判断，XML文档操作，国际化标签，SQL标签。 除了这些，它还提供了一个框架来使用集成JSTL的自定义标签。
 
 
 
-#### <span id="head53">4.2 JSTL标签库的作用</span>
+#### 4.2 JSTL标签库的作用
 
 > 可以利用迭代，条件判断，XML文档操作，国际化标签，SQL标签这些标签取代JSP页面上的Java代码，从而提高程序的可读性，降低程序的维护难度。 
 
 
 
-#### <span id="head54">4.3 JSTL标签库的使用</span>
+#### 4.3 JSTL标签库的使用
 
 > - 从Apache的标准标签库中下载的`jakarta-taglibs-standard-current.zip`
 >   * 官方下载地址：[http://archive.apache.org/dist/jakarta/taglibs/standard/binaries/](http://archive.apache.org/dist/jakarta/taglibs/standard/binaries/)
@@ -967,7 +968,7 @@ ${empty password}<br>
 
 
 
-#### <span id="head55">4.3 JSTL核心标签</span>
+#### 4.3 JSTL核心标签
 
 > 核心标签是最常用的 JSTL标签。 
 
@@ -995,7 +996,7 @@ ${empty password}<br>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>JSTL标签</title>
+    <title>JSTL标签</title>
 </head>
 <body>
 <%--
@@ -1027,10 +1028,10 @@ catch标签
 var：异常对象名称
 --%>
 <c:catch var="e">
-<%
-//算数异常
-int num = 1 / 0;
-%>
+    <%
+        //算数异常
+        int num = 1 / 0;
+    %>
 </c:catch>
 <%--打印捕获的异常详细信息--%>
 ${e.message}<br>
@@ -1043,11 +1044,11 @@ test：条件判断的条件
 --%>
 <c:set var="i" value="1" scope="session"></c:set>
 <c:if test="${i>2}">
-i大于2
+    i大于2
 </c:if>
 <c:if test="${i<2}">
-<%--执行1<2--%>
-i小于2
+    <%--执行1<2--%>
+    i小于2
 </c:if>
 <br>
 
@@ -1062,40 +1063,40 @@ end：结束
 注意：在模拟for循环的时候是有局限性的，step步长必须大于0，而且begin必须小于end！
 items：遍历的集合或数组
 varStatus：元素状态对象（varStatus属性还包含以下属性参数）
-current：当前元素
-index：当前索引
-first：是否是第一个元素
-last：是否是最后一个元素
+    current：当前元素
+    index：当前索引
+    first：是否是第一个元素
+    last：是否是最后一个元素
 --%>
 <%--for循环：打印1~10--%>
 <c:forEach var="i" begin="1" end="10" step="1">
-${i}
+    ${i}
 </c:forEach>
 <br>
 <%--增强for循环：打印集合内元素--%>
 <%
-List<String> fruits = new ArrayList<>();
-fruits.add("apple");
-fruits.add("banana");
-fruits.add("strawberry");
-request.setAttribute("fruitsName", fruits);
+    List<String> fruits = new ArrayList<>();
+    fruits.add("apple");
+    fruits.add("banana");
+    fruits.add("strawberry");
+    request.setAttribute("fruitsName", fruits);
 %>
 <%--普通for循环--%>
 <c:forEach var="i" begin="0" end="${fruitsName.size() - 1}" step="1">
-${fruitsName[i]}
+    ${fruitsName[i]}
 </c:forEach>
 <br>
 <%--增强for循环--%>
 <c:forEach var="j" items="${fruitsName}" varStatus="status">
-${j}<br>
-开始：${status.begin}<br>
-结束${status.end}<br>
-步长：${status.step}<br>
-是第几个元素：${status.count}<br>
-是否是第一个元素：${status.first}<br>
-是否是最后一个元素：${status.last}<br>
-当前索引：${status.index}<br>
-当前元素：${status.current}<br>
+    ${j}<br>
+    开始：${status.begin}<br>
+    结束${status.end}<br>
+    步长：${status.step}<br>
+    是第几个元素：${status.count}<br>
+    是否是第一个元素：${status.first}<br>
+    是否是最后一个元素：${status.last}<br>
+    当前索引：${status.index}<br>
+    当前元素：${status.current}<br>
 </c:forEach>
 
 <%--
@@ -1107,8 +1108,8 @@ delims：分割字符串依据
 var：分割后的元素对象
 --%>
 <%
-String str = "111-222-333";
-request.setAttribute("str", str);
+    String str = "111-222-333";
+    request.setAttribute("str", str);
 %>
 <%--按”-“拆分字符串str并打印分割后的字符串信息--%>
 <c:forTokens var="str" items="${str}" delims="-">
@@ -1120,13 +1121,13 @@ ${str}
 
 
 
-#### <span id="head56">4.4 JSTL综合案例 </span>
+#### 4.4 JSTL综合案例 
 
 > 使用Servlet、JSP、JDBC、JSTL等所学知识完成以下内容
 
 ![1588087877387](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531101858.png)
 
-###### <span id="head57"> c3p0配置文件</span>
+###### c3p0配置文件
 
 ```java
 c3p0.driverClass=com.mysql.jdbc.Driver
@@ -1135,17 +1136,17 @@ c3p0.user=root
 c3p0.password=Mylifes1110
 ```
 
-###### <span id="head58"> MySQL数据库库表操作</span>
+###### MySQL数据库库表操作
 
 ```sql
 use temp;
 
 create table product
 (
-id    int primary key auto_increment,
-name  varchar(30),
-price double,
-count int
+    id    int primary key auto_increment,
+    name  varchar(30),
+    price double,
+    count int
 ) charset = utf8;
 
 insert into product (id, name, price, count)
@@ -1161,7 +1162,7 @@ insert into product (id, name, price, count)
 VALUES (4, '微波炉', 1500, 2);
 ```
 
-###### <span id="head59"> DBUtils连接池工具类</span>
+###### DBUtils连接池工具类
 
 ```java
 package com.mylifes1110.java.utils;
@@ -1169,84 +1170,84 @@ package com.mylifes1110.java.utils;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 public class DBUtils {
-private static ComboPooledDataSource dataSource;
+    private static ComboPooledDataSource dataSource;
 
-static {
-dataSource = new ComboPooledDataSource();
-}
+    static {
+        dataSource = new ComboPooledDataSource();
+    }
 
-public static ComboPooledDataSource getDataSource() {
-return dataSource;
-}
+    public static ComboPooledDataSource getDataSource() {
+        return dataSource;
+    }
 }
 ```
 
-###### <span id="head60"> Product实体类</span>
+###### Product实体类
 
 ```java
 package com.mylifes1110.java.bean;
 
 public class Product {
-private Integer id;
-private String name;
-private Double price;
-private Integer count;
+    private Integer id;
+    private String name;
+    private Double price;
+    private Integer count;
 
-public Product() {
-}
+    public Product() {
+    }
 
-public Product(Integer id, String name, Double price, Integer count) {
-this.id = id;
-this.name = name;
-this.price = price;
-this.count = count;
-}
+    public Product(Integer id, String name, Double price, Integer count) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.count = count;
+    }
 
-public Integer getId() {
-return id;
-}
+    public Integer getId() {
+        return id;
+    }
 
-public void setId(Integer id) {
-this.id = id;
-}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-public String getName() {
-return name;
-}
+    public String getName() {
+        return name;
+    }
 
-public void setName(String name) {
-this.name = name;
-}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-public Double getPrice() {
-return price;
-}
+    public Double getPrice() {
+        return price;
+    }
 
-public void setPrice(Double price) {
-this.price = price;
-}
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 
-public Integer getCount() {
-return count;
-}
+    public Integer getCount() {
+        return count;
+    }
 
-public void setCount(Integer count) {
-this.count = count;
-}
+    public void setCount(Integer count) {
+        this.count = count;
+    }
 
-@Override
-public String toString() {
-return "Product{" +
-"id=" + id +
-", name='" + name + '\'' +
-", price=" + price +
-", count=" + count +
-'}';
-}
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", count=" + count +
+                '}';
+    }
 }
 ```
 
-###### <span id="head61"> Dao层接口</span>
+###### Dao层接口
 
 ```java
 package com.mylifes1110.java.dao;
@@ -1257,11 +1258,11 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface ProductDao {
-List<Product> selectProductList() throws SQLException;
+    List<Product> selectProductList() throws SQLException;
 }
 ```
 
-###### <span id="head62"> Dao层实现类</span>
+###### Dao层实现类
 
 ```java
 package com.mylifes1110.java.dao.impl;
@@ -1277,15 +1278,15 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ProductDaoImpl implements ProductDao {
-@Override
-public List<Product> selectProductList() throws SQLException {
-return new QueryRunner(DBUtils.getDataSource()).query("select * from product",
-new BeanListHandler<Product>(Product.class));
-}
+    @Override
+    public List<Product> selectProductList() throws SQLException {
+        return new QueryRunner(DBUtils.getDataSource()).query("select * from product",
+                                                              new BeanListHandler<Product>(Product.class));
+    }
 }
 ```
 
-###### <span id="head63"> Dao层单元测试</span>
+###### Dao层单元测试
 
 ```java
 package com.mylifes1110.java.test;
@@ -1300,32 +1301,32 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ProductDaoTest {
-ProductDao productDao;
+    ProductDao productDao;
 
-/**
-* @Before注解 在@Test单元测试之前初始化
-*/
-@Before
-public void init() {
-productDao = new ProductDaoImpl();
-}
+    /**
+     * @Before注解 在@Test单元测试之前初始化
+     */
+    @Before
+    public void init() {
+        productDao = new ProductDaoImpl();
+    }
 
-public void selectProductById() throws SQLException {
-Product product = productDao.selectProductById(1);
+    public void selectProductById() throws SQLException {
+        Product product = productDao.selectProductById(1);
 
-System.out.println(product);
-}
+        System.out.println(product);
+    }
 
-@Test
-public void selectProductList() throws SQLException {
-List<Product> products = productDao.selectProductList();
+    @Test
+    public void selectProductList() throws SQLException {
+        List<Product> products = productDao.selectProductList();
 
-System.out.println(products);
-}
+        System.out.println(products);
+    }
 }
 ```
 
-###### <span id="head64"> ProductServlet</span>
+###### ProductServlet
 
 ```java
 package com.mylifes1110.java.servlet;
@@ -1344,76 +1345,76 @@ import java.sql.SQLException;
 import java.util.List;
 
 @WebServlet(
-name  = "ProductServlet",
-value = "/SelectProductList"
+    name  = "ProductServlet",
+    value = "/SelectProductList"
 )
 public class ProductServlet extends HttpServlet {
-protected void doGet(HttpServletRequest request, HttpServletResponse response)
-throws ServletException, IOException {
-doPost(request, response);
-}
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        doPost(request, response);
+    }
 
-protected void doPost(HttpServletRequest request, HttpServletResponse response)
-throws ServletException, IOException {
-ProductDao productDao = new ProductDaoImpl();
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        ProductDao productDao = new ProductDaoImpl();
 
-try {
-List<Product> products = productDao.selectProductList();
+        try {
+            List<Product> products = productDao.selectProductList();
 
-request.setAttribute("productList", products);
-request.getRequestDispatcher("/product/productList.jsp").forward(request, response);
-} catch (SQLException throwables) {
-throwables.printStackTrace();
-}
-}
+            request.setAttribute("productList", products);
+            request.getRequestDispatcher("/product/productList.jsp").forward(request, response);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 }
 ```
 
-###### <span id="head65"> productList.jsp页面</span>
+###### productList.jsp页面
 
 ```jsp
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
-Created by IntelliJ IDEA.
-User: Ziph
-Date: 2020/4/28
-Time: 22:03
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Ziph
+  Date: 2020/4/28
+  Time: 22:03
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>商品列表</title>
+    <title>商品列表</title>
 </head>
 <body>
 <table border="1px" cellpadding="10px" cellspacing="0px" width="400px" height="200px">
-<tr>
-<td align="center">ID</td>
-<td>名称</td>
-<td>价格</td>
-<td>数量</td>
-<td>小计</td>
-</tr>
+    <tr>
+        <td align="center">ID</td>
+        <td>名称</td>
+        <td>价格</td>
+        <td>数量</td>
+        <td>小计</td>
+    </tr>
 
-<%--循环之前，总价为0--%>
-<c:set var="total" value="0" scope="page"></c:set>
-<c:forEach items="${productList}" var="product">
-<tr>
-<td align="center">${product.id}</td>
-<td>${product.name}</td>
-<td>${product.price}</td>
-<td>${product.count}</td>
-<td>${product.price * product.count}</td>
-</tr>
-<%--forEach标签，循环一次就是一个小计!然后更新一下计算总价的计数器中！--%>
-<c:set var="total" value="${total + product.price * product.count}" scope="page"></c:set>
-</c:forEach>
-<%--循环之后，计算出总价--%>
-<tr>
-<td colspan="5" align="right">
-总价：${total}元
-</td>
-</tr>
+    <%--循环之前，总价为0--%>
+    <c:set var="total" value="0" scope="page"></c:set>
+    <c:forEach items="${productList}" var="product">
+        <tr>
+            <td align="center">${product.id}</td>
+            <td>${product.name}</td>
+            <td>${product.price}</td>
+            <td>${product.count}</td>
+            <td>${product.price * product.count}</td>
+        </tr>
+        <%--forEach标签，循环一次就是一个小计!然后更新一下计算总价的计数器中！--%>
+        <c:set var="total" value="${total + product.price * product.count}" scope="page"></c:set>
+    </c:forEach>
+    <%--循环之后，计算出总价--%>
+    <tr>
+        <td colspan="5" align="right">
+            总价：${total}元
+        </td>
+    </tr>
 </table>
 </body>
 </html>
@@ -1421,26 +1422,26 @@ To change this template use File | Settings | File Templates.
 
 
 
-### <span id="head66"> 五、JSP开发模型</span>
+### 五、JSP开发模型
 
 > Sun公司在推出jsp后，也为我们提供了两种jsp开发模式。分别是JSP Model1、JSP Model2，但是在JSP Model1开发模型中经历过一次优化。而两种开发模型都不是最终版，只是在技术上做起了过度作用，为MVC模式做了技术铺垫！
 
 
 
-#### <span id="head67">5.1 JSP Model1开发模型</span>
+#### 5.1 JSP Model1开发模型
 
 > JSP Model1是JavaWeb早期的模型，它适合小型Web项目，开发成本低！Model1第一代时期，服务器端只有JSP页面，所有的操作都在JSP页面中，连访问数据库的API也在JSP页面中完成。
 
 ![model1](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531101859.png)
 
-##### <span id="head68">5.1.1 JSP Model1开发模型的优缺点</span>
+##### 5.1.1 JSP Model1开发模型的优缺点
 
 > - **优点：** 开发成本低、使用简单快捷，对开发人员要求不高
 > - **缺点：** 不适合完成比较复杂的项目， 所有的东西都耦合在一起，对后期的维护和扩展极为不利
 
 
 
-#### <span id="head69">5.2 JSP Model1优化版开发模型</span>
+#### 5.2 JSP Model1优化版开发模型
 
 > JSP Model1优化后有所改进，把业务逻辑和数据访问的内容放到了JavaBeans（狭义JavaBeans：实体类；广义JavaBeans：实体类、dao层、service层和工具类）中，而JSP页面负责显示以及请求调度的工作。虽然第二代比第一代好了些，但还让JSP做了过多的工作，JSP中把视图工作和请求调度（控制器）的工作耦合在了一起。
 
@@ -1448,7 +1449,7 @@ To change this template use File | Settings | File Templates.
 
 
 
-##### <span id="head70">5.2.1 JSP Model1优化版开发模型的优缺点</span>
+##### 5.2.1 JSP Model1优化版开发模型的优缺点
 
 > **优点：** 开发成本低、使用简单快捷，对开发人员要求不高，而且在技术中使用Java Beans层面达到了一定程度的解耦
 >
@@ -1456,7 +1457,7 @@ To change this template use File | Settings | File Templates.
 
 
 
-#### <span id="head71">5.3 JSP Model2开发模型</span>
+#### 5.3 JSP Model2开发模型
 
 > JSP Model2开发模型中，可见把JSP页面的耦合度大大降低。在此JSP页面（视图层）用来接收数据，为用户提供显示页面的功能。JavaBean（模型层）用来完成数据库的业务功能，同时将业务交接给Servlet。而Servlet（控制层）来实现处理模型对象的业务和对相应业务JSP页面的转发。
 >
@@ -1466,22 +1467,22 @@ To change this template use File | Settings | File Templates.
 
 
 
-##### <span id="head72">5.4 JSP Model2开发模型优缺点</span>
+##### 5.4 JSP Model2开发模型优缺点
 
 > - **优点：** 再一次实现了解耦，使得维护方便，开发人员可各司其职。有利于进行分工操作，它比较适合开发一些比较复杂项目，因为它的很多组件可以重用
 > - **缺点：** Web项目的开发难度加大，同时对开发人员的技术要求也有相应提高
 
 
 
-### <span id="head73"> 六、BeanUtils工具类的使用</span>
+### 六、BeanUtils工具类的使用
 
-#### <span id="head74">6.1 参数问题</span>
+#### 6.1 参数问题
 
 > 我们在获取浏览器参数的时候，通过Bean实体类封装成对象，实现数据的交互。而问题是，浏览器请求参数少的时候自己编码代码还可以，但是如果在面临大量浏览器请求参数时，麻烦就来了。我们需要书写大量的getParameter和setXxx来封装实体类对象实现数据交互。而目前导入第三方jar包，使用它可以解决此问题！
 
 
 
-#### <span id="head75">6.2 beanutils.jar工具类jar包的下载</span>
+#### 6.2 beanutils.jar工具类jar包的下载
 
 > 由于此工具类的版本不同，我们需要下载的jar包也不同。经过jar包的迭代，也出现了需要jar包的辅助包等等，我们可以把核心jar包和辅助包一起导入，来实现功能。**需要下载并导入的jar包如下：** 
 >
@@ -1493,91 +1494,91 @@ To change this template use File | Settings | File Templates.
 
 
 
-#### <span id="head76">6.3 第三方jar包beanutils工具类使用</span>
+#### 6.3 第三方jar包beanutils工具类使用
 
 > 此次只是测试使用了BeanUtils工具类
 
-###### <span id="head77"> User实体类</span>
+###### User实体类
 
 ```java
 package com.mylifes1110.java.bean;
 
 public class User {
-private Integer id;
-private String  username;
-private String  password;
-private Integer age;
+    private Integer id;
+    private String  username;
+    private String  password;
+    private Integer age;
 
-public User() {}
+    public User() {}
 
-public User(Integer id, String username, String password, Integer age) {
-this.id       = id;
-this.username = username;
-this.password = password;
-this.age      = age;
-}
+    public User(Integer id, String username, String password, Integer age) {
+        this.id       = id;
+        this.username = username;
+        this.password = password;
+        this.age      = age;
+    }
 
-@Override
-public String toString() {
-return "User{" + "id=" + id + ", username='" + username + '\'' + ", password='" + password + '\'' + ", age="
-+ age + '}';
-}
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", username='" + username + '\'' + ", password='" + password + '\'' + ", age="
+               + age + '}';
+    }
 
-public Integer getAge() {
-return age;
-}
+    public Integer getAge() {
+        return age;
+    }
 
-public void setAge(Integer age) {
-this.age = age;
-}
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 
-public Integer getId() {
-return id;
-}
+    public Integer getId() {
+        return id;
+    }
 
-public void setId(Integer id) {
-this.id = id;
-}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-public String getPassword() {
-return password;
-}
+    public String getPassword() {
+        return password;
+    }
 
-public void setPassword(String password) {
-this.password = password;
-}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-public String getUsername() {
-return username;
-}
+    public String getUsername() {
+        return username;
+    }
 
-public void setUsername(String username) {
-this.username = username;
-}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 }
 ```
 
-###### <span id="head78"> JSP注册页面</span>
+###### JSP注册页面
 
 ```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>注册</title>
+    <title>注册</title>
 </head>
 <body>
 <form action="/firstjsp/register" method="post">
-账户:<input type="text" name="username"/><br>
-密码:<input type="text" name="password"/><br>
-年龄:<input type="text" name="age"/><br>
-<button type="submit">注册</button>
+    账户:<input type="text" name="username"/><br>
+    密码:<input type="text" name="password"/><br>
+    年龄:<input type="text" name="age"/><br>
+    <button type="submit">注册</button>
 </form>
 </body>
 </html>
 
 ```
 
-###### <span id="head79"> Servlet</span>
+###### Servlet
 
 ```java
 package com.mylifes1110.java.servlet;
@@ -1594,68 +1595,68 @@ import java.io.IOException;
 import java.util.Map;
 
 @WebServlet(
-name  = "RegisterServlet1Servlet",
-value = "/register"
+    name  = "RegisterServlet1Servlet",
+    value = "/register"
 )
 public class RegisterServlet1Servlet extends HttpServlet {
-protected void doGet(HttpServletRequest request, HttpServletResponse response)
-throws ServletException, IOException {
-doPost(request, response);
-}
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        doPost(request, response);
+    }
 
-protected void doPost(HttpServletRequest request, HttpServletResponse response)
-throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-/**
-* 底层代码：
-* public static void populate(Object bean, Map<String, ? extends Object> properties) throws IllegalAccessException, InvocationTargetException {
-*      BeanUtilsBean.getInstance().populate(bean, properties);
-* }
-* <p>
-* 解释：
-* populate(Object bean, Map<String, ? extends Object> properties) : 将map集合转换成java对象
-* Object bean : 要封装的java对象
-* Map<String, ? extends Object> properties : 请求参数
-* 注意：String[]是Object的子类
-* </p>
-*/
-Map<String, String[]> map  = request.getParameterMap();
-User                  user = new User();
+        /**
+         * 底层代码：
+         * public static void populate(Object bean, Map<String, ? extends Object> properties) throws IllegalAccessException, InvocationTargetException {
+         *      BeanUtilsBean.getInstance().populate(bean, properties);
+         * }
+         * <p>
+         * 解释：
+         * populate(Object bean, Map<String, ? extends Object> properties) : 将map集合转换成java对象
+         * Object bean : 要封装的java对象
+         * Map<String, ? extends Object> properties : 请求参数
+         * 注意：String[]是Object的子类
+         * </p>
+         */
+        Map<String, String[]> map  = request.getParameterMap();
+        User                  user = new User();
 
-try {
-BeanUtils.populate(user, map);
-System.out.println(user);
-} catch (Exception e) {
-e.printStackTrace();
-}
-}
+        try {
+            BeanUtils.populate(user, map);
+            System.out.println(user);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
 
 
-#### <span id="head80">6.4 自定义beanutils工具类</span>
+#### 6.4 自定义beanutils工具类
 
-###### <span id="head81"> register注册页面</span>
+###### register注册页面
 
 ```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>注册</title>
+    <title>注册</title>
 </head>
 <body>
 <form action="/firstjsp/register" method="post">
-账户:<input type="text" name="username"/><br>
-密码:<input type="text" name="password"/><br>
-年龄:<input type="text" name="age"/><br>
-<button type="submit">注册</button>
+    账户:<input type="text" name="username"/><br>
+    密码:<input type="text" name="password"/><br>
+    年龄:<input type="text" name="age"/><br>
+    <button type="submit">注册</button>
 </form>
 </body>
 </html>
 ```
 
-###### <span id="head82"> RegisterServlet</span>
+###### RegisterServlet
 
 ```java
 package com.mylifes1110.java.servlet;
@@ -1674,30 +1675,30 @@ import java.util.Map;
 
 @WebServlet(name = "RegisterServlet", value = "/register")
 public class RegisterServlet extends HttpServlet {
-protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//map转换为user对象
-Map<String, String[]> map = request.getParameterMap();
-User user = new User();
-try {
-MyBeanUtils.populate(user, map);
-} catch (NoSuchMethodException e) {
-e.printStackTrace();
-} catch (InvocationTargetException e) {
-e.printStackTrace();
-} catch (IllegalAccessException e) {
-e.printStackTrace();
-}
-System.out.println(user);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        //map转换为user对象
+        Map<String, String[]> map = request.getParameterMap();
+        User user = new User();
+        try {
+            MyBeanUtils.populate(user, map);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+        System.out.println(user);
 
-}
+    }
 
-protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-doPost(request, response);
-}
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request, response);
+    }
 }
 ```
 
-###### <span id="head83"> 自定义MyBeanUtils工具类</span>
+###### 自定义MyBeanUtils工具类
 
 ```java
 package com.mylifes1110.java.utils;
@@ -1709,81 +1710,81 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
-* 自定义MyBeanUtils工具类
-*/
+ * 自定义MyBeanUtils工具类
+ */
 public class MyBeanUtils {
 
-/**
-* 将map集合中的请求参数值封装到对象t中
-*
-* @param t   传入的泛型对象
-* @param map 键：参数名称；值：一组参数值
-* @param <T> 自定义泛型
-*/
-public static <T> void populate(T t, Map<String, ? extends Object> map)
-throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    /**
+     * 将map集合中的请求参数值封装到对象t中
+     *
+     * @param t   传入的泛型对象
+     * @param map 键：参数名称；值：一组参数值
+     * @param <T> 自定义泛型
+     */
+    public static <T> void populate(T t, Map<String, ? extends Object> map)
+            throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
-// 获取泛型对象的Class对象
-Class<?> tClass = t.getClass();
+        // 获取泛型对象的Class对象
+        Class<?> tClass = t.getClass();
 
-// 获取对应对象的所有方法对象
-Field[] fields = tClass.getDeclaredFields();
+        // 获取对应对象的所有方法对象
+        Field[] fields = tClass.getDeclaredFields();
 
-// 遍历所有方法对象
-for (Field field : fields) {
+        // 遍历所有方法对象
+        for (Field field : fields) {
 
-// 获取方法名称
-String fieldName = field.getName();
+            // 获取方法名称
+            String fieldName = field.getName();
 
-// 获取set方法名称
-String methodName = "set" + fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
+            // 获取set方法名称
+            String methodName = "set" + fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
 
-// 获取对应的set方法类型
-Class<?> type = field.getType();
+            // 获取对应的set方法类型
+            Class<?> type = field.getType();
 
-// 获取对应的set方法
-Method method = tClass.getMethod(methodName, type);
+            // 获取对应的set方法
+            Method method = tClass.getMethod(methodName, type);
 
-// 判断对应set方法是否为空
-if (method != null) {
+            // 判断对应set方法是否为空
+            if (method != null) {
 
-// 获取对应方法参数值（参数类型）
-Object o = map.get(fieldName);
+                // 获取对应方法参数值（参数类型）
+                Object o = map.get(fieldName);
 
-// 参数值不为空
-if (o != null) {
+                // 参数值不为空
+                if (o != null) {
 
-// 把自身本应该是String类型参数值（此时是Object类型）强转
-String[] str = (String[]) o;
+                    // 把自身本应该是String类型参数值（此时是Object类型）强转
+                    String[] str = (String[]) o;
 
-// 如果参数类型是Integer类型
-if (type.getName().equals("java.lang.Integer")) {
+                    // 如果参数类型是Integer类型
+                    if (type.getName().equals("java.lang.Integer")) {
 
-// 把参数值转换为Integer类型并执行方法
-method.invoke(t, Integer.parseInt(str[0]));
-} else {
+                        // 把参数值转换为Integer类型并执行方法
+                        method.invoke(t, Integer.parseInt(str[0]));
+                    } else {
 
-// 参数为String类型直接执行方法
-method.invoke(t, str[0]);
-}
-}
-}
-}
-}
+                        // 参数为String类型直接执行方法
+                        method.invoke(t, str[0]);
+                    }
+                }
+            }
+        }
+    }
 }
 ```
 
 
 
-### <span id="head84"> 七、MVC模式</span>
+### 七、MVC模式
 
-#### <span id="head85">7.1 什么是MVC模式</span>
+#### 7.1 什么是MVC模式
 
 > 首先要需要知道MVC模式并不是Java Web项目中独有的，MVC是一种软件工程中的一种设计模式，把软件系统分为三个基本部分：模型（Model）、视图（View）和控制器（Controller），即为MVC。它是一种软件设计的典范，最早为Trygve Reenskaug提出，为施乐帕罗奥多研究中心（Xerox PARC）的Smalltalk语言发明的一种软件设计模式。
 
 
 
-#### <span id="head86">7.2 MVC模式详解</span>
+#### 7.2 MVC模式详解
 
 > 虽然MVC并不是Java当中独有的，但是现在几乎所有的B/S的架构都采用了MVC框架模式。
 >
@@ -1793,7 +1794,7 @@ method.invoke(t, str[0]);
 
 
 
-#### <span id="head87">7.3 什么是MVC架构模型</span>
+#### 7.3 什么是MVC架构模型
 
 > - 在“三层架构”中，为了面向对象编程，将各层传递的数据封装成实体类，便于数据传递和提高可读性
 > - 在MVC（模型Model-视图View-控制器Controller）模式中，Model代表模型，是业务流程**/**状态的处理以及业务规则的制定，接受视图请求的数据，并返回最终的处理结果。业务模型的设计可以说是MVC最主要的核心
@@ -1802,9 +1803,9 @@ method.invoke(t, str[0]);
 
 
 
-#### <span id="head88">7.4 MVC架构和三层架构的区别</span>
+#### 7.4 MVC架构和三层架构的区别
 
-##### <span id="head89">7.4.1 架构模式思想</span>
+##### 7.4.1 架构模式思想
 
 > 首先，我们要认识到区分层次的目的即为了“**高内聚低耦合**”的思想。 
 >
@@ -1814,7 +1815,7 @@ method.invoke(t, str[0]);
 
 
 
-##### <span id="head90">7.4.2 剖析架构主体</span>
+##### 7.4.2 剖析架构主体
 
 > **MVC架构主体：** 
 >
@@ -1838,7 +1839,7 @@ method.invoke(t, str[0]);
 
 
 
-##### <span id="head91">7.4.3 架构和模式划分</span>
+##### 7.4.3 架构和模式划分
 
 > **架构划分：** 
 >
@@ -1852,7 +1853,7 @@ method.invoke(t, str[0]);
 
 
 
-##### <span id="head92">7.4.4 架构和设计模式的区别</span>
+##### 7.4.4 架构和设计模式的区别
 
 >框架、设计模式这两个概念总容易被混淆，其实它们之间还是有区别的。框架通常是代码重用，而设计模式是设计重用，架构则介于两者之间，部分代码重用，部分设计重用，有时分析也可重用。
 >
@@ -1862,7 +1863,7 @@ method.invoke(t, str[0]);
 
 
 
-#### <span id="head93">7.5 基于MAC的三层架构实现</span>
+#### 7.5 基于MAC的三层架构实现
 
 > 虽然MVC把程序分成三部分，每个部分负责不同的功能，但是这只是逻辑的分离，实际代码并没有真正分离，特别是Model（包括业务、数据访问和实体类、工具类等）部分的代码，为了增强代码的维护性和降低代码耦合性，需要把代码分层管理，于是就有了三层架构：分别是**web层（表示|界面层）**、**service层（业务逻辑层）**、**dao层(数据访问层)**
 >
@@ -1870,7 +1871,7 @@ method.invoke(t, str[0]);
 
 ![mvc1](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531101903.png)
 
-#### <span id="head94">7.6 MAC高级框架应用</span>
+#### 7.6 MAC高级框架应用
 
 >  MVC模式被广泛用于Java的各种框架中，比如Struts2、Spring MVC等等都用到了这种思想。
 >
@@ -1878,9 +1879,9 @@ method.invoke(t, str[0]);
 
 
 
-### <span id="head95"> 八、分页</span>
+### 八、分页
 
-#### <span id="head96">8.1 生活中的分页</span>
+#### 8.1 生活中的分页
 
 > 我们在生活中到处课件分页，各种浏览器、查询系统、电商系统的商品展示等等所有领域的访问数据千千万，它都是用分页来显示的！我这里举例贴图一下，那么问题来了为什么要分页显示呢？
 
@@ -1888,7 +1889,7 @@ method.invoke(t, str[0]);
 
 
 
-#### <span id="head97">8.2 为什么要有分页？</span>
+#### 8.2 为什么要有分页？
 
 > 如果没有使用分页查询的话，存在三个问题：
 >
@@ -1898,39 +1899,39 @@ method.invoke(t, str[0]);
 
 
 
-#### <span id="head98">8.3 分页的分类</span>
+#### 8.3 分页的分类
 
 > 分页的分类也有两种：**逻辑分页** 和**物理分页** 
 
 
 
-##### <span id="head99">8.3.1 什么是逻辑分页？</span>
+##### 8.3.1 什么是逻辑分页？
 
 > 概念：一次性将所有数据查询出来，保存到List集合中，后续，如果有分页请求，再对List集合进行拆分
 
 
 
-###### <span id="head100">8.3.1.1 逻辑分页的优缺点</span>
+###### 8.3.1.1 逻辑分页的优缺点
 
 > - 优点：减少了操作数据库的次数
 > - 缺点：单次查询数据库的时间过长
 
 
 
-##### <span id="head101">8.3.2 什么是物理分页？（常用）</span>
+##### 8.3.2 什么是物理分页？（常用）
 
 > 不是一次性将所有数据全部查询出来。查询第一页：发送一条查询10条的SQL语句。查询下 一页数据：又发送一条查询后10条的SQL语句
 
 
 
-###### <span id="head102">8.3.2.1 物理分页的优缺点</span>
+###### 8.3.2.1 物理分页的优缺点
 
 > - 优点：单次查询数据库的时间非常短
 > - 缺点：操作数据库的次数增加
 
 
 
-###### <span id="head103">8.3.2.2 物理分页SQL语句实现</span>
+###### 8.3.2.2 物理分页SQL语句实现
 
 > 分页的SQL语句如下：
 >
@@ -1943,7 +1944,7 @@ select * from 表名 limit ? , ?;
 
 
 
-###### <span id="head104">8.3.2.3 SQL语句分页举例</span>
+###### 8.3.2.3 SQL语句分页举例
 
 > 查询员工表，要求每页显示10条员工数据
 >
@@ -1972,9 +1973,9 @@ SELECT * FROM employee LIMIT 30 , 10;
 
 
 
-#### <span id="head105">8.1 分页查询流程分析与问题</span>
+#### 8.1 分页查询流程分析与问题
 
-##### <span id="head106">8.1.1 分页的两种情况</span>
+##### 8.1.1 分页的两种情况
 
 > 假设数据有N条，要求每页有x条数据，进行分页处理有两种情况如下：
 >
@@ -1983,7 +1984,7 @@ SELECT * FROM employee LIMIT 30 , 10;
 
 
 
-##### <span id="head107">8.1.2 分页的流程步骤</span>
+##### 8.1.2 分页的流程步骤
 
 > 1. 确定每页显示的数据条数
 > 2. 确定分页显示所需的总页数（数据库中的总数据条数）
@@ -1992,7 +1993,7 @@ SELECT * FROM employee LIMIT 30 , 10;
 
 
 
-##### <span id="head108">8.1.3 分页查询在Web项目中的一些问题</span>
+##### 8.1.3 分页查询在Web项目中的一些问题
 
 > **问题一：** 当浏览器发起分页请求时，浏览器需要传递什么参数给服务器？
 >
@@ -2018,7 +2019,7 @@ SELECT * FROM employee LIMIT 30 , 10;
 
 
 
-##### <span id="head109">8.1.4 分页查询的综合案例</span>
+##### 8.1.4 分页查询的综合案例
 
 > 登录账号、密码正确后显示执行效果图如下：
 >
@@ -2028,26 +2029,26 @@ SELECT * FROM employee LIMIT 30 , 10;
 
 ![1588317675436](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531101905.png)
 
-###### <span id="head110"> IDEA架构与jar包展示</span>
+###### IDEA架构与jar包展示
 
 ![1588320289882](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531101906.png)
 
-###### <span id="head111"> 库表操作</span>
+###### 库表操作
 
 ```sql
 use temp;
 create table user
 (
-id       int auto_increment
-primary key,
-username varchar(30) null,
-password varchar(30) not null,
-constraint username
-unique (username)
+    id       int auto_increment
+        primary key,
+    username varchar(30) null,
+    password varchar(30) not null,
+    constraint username
+        unique (username)
 );
 ```
 
-###### <span id="head112"> c3p0.properties</span>
+###### c3p0.properties
 
 ```java
 c3p0.driverClass=com.mysql.jdbc.Driver
@@ -2056,7 +2057,7 @@ c3p0.user=root
 c3p0.password=Mylifes1110
 ```
 
-###### <span id="head113"> 连接池工具类DBUtils</span>
+###### 连接池工具类DBUtils
 
 ```java
 package com.mylifes1110.java.utils;
@@ -2064,173 +2065,173 @@ package com.mylifes1110.java.utils;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 /**
-* 连接池工具类
-*/
+ * 连接池工具类
+ */
 public class DBUtils {
-private static ComboPooledDataSource dataSource;
+    private static ComboPooledDataSource dataSource;
 
-static {
-dataSource = new ComboPooledDataSource();
-}
+    static {
+        dataSource = new ComboPooledDataSource();
+    }
 
-public static ComboPooledDataSource getDataSource() {
-return dataSource;
-}
+    public static ComboPooledDataSource getDataSource() {
+        return dataSource;
+    }
 }
 ```
 
-###### <span id="head114"> 实体类User</span>
+###### 实体类User
 
 ```java
 package com.mylifes1110.java.bean;
 
 /**
-* User实体类
-*/
+ * User实体类
+ */
 public class User {
-private Integer id;
-private String  username;
-private String  password;
+    private Integer id;
+    private String  username;
+    private String  password;
 
-public User() {}
+    public User() {}
 
-public User(Integer id, String username, String password) {
-this.id       = id;
-this.username = username;
-this.password = password;
-}
+    public User(Integer id, String username, String password) {
+        this.id       = id;
+        this.username = username;
+        this.password = password;
+    }
 
-@Override
-public String toString() {
-return "User{" + "id=" + id + ", username='" + username + '\'' + ", password='" + password + '\'' + '}';
-}
+    @Override
+    public String toString() {
+        return "User{" + "id=" + id + ", username='" + username + '\'' + ", password='" + password + '\'' + '}';
+    }
 
-public Integer getId() {
-return id;
-}
+    public Integer getId() {
+        return id;
+    }
 
-public void setId(Integer id) {
-this.id = id;
-}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-public String getPassword() {
-return password;
-}
+    public String getPassword() {
+        return password;
+    }
 
-public void setPassword(String password) {
-this.password = password;
-}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-public String getUsername() {
-return username;
-}
+    public String getUsername() {
+        return username;
+    }
 
-public void setUsername(String username) {
-this.username = username;
-}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 }
 ```
 
-###### <span id="head115"> 登录页面login.jsp</span>
+###### 登录页面login.jsp
 
 ```html
 <%--
-Created by IntelliJ IDEA.
-User: Ziph
-Date: 2020/4/30
-Time: 19:30
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Ziph
+  Date: 2020/4/30
+  Time: 19:30
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>登录页面</title>
+    <title>登录页面</title>
 </head>
 <body>
 <font color="red"><b>${error}</b></font>
 <form action="${pageContext.request.contextPath}/user" method="post">
-<input type="hidden" name="methodName" value="login">
-账号：<input type="text" name="username"><br>
-密码：<input type="text" name="password"><br>
-<button type="submit">登录</button>
+    <input type="hidden" name="methodName" value="login">
+    账号：<input type="text" name="username"><br>
+    密码：<input type="text" name="password"><br>
+    <button type="submit">登录</button>
 </form>
 </body>
 </html>
 ```
 
-###### <span id="head116"> 分页查询显示页面index.jsp</span>
+###### 分页查询显示页面index.jsp
 
 ```html
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
-Created by IntelliJ IDEA.
-User: Ziph
-Date: 2020/4/30
-Time: 19:13
-To change this template use File | Settings | File Templates.
+  Created by IntelliJ IDEA.
+  User: Ziph
+  Date: 2020/4/30
+  Time: 19:13
+  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-<title>分页查询显示主页</title>
-<style>
-a {
-text-decoration: none;
-}
+    <title>分页查询显示主页</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
 
-#inputPage {
-width: 40px;
-}
-.top_div {
-position: relative;
-top: 5px;
-}
-</style>
+        #inputPage {
+            width: 40px;
+        }
+        .top_div {
+            position: relative;
+            top: 5px;
+        }
+    </style>
 </head>
 <body>
 <div class="top_div">
-欢迎~${sessionScope.user.username}&nbsp;&nbsp;
-<a href="${pageContext.request.contextPath}/user?methodName=logout">注销</a>
+    欢迎~${sessionScope.user.username}&nbsp;&nbsp;
+    <a href="${pageContext.request.contextPath}/user?methodName=logout">注销</a>
 </div>
 <br>
 <font color="red"><b>${logoutError}</b></font>
 <table border="1px" cellspacing="0px" cellpadding="10px" width="600px" height="200px">
-<tr>
-<td><b>ID</b></td>
-<td><b>账号</b></td>
-<td><b>密码</b></td>
-</tr>
-<c:forEach items="${pageBean.list}" var="user">
-<tr>
-<td>${user.id}</td>
-<td>${user.username}</td>
-<td>${user.password}</td>
-</tr>
-</c:forEach>
-<tr>
-<td colspan="3" align="center">
-<c:if test="${pageBean.currentPage != 1}">
-<a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=1">[首页]</a>
-<a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=${pageBean.currentPage - 1}">上一页</a>
-</c:if>
-<c:forEach var="i" begin="1" end="${pageBean.totalPage}" step="1">
-<a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=${i}">${i}</a>
-</c:forEach>
-<c:if test="${pageBean.currentPage != pageBean.totalPage}">
-<a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=${pageBean.currentPage + 1}">下一页</a>
-<a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=${pageBean.totalPage}">[尾页]</a>
-</c:if>
-<input type="text" name="inputPage" id="inputPage">
-<button type="submit" name="inputPage">跳转</button>
-第${pageBean.currentPage}/${pageBean.totalPage}页
-</td>
-</tr>
+    <tr>
+        <td><b>ID</b></td>
+        <td><b>账号</b></td>
+        <td><b>密码</b></td>
+    </tr>
+    <c:forEach items="${pageBean.list}" var="user">
+        <tr>
+            <td>${user.id}</td>
+            <td>${user.username}</td>
+            <td>${user.password}</td>
+        </tr>
+    </c:forEach>
+    <tr>
+        <td colspan="3" align="center">
+            <c:if test="${pageBean.currentPage != 1}">
+                <a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=1">[首页]</a>
+                <a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=${pageBean.currentPage - 1}">上一页</a>
+            </c:if>
+            <c:forEach var="i" begin="1" end="${pageBean.totalPage}" step="1">
+                <a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=${i}">${i}</a>
+            </c:forEach>
+            <c:if test="${pageBean.currentPage != pageBean.totalPage}">
+                <a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=${pageBean.currentPage + 1}">下一页</a>
+                <a href="${pageContext.request.contextPath}/user?methodName=selectUserListByPage&currentPage=${pageBean.totalPage}">[尾页]</a>
+            </c:if>
+            <input type="text" name="inputPage" id="inputPage">
+            <button type="submit" name="inputPage">跳转</button>
+            第${pageBean.currentPage}/${pageBean.totalPage}页
+        </td>
+    </tr>
 </table>
 </body>
 </html>
 ```
 
-###### <span id="head117"> 封装好的PageBean对象</span>
+###### 封装好的PageBean对象
 
 ```java
 package com.mylifes1110.java.bean;
@@ -2238,75 +2239,75 @@ package com.mylifes1110.java.bean;
 import java.util.List;
 
 /**
-* 分页对象
-* @param <T> 可以传入任何对象进行分页处理
-*/
+ * 分页对象
+ * @param <T> 可以传入任何对象进行分页处理
+ */
 public class PageBean<T> {
-private Integer currentPage;    // 当前页数
-private Integer totalPage;      // 总页数
-private Integer totalSize;      // 总数据条数
-private Integer pageSize;       // 每页数据条数
-private List<T> list;           // 当前页数据
+    private Integer currentPage;    // 当前页数
+    private Integer totalPage;      // 总页数
+    private Integer totalSize;      // 总数据条数
+    private Integer pageSize;       // 每页数据条数
+    private List<T> list;           // 当前页数据
 
-public PageBean() {}
+    public PageBean() {}
 
-public PageBean(Integer currentPage, Integer totalPage, Integer totalSize, Integer pageSize, List<T> list) {
-this.currentPage = currentPage;
-this.totalPage   = totalPage;
-this.totalSize   = totalSize;
-this.pageSize    = pageSize;
-this.list        = list;
-}
+    public PageBean(Integer currentPage, Integer totalPage, Integer totalSize, Integer pageSize, List<T> list) {
+        this.currentPage = currentPage;
+        this.totalPage   = totalPage;
+        this.totalSize   = totalSize;
+        this.pageSize    = pageSize;
+        this.list        = list;
+    }
 
-@Override
-public String toString() {
-return "PageBean{" + "currentPage=" + currentPage + ", totalPage=" + totalPage + ", totalSize=" + totalSize
-+ ", pageSize=" + pageSize + ", list=" + list + '}';
-}
+    @Override
+    public String toString() {
+        return "PageBean{" + "currentPage=" + currentPage + ", totalPage=" + totalPage + ", totalSize=" + totalSize
+               + ", pageSize=" + pageSize + ", list=" + list + '}';
+    }
 
-public Integer getCurrentPage() {
-return currentPage;
-}
+    public Integer getCurrentPage() {
+        return currentPage;
+    }
 
-public void setCurrentPage(Integer currentPage) {
-this.currentPage = currentPage;
-}
+    public void setCurrentPage(Integer currentPage) {
+        this.currentPage = currentPage;
+    }
 
-public List<T> getList() {
-return list;
-}
+    public List<T> getList() {
+        return list;
+    }
 
-public void setList(List<T> list) {
-this.list = list;
-}
+    public void setList(List<T> list) {
+        this.list = list;
+    }
 
-public Integer getPageSize() {
-return pageSize;
-}
+    public Integer getPageSize() {
+        return pageSize;
+    }
 
-public void setPageSize(Integer pageSize) {
-this.pageSize = pageSize;
-}
+    public void setPageSize(Integer pageSize) {
+        this.pageSize = pageSize;
+    }
 
-public Integer getTotalPage() {
-return totalPage;
-}
+    public Integer getTotalPage() {
+        return totalPage;
+    }
 
-public void setTotalPage(Integer totalPage) {
-this.totalPage = totalPage;
-}
+    public void setTotalPage(Integer totalPage) {
+        this.totalPage = totalPage;
+    }
 
-public Integer getTotalSize() {
-return totalSize;
-}
+    public Integer getTotalSize() {
+        return totalSize;
+    }
 
-public void setTotalSize(Integer totalSize) {
-this.totalSize = totalSize;
-}
+    public void setTotalSize(Integer totalSize) {
+        this.totalSize = totalSize;
+    }
 }
 ```
 
-###### <span id="head118"> 通用Servlet</span>
+###### 通用Servlet
 
 ```java
 package com.mylifes1110.java.controller;
@@ -2323,47 +2324,47 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
-* 通用Servlet
-*/
+ * 通用Servlet
+ */
 @WebServlet(
-name  = "BeanServlet",
-value = "/bean"
+    name  = "BeanServlet",
+    value = "/bean"
 )
 public class BeanServlet extends HttpServlet {
-protected void service(HttpServletRequest request, HttpServletResponse response)
-throws ServletException, IOException {
-String methodName = request.getParameter("methodName");
+    protected void service(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String methodName = request.getParameter("methodName");
 
-try {
-Method method = this.getClass().getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
+        try {
+            Method method = this.getClass().getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
 
-if (method != null) {
-String returnValue = (String) method.invoke(this, request, response);
+            if (method != null) {
+                String returnValue = (String) method.invoke(this, request, response);
 
-if (returnValue != null) {
-int index = returnValue.lastIndexOf(":");
+                if (returnValue != null) {
+                    int index = returnValue.lastIndexOf(":");
 
-if (index == -1) {
-request.getRequestDispatcher(returnValue).forward(request, response);
-} else {
-String path = returnValue.substring(index + 1);
+                    if (index == -1) {
+                        request.getRequestDispatcher(returnValue).forward(request, response);
+                    } else {
+                        String path = returnValue.substring(index + 1);
 
-if (returnValue.startsWith("redirect")) {
-response.sendRedirect(request.getContextPath() + path);
-} else if (returnValue.startsWith("forward")) {
-request.getRequestDispatcher(path).forward(request, response);
-}
-}
-}
-}
-} catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-e.printStackTrace();
-}
-}
+                        if (returnValue.startsWith("redirect")) {
+                            response.sendRedirect(request.getContextPath() + path);
+                        } else if (returnValue.startsWith("forward")) {
+                            request.getRequestDispatcher(path).forward(request, response);
+                        }
+                    }
+                }
+            }
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
 }
 ```
 
-###### <span id="head119"> UserServlet</span>
+###### UserServlet
 
 > - 处理当前页数
 >
@@ -2389,111 +2390,111 @@ import com.mylifes1110.java.service.UserService;
 import com.mylifes1110.java.service.UserServiceImpl;
 
 /**
-* User相关Servlet请求处理
-*/
+ * User相关Servlet请求处理
+ */
 @WebServlet(
-name  = "UserServlet",
-value = "/user"
+    name  = "UserServlet",
+    value = "/user"
 )
 public class UserServlet extends BeanServlet {
-private UserService userService = new UserServiceImpl();
+    private UserService userService = new UserServiceImpl();
 
-/**
-* 登录
-*
-* @param request  请求对象
-* @param response 响应对象
-* @return 返回相应重定向或请求转发地址
-*/
-public String login(HttpServletRequest request, HttpServletResponse response) {
-User loginUser = new User();
+    /**
+     * 登录
+     *
+     * @param request  请求对象
+     * @param response 响应对象
+     * @return 返回相应重定向或请求转发地址
+     */
+    public String login(HttpServletRequest request, HttpServletResponse response) {
+        User loginUser = new User();
 
-try {
-BeanUtils.populate(loginUser, request.getParameterMap());
+        try {
+            BeanUtils.populate(loginUser, request.getParameterMap());
 
-User checkUser = userService.login(loginUser);
+            User checkUser = userService.login(loginUser);
 
-if (checkUser != null) {
-request.getSession().setAttribute("user", checkUser);
+            if (checkUser != null) {
+                request.getSession().setAttribute("user", checkUser);
 
-return "/user?methodName=selectUserListByPage";
-} else {
-request.setAttribute("error", "账号或密码错误！");
+                return "/user?methodName=selectUserListByPage";
+            } else {
+                request.setAttribute("error", "账号或密码错误！");
 
-return "/login.jsp";
-}
-} catch (IllegalAccessException | InvocationTargetException | SQLException e) {
-e.printStackTrace();
-}
+                return "/login.jsp";
+            }
+        } catch (IllegalAccessException | InvocationTargetException | SQLException e) {
+            e.printStackTrace();
+        }
 
-return "/login.jsp";
-}
+        return "/login.jsp";
+    }
 
-/**
-* 注销
-* @param request 请求对象
-* @param response 响应对象
-* @return 返回注销成功与失败的重定向和请求转发地址
-*/
-public String logout(HttpServletRequest request, HttpServletResponse response) {
-try {
-request.getSession().invalidate();
+    /**
+     * 注销
+     * @param request 请求对象
+     * @param response 响应对象
+     * @return 返回注销成功与失败的重定向和请求转发地址
+     */
+    public String logout(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            request.getSession().invalidate();
 
-return "redirect:/login.jsp";
-} catch (Exception e) {
-e.printStackTrace();
-}
+            return "redirect:/login.jsp";
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-request.setAttribute("logoutError", "注销失败！");
+        request.setAttribute("logoutError", "注销失败！");
 
-return "/index.jsp";
-}
+        return "/index.jsp";
+    }
 
-/**
-* 分页查询
-*
-* @param request  请求对象
-* @param response 响应对象
-* @return 返回相应重定向或请求转发地址
-*/
-public String selectUserListByPage(HttpServletRequest request, HttpServletResponse response) {
-String  currentPageStr = request.getParameter("currentPage");
-Integer currentPage    = getCurrentPage(currentPageStr);
+    /**
+     * 分页查询
+     *
+     * @param request  请求对象
+     * @param response 响应对象
+     * @return 返回相应重定向或请求转发地址
+     */
+    public String selectUserListByPage(HttpServletRequest request, HttpServletResponse response) {
+        String  currentPageStr = request.getParameter("currentPage");
+        Integer currentPage    = getCurrentPage(currentPageStr);
 
-try {
-PageBean<User> pageBean = userService.selectUserListByPage(currentPage);
+        try {
+            PageBean<User> pageBean = userService.selectUserListByPage(currentPage);
 
-request.setAttribute("pageBean", pageBean);
+            request.setAttribute("pageBean", pageBean);
 
-return "/index.jsp";
-} catch (SQLException throwables) {
-throwables.printStackTrace();
-}
+            return "/index.jsp";
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
 
-return "/login.jsp";
-}
+        return "/login.jsp";
+    }
 
-/**
-* 获取当前页数
-*
-* @param currentPageStr 字符串类型的当前页数
-* @return 返回Integer类型的当前页数
-*/
-public Integer getCurrentPage(String currentPageStr) {
-if (currentPageStr == null) {
+    /**
+     * 获取当前页数
+     *
+     * @param currentPageStr 字符串类型的当前页数
+     * @return 返回Integer类型的当前页数
+     */
+    public Integer getCurrentPage(String currentPageStr) {
+        if (currentPageStr == null) {
 
-// 如果没有传递当前页数，默认第一页
-currentPageStr = "1";
-}
+            // 如果没有传递当前页数，默认第一页
+            currentPageStr = "1";
+        }
 
-Integer currentPage = Integer.parseInt(currentPageStr);
+        Integer currentPage = Integer.parseInt(currentPageStr);
 
-return currentPage;
-}
+        return currentPage;
+    }
 }
 ```
 
-###### <span id="head120"> 访问资源登录校验LoginFilter</span>
+###### 访问资源登录校验LoginFilter
 
 > 一般登录校验的过滤器我们知道是要判断是否在登录状态下的，通过取出域中的实体类对象是否为空判断。但是每一个Servlet都会经过Filter过滤，当我们访问没有在登录状态下的登录页面时，它本应该是跳转Servlet进行请求处理，但是Servlet被Filter判断为不在登录状态而拦截反手就又是一个重定向到了登陆页面，这种情况就像递归没有出口一样，无限的访问下去，没有尽头！
 >
@@ -2510,40 +2511,40 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
-* 访问资源的登录校验
-*/
+ * 访问资源的登录校验
+ */
 @WebFilter(
-filterName = "LoginFilter",
-value      = "/*"
+    filterName = "LoginFilter",
+    value      = "/*"
 )
 public class LoginFilter implements Filter {
-public void destroy() {}
+    public void destroy() {}
 
-public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
-throws ServletException, IOException {
-HttpServletRequest  request    = (HttpServletRequest) req;
-HttpServletResponse response   = (HttpServletResponse) resp;
-String              uri        = request.getRequestURI();
-String              methodName = request.getParameter("methodName");
+    public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
+            throws ServletException, IOException {
+        HttpServletRequest  request    = (HttpServletRequest) req;
+        HttpServletResponse response   = (HttpServletResponse) resp;
+        String              uri        = request.getRequestURI();
+        String              methodName = request.getParameter("methodName");
 
-if (uri.contains("login") || ((methodName != null) && methodName.equals("login"))) {
-chain.doFilter(request, response);
-} else {
-Object checkUser = request.getSession().getAttribute("user");
+        if (uri.contains("login") || ((methodName != null) && methodName.equals("login"))) {
+            chain.doFilter(request, response);
+        } else {
+            Object checkUser = request.getSession().getAttribute("user");
 
-if (checkUser == null) {
-response.sendRedirect(request.getContextPath() + "/login.jsp");
-} else {
-chain.doFilter(request, response);
-}
-}
-}
+            if (checkUser == null) {
+                response.sendRedirect(request.getContextPath() + "/login.jsp");
+            } else {
+                chain.doFilter(request, response);
+            }
+        }
+    }
 
-public void init(FilterConfig config) throws ServletException {}
+    public void init(FilterConfig config) throws ServletException {}
 }
 ```
 
-###### <span id="head121"> Dao层接口</span>
+###### Dao层接口
 
 ```java
 package com.mylifes1110.java.dao;
@@ -2555,15 +2556,15 @@ import java.util.List;
 import com.mylifes1110.java.bean.User;
 
 public interface UserDao {
-User login(User loginUser) throws SQLException;
+    User login(User loginUser) throws SQLException;
 
-Integer selectTotalSize() throws SQLException;
+    Integer selectTotalSize() throws SQLException;
 
-List<User> selectUserListByPage(Integer beginIndex, Integer pageSize) throws SQLException;
+    List<User> selectUserListByPage(Integer beginIndex, Integer pageSize) throws SQLException;
 }
 ```
 
-###### <span id="head122"> Dao层实现类</span>
+###### Dao层实现类
 
 > - 获取总记录数
 > - 获取当前页数据
@@ -2583,36 +2584,36 @@ import com.mylifes1110.java.bean.User;
 import com.mylifes1110.java.utils.DBUtils;
 
 public class UserDaoImpl implements UserDao {
-@Override
-public User login(User loginUser) throws SQLException {
-return new QueryRunner(DBUtils.getDataSource()).query("select * from user where username = ? and password = ?",
-new BeanHandler<User>(User.class),
-loginUser.getUsername(),
-loginUser.getPassword());
-}
+    @Override
+    public User login(User loginUser) throws SQLException {
+        return new QueryRunner(DBUtils.getDataSource()).query("select * from user where username = ? and password = ?",
+                                                              new BeanHandler<User>(User.class),
+                                                              loginUser.getUsername(),
+                                                              loginUser.getPassword());
+    }
 
-/**
-* 获取集合中总记录数
-* @return 返回集合中的总记录数
-*/
-@Override
-public Integer selectTotalSize() throws SQLException {
-return new QueryRunner(DBUtils.getDataSource()).query("select * from user",
-new BeanListHandler<User>(User.class))
-.size();
-}
+    /**
+     * 获取集合中总记录数
+     * @return 返回集合中的总记录数
+     */
+    @Override
+    public Integer selectTotalSize() throws SQLException {
+        return new QueryRunner(DBUtils.getDataSource()).query("select * from user",
+                                                              new BeanListHandler<User>(User.class))
+                                                       .size();
+    }
 
-@Override
-public List<User> selectUserListByPage(Integer beginIndex, Integer pageSize) throws SQLException {
-return new QueryRunner(DBUtils.getDataSource()).query("select * from user limit ?, ?",
-new BeanListHandler<User>(User.class),
-beginIndex,
-pageSize);
-}
+    @Override
+    public List<User> selectUserListByPage(Integer beginIndex, Integer pageSize) throws SQLException {
+        return new QueryRunner(DBUtils.getDataSource()).query("select * from user limit ?, ?",
+                                                              new BeanListHandler<User>(User.class),
+                                                              beginIndex,
+                                                              pageSize);
+    }
 }
 ```
 
-###### <span id="head123"> Service层接口</span>
+###### Service层接口
 
 ```java
 package com.mylifes1110.java.service;
@@ -2623,13 +2624,13 @@ import com.mylifes1110.java.bean.PageBean;
 import com.mylifes1110.java.bean.User;
 
 public interface UserService {
-User login(User loginUser) throws SQLException;
+    User login(User loginUser) throws SQLException;
 
-PageBean<User> selectUserListByPage(Integer currentPage) throws SQLException;
+    PageBean<User> selectUserListByPage(Integer currentPage) throws SQLException;
 }
 ```
 
-###### <span id="head124"> Service层实现类</span>
+###### Service层实现类
 
 > - 设置当前页数(currentPage)
 > - 设置总记录数(totalSize)
@@ -2652,63 +2653,63 @@ import com.mylifes1110.java.dao.UserDao;
 import com.mylifes1110.java.dao.UserDaoImpl;
 
 public class UserServiceImpl implements UserService {
-private UserDao userDao = new UserDaoImpl();
+    private UserDao userDao = new UserDaoImpl();
 
-@Override
-public User login(User loginUser) throws SQLException {
-User user = userDao.login(loginUser);
+    @Override
+    public User login(User loginUser) throws SQLException {
+        User user = userDao.login(loginUser);
 
-return user;
-}
+        return user;
+    }
 
-@Override
-public PageBean<User> selectUserListByPage(Integer currentPage) throws SQLException {
-PageBean<User> pageBean = new PageBean<>();
+    @Override
+    public PageBean<User> selectUserListByPage(Integer currentPage) throws SQLException {
+        PageBean<User> pageBean = new PageBean<>();
 
-// 当前页数
-pageBean.setCurrentPage(currentPage);
+        // 当前页数
+        pageBean.setCurrentPage(currentPage);
 
-Integer totalSize = userDao.selectTotalSize();
+        Integer totalSize = userDao.selectTotalSize();
 
-// 数据库总记录数
-pageBean.setTotalSize(totalSize);
+        // 数据库总记录数
+        pageBean.setTotalSize(totalSize);
 
-// 每页记录数
-Integer pageSize = 5;
+        // 每页记录数
+        Integer pageSize = 5;
 
-pageBean.setPageSize(pageSize);
+        pageBean.setPageSize(pageSize);
 
-// 总页数
-// 总页数 = 总记录数 / 每页记录数
-Integer totalPage = (totalSize % pageSize == 0)
-? totalSize / pageSize
-: totalSize / pageSize + 1;
+        // 总页数
+        // 总页数 = 总记录数 / 每页记录数
+        Integer totalPage = (totalSize % pageSize == 0)
+                            ? totalSize / pageSize
+                            : totalSize / pageSize + 1;
 
-/*
-* Integer totalPage = 0;
-* if (totalSize % pageSize == 0) {
-* /            可以整除
-*   totalPage = totalSize / pageSize;
-* } else {
-* /            不可以整除
-*   totalPage = totalSize / pageSize + 1;
-* }
-*/
-pageBean.setTotalPage(totalPage);
+        /*
+         * Integer totalPage = 0;
+         * if (totalSize % pageSize == 0) {
+         * /            可以整除
+         *   totalPage = totalSize / pageSize;
+         * } else {
+         * /            不可以整除
+         *   totalPage = totalSize / pageSize + 1;
+         * }
+         */
+        pageBean.setTotalPage(totalPage);
 
-/**
-* 当前页数据
-* select * from user limit ?, ?;
-* 第一个?：开始索引 = (当前页数 - 1) * 每页记录数
-* 第二个?：每页记录数pageSize
-*/
-Integer    beginIndex = (currentPage - 1) * pageSize;
-List<User> list       = userDao.selectUserListByPage(beginIndex, pageSize);
+        /**
+         * 当前页数据
+         * select * from user limit ?, ?;
+         * 第一个?：开始索引 = (当前页数 - 1) * 每页记录数
+         * 第二个?：每页记录数pageSize
+         */
+        Integer    beginIndex = (currentPage - 1) * pageSize;
+        List<User> list       = userDao.selectUserListByPage(beginIndex, pageSize);
 
-pageBean.setList(list);
+        pageBean.setList(list);
 
-return pageBean;
-}
+        return pageBean;
+    }
 }
 ```
 
