@@ -110,7 +110,7 @@ public class Test {
         //测试加法
 //        System.out.println(calculator.add(10, 10));		//20		正确
         //测试减法
-        System.out.println(calculator.cut(10, 10));			//0		正确
+        System.out.println(calculator.cut(10, 10));			//0		    正确
     }
 }
 ```
@@ -187,7 +187,7 @@ Assert.assertEquals(预期值, 结果);
 
 
 
-***注意：***我们使用断言的时候尽量不要去断言Double对象。对于双精度数，绝对有必要使用增量进行比较，以避免浮点舍入的问题。如果您使用`assertEquals`带有`double`参数的3参数版本。
+***注意：*** 我们使用断言的时候尽量不要去断言Double对象。对于双精度数，绝对有必要使用增量进行比较，以避免浮点舍入的问题。如果您使用`assertEquals`带有`double`参数的3参数版本。
 
 ```java
 assertEquals(double expected, double actual, double delta);
@@ -196,8 +196,6 @@ assertEquals(double expected, double actual, double delta);
 这样以来`Double`将被自动取消装箱，`double`并且一切正常，这样测试结果就不会失败。否则使用两个参数的来断言double类型，会有如下报错信息：
 
 ![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531225403.png)
-
-
 
 
 
