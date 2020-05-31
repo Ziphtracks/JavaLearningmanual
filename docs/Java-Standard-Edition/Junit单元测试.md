@@ -8,6 +8,11 @@
     * [五、单元测试的编码规范](#%E4%BA%94%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%9A%84%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83)
     * [六、@Test测试与Assert断言步骤](#%E5%85%ADtest%E6%B5%8B%E8%AF%95%E4%B8%8Eassert%E6%96%AD%E8%A8%80%E6%AD%A5%E9%AA%A4)
     * [七、@Before和@After注解](#%E4%B8%83before%E5%92%8Cafter%E6%B3%A8%E8%A7%A3)
+    * [八、自定义@MyTest注解实现单元测试](#%E5%85%AB%E8%87%AA%E5%AE%9A%E4%B9%89mytest%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
+         * [MyTest注解类](#mytest%E6%B3%A8%E8%A7%A3%E7%B1%BB)
+         * [TestJunit单元测试类](#testjunit%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E7%B1%BB)
+         * [MyTestDemo测试类（主要实现功能并测试）](#mytestdemo%E6%B5%8B%E8%AF%95%E7%B1%BB%E4%B8%BB%E8%A6%81%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD%E5%B9%B6%E6%B5%8B%E8%AF%95)
+      * [执行结果图](#%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C%E5%9B%BE)
 
 # Junit单元测试
 
@@ -29,7 +34,7 @@
 
 当我们一块一块的做完并一块一块的测试后OK后，这时候你会发现项目像拼图一样拼在了一起。简单来说，这就是单元测试存在的重要意义！
 
-声明：术语显得过于生硬，白话文也许会让你们了解，请谅解我的大白话！谢谢！
+**声明：** 术语显得过于生硬，白话文也许会让你们了解，请谅解我的大白话！谢谢！
 
 
 
@@ -211,3 +216,133 @@ assertEquals(double expected, double actual, double delta);
 
 ![image-20200531225614728](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531225616.png)
 
+
+
+### 八、自定义@MyTest注解实现单元测试
+
+
+
+**目的： **完成自定义注解@MyTest，并实现标有注解的方法并启动它。（模拟@Test注解做单元测试）
+
+**步骤：** 
+
+1. 新建一个**注解类（annotation）**，命名为MyTest
+2. 创建一个**TestJunit单元测试类**，写几个方法，比如：`public void test1()`
+3. 创建一个**MyTestDemo测试类**（主功能实现类），该类主要利用反射机制来实现对TestJunit单元测试类中加@MyTest注解方法的启动
+4. **给予注解类生命周期与反射机制吻合**，也就是定义的注解可以保留到**运行时**，通过**反射机制**可以获取注解信息
+5. 编写MyTestDemo测试类，利用反射获取TestJunit单元测试类的Class对象，并获取单元测试类中所有的方法对象，遍历所有方法对象，只要加@MyTest的注解的方法把他执行起来，不加注解的不给予任何处理操作
+6. 启动测试类，查看结果（执行结果，在最后面！）
+
+**注意：** 
+
+1. 自定义注解类中，没有编写注解体，也就是没有给默认value值。因为该注解只是起到了标识的作用，标识需要启动的方法
+2. 注解类编译后也是.class文件
+3. 通过反射机制来完成自定义注解操作，一定要给与注解和反射同样的生命周期
+4. 你要知道我们是不能完成Junit4、Junit5这样类型的插件功能的，可以选择性的执行加了注解的方法，而且我们有实力写出插件IDEA也是不承认的。不会给你生成run方法启动项
+
+###### MyTest注解类
+
+```java
+package com.mylifes1110.java.anno;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+/**
+ * 此自定义注解@MyTest只是作为需要单元测试的标记，不需要做默认值
+ * @Retention注解表示给与@MyTest注解生命周期
+ * 当前定义的注解可以保留到运行时，通过反射机制可以获取注解信息
+ * 否则反射将对注解没有任何作用，失去了该意义和自定义单元测试的初衷
+ */
+@Retention(RetentionPolicy.RUNTIME)
+public @interface MyTest {
+//    String value() default "";
+}
+```
+
+###### TestJunit单元测试类
+
+```java
+package com.mylifes1110.java.test.junit;
+
+import com.mylifes1110.java.anno.MyTest;
+import org.junit.Test;
+
+public class TestJunit {
+
+    @Test
+    public void test1() {
+        System.out.println("---test1---");
+    }
+
+    @MyTest
+    public void test2() {
+        System.out.println("---test2---");
+    }
+
+    @MyTest
+    public void test3() {
+        System.out.println("---test3---");
+    }
+
+    public void test4() {
+        System.out.println("---test4---");
+    }
+}
+```
+
+###### MyTestDemo测试类（主要实现功能并测试）
+
+```java
+package com.mylifes1110.java.test.junit;
+
+import com.mylifes1110.java.anno.MyTest;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+/**
+ * 让自定义的MyTest注解起作用
+ * 通过反射，扫描TestJunit类中有哪些方法上方加了MyTest注解
+ * 如果加@MyTest注解的则执行它
+ * 如果没有加@MyTest注解的则不做任何处理
+ */
+public class MyTestDemo {
+    public static void main(String[] args) {
+        /**
+         * 1.获取TestJunit类对应的Class对象
+         */
+        Class<TestJunit> junitClass = TestJunit.class;
+        /**
+         * 获取TestJunit类中所有的方法对象
+         */
+        Method[] methods = junitClass.getMethods();
+
+        /**
+         * 遍历所有方法对象查找有与没有@MyTest注解，并做出响应处理
+         */
+        for (Method method : methods) {
+            boolean present = method.isAnnotationPresent(MyTest.class);
+            /**
+             * TestJunit类中有@MyTest注解的执行该方法
+             */
+            if (present) {
+                try {
+                    method.invoke(junitClass.newInstance());
+                } catch (IllegalAccessException | InvocationTargetException | InstantiationException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                /**
+                 * TestJunit类中没有@MyTest注解的不做任何操作
+                 * 此else分支冗余，只是为了做标记，让你们好理解
+                 */
+            }
+        }
+    }
+}
+```
+
+###### 执行结果图
+
+![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531232623.png)
