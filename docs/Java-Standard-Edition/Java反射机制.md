@@ -1,34 +1,33 @@
-- [ 深入理解Java反射机制](#head1)
-	- [ 一、Java反射概述](#head2)
-	- [ 二、Java创建对象思想传递](#head3)
-	- [ 三、类对象](#head4)
-		- [3.1 类对象和类的对象](#head5)
-		- [3.2 三种获取类对象的方法](#head6)
-	- [ 四、Class对象的常用方法](#head7)
-		- [4.1 获取成员变量](#head8)
-		- [4.2 获取构造方法](#head9)
-		- [4.3 获取方法](#head10)
-		- [4.4 获取类名](#head11)
-		- [4.5 获取接口](#head12)
-		- [4.6 获取包名](#head13)
-		- [4.7 获取父类](#head14)
-		- [4.8 判断注解](#head15)
-	- [ 五、对象和方法的代工厂](#head16)
-		- [5.1 创建对象的代工厂](#head17)
-		- [5.2 创建对象并执行方法的代工厂](#head18)
+* [深入理解Java反射机制](#%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6)
+    * [一、Java反射概述](#%E4%B8%80java%E5%8F%8D%E5%B0%84%E6%A6%82%E8%BF%B0)
+    * [二、Java创建对象思想传递](#%E4%BA%8Cjava%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E6%80%9D%E6%83%B3%E4%BC%A0%E9%80%92)
+    * [三、类对象](#%E4%B8%89%E7%B1%BB%E5%AF%B9%E8%B1%A1)
+      * [3\.1 类对象和类的对象](#31-%E7%B1%BB%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%E7%9A%84%E5%AF%B9%E8%B1%A1)
+      * [3\.2 三种获取类对象的方法](#32-%E4%B8%89%E7%A7%8D%E8%8E%B7%E5%8F%96%E7%B1%BB%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%96%B9%E6%B3%95)
+    * [四、Class对象的常用方法](#%E5%9B%9Bclass%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95)
+      * [4\.1 获取成员变量](#41-%E8%8E%B7%E5%8F%96%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F)
+      * [4\.2 获取构造方法](#42-%E8%8E%B7%E5%8F%96%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95)
+      * [4\.3 获取方法](#43-%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95)
+      * [4\.4 获取类名](#44-%E8%8E%B7%E5%8F%96%E7%B1%BB%E5%90%8D)
+      * [4\.5 获取接口](#45-%E8%8E%B7%E5%8F%96%E6%8E%A5%E5%8F%A3)
+      * [4\.6 获取包名](#46-%E8%8E%B7%E5%8F%96%E5%8C%85%E5%90%8D)
+      * [4\.7 获取父类](#47-%E8%8E%B7%E5%8F%96%E7%88%B6%E7%B1%BB)
+      * [4\.8 判断注解](#48-%E5%88%A4%E6%96%AD%E6%B3%A8%E8%A7%A3)
+    * [五、对象和方法的代工厂](#%E4%BA%94%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%96%B9%E6%B3%95%E7%9A%84%E4%BB%A3%E5%B7%A5%E5%8E%82)
+      * [5\.1 创建对象的代工厂](#51-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%BB%A3%E5%B7%A5%E5%8E%82)
+      * [5\.2 创建对象并执行方法的代工厂](#52-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E5%B9%B6%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E7%9A%84%E4%BB%A3%E5%B7%A5%E5%8E%82)
+
+# 深入理解Java反射机制
 
 
-# <span id="head1"> 深入理解Java反射机制</span>
 
-
-
-### <span id="head2"> 一、Java反射概述</span>
+### 一、Java反射概述
 
 > Java的反射（reflection）机制是指在程序的运行状态中，可以构造任意一个类的对象，可以了解任意一个对象所属的类，可以了解任意一个类的成员变量和方法，可以调用任意一个对象的属性和方法。这种动态获取程序信息以及动态调用对象的功能称为Java语言的反射机制。Java反射机制被称为框架设计的灵魂。
 
 
 
-### <span id="head3"> 二、Java创建对象思想传递</span>
+### 二、Java创建对象思想传递
 
 > 首先在Java反射机制的概述部分，多次强调了`任意一个`是为什么呢？
 >
@@ -58,9 +57,9 @@
 
 
 
-### <span id="head4"> 三、类对象</span>
+### 三、类对象
 
-#### <span id="head5">3.1 类对象和类的对象</span>
+#### 3.1 类对象和类的对象
 
 > 根据上述的创建对象思想，我们可以得出反射机制就是程序运行时使用Class类对象封装的方法操作各个对象。所以在这里我们要介绍两个概念`类对象`和`类的对象`
 >
@@ -79,7 +78,7 @@
 
 
 
-#### <span id="head6">3.2 三种获取类对象的方法</span>
+#### 3.2 三种获取类对象的方法
 
 | 返回值          | 方法名称                                                     | 描述                                                         |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -107,43 +106,43 @@ class Person {
 }
 
 public class TestReflect {
-public static void main(String[] args) throws ClassNotFoundException {
-//通过类的对象获取类对象
-Person person = new Person();
-Class<? extends Person> clazz1 = person.getClass();
+    public static void main(String[] args) throws ClassNotFoundException {
+        //通过类的对象获取类对象
+        Person person = new Person();
+        Class<? extends Person> clazz1 = person.getClass();
 
-//通过类名获取类对象
-Class<Person> clazz2 = Person.class;
+        //通过类名获取类对象
+        Class<Person> clazz2 = Person.class;
 
-//以静态方法通过全类名获取类对象
-Class<?> clazz3 = Class.forName("com.mylifes1110.java.bean.Person");
+        //以静态方法通过全类名获取类对象
+        Class<?> clazz3 = Class.forName("com.mylifes1110.java.bean.Person");
 
-System.out.println(clazz1 == clazz2);   //true
-System.out.println(clazz1 == clazz3);   //true
-System.out.println(clazz2 == clazz3);   //true
-}
+        System.out.println(clazz1 == clazz2);   //true
+        System.out.println(clazz1 == clazz3);   //true
+        System.out.println(clazz2 == clazz3);   //true
+    }
 
-/**
-* @param className 全类名
-* @return 以静态方法通过全类名获取类对象
-*/
-public static Class getClassObject(String className) {
-	Class clazz = null;
-	try {
-		clazz = Class.forName(className);
-	} catch (ClassNotFoundException e) {
-		e.printStackTrace();
-	}
-		return clazz;
-	}
+    /**
+     * @param className 全类名
+     * @return 以静态方法通过全类名获取类对象
+     */
+    public static Class getClassObject(String className) {
+        Class clazz = null;
+        try {
+            clazz = Class.forName(className);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return clazz;
+    }
 }
 ```
 
 
 
-### <span id="head7"> 四、Class对象的常用方法</span>
+### 四、Class对象的常用方法
 
-#### <span id="head8">4.1 获取成员变量</span>
+#### 4.1 获取成员变量
 
 | 返回值  | 方法名称                      | 描述                                                |
 | ------- | ----------------------------- | --------------------------------------------------- |
@@ -173,62 +172,62 @@ package com.mylifes1110.java.bean;
 import java.lang.reflect.Field;
 
 class Person {
-private String   name;
-public Integer   age;
-protected Double score;
+    private String   name;
+    public Integer   age;
+    protected Double score;
 
-@Override
-public String toString() {
-	return "Person{" + "name='" + name + '\'' + ", age=" + age + ", score=" + score + '}';
-	}
+    @Override
+    public String toString() {
+        return "Person{" + "name='" + name + '\'' + ", age=" + age + ", score=" + score + '}';
+    }
 }
 
 
 public class TestReflectFiled {
-public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
-Person person = new Person();
-Class<? extends Person> personClass = person.getClass();
+    public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
+        Person person = new Person();
+        Class<? extends Person> personClass = person.getClass();
 
-//获取 public 修饰的所有成员变量
-Field[] fields = personClass.getFields();
-for (Field field : fields) {
-	System.out.println(field);      //public java.lang.Integer com.mylifes1110.java.bean.Person.age
-}
+        //获取 public 修饰的所有成员变量
+        Field[] fields = personClass.getFields();
+        for (Field field : fields) {
+            System.out.println(field);      //public java.lang.Integer com.mylifes1110.java.bean.Person.age
+        }
 
-//获取 public 修饰的指定名称的成员变量
-Field age = personClass.getField("age");
-System.out.println(age);            //public java.lang.Integer com.mylifes1110.java.bean.Person.age
-//获取成员变量age的值
-Object ageValue = age.get(person);
-System.out.println(ageValue);       //null
-//设置age的值
-age.set(person, 18);
-System.out.println(person);         //Person{name='null', age=18, score=null}
+        //获取 public 修饰的指定名称的成员变量
+        Field age = personClass.getField("age");
+        System.out.println(age);            //public java.lang.Integer com.mylifes1110.java.bean.Person.age
+        //获取成员变量age的值
+        Object ageValue = age.get(person);
+        System.out.println(ageValue);       //null
+        //设置age的值
+        age.set(person, 18);
+        System.out.println(person);         //Person{name='null', age=18, score=null}
 
-//获取所有成员变量，不被修饰符限制
-Field[] declaredFields = personClass.getDeclaredFields();
-for (Field declaredField : declaredFields) {
-	System.out.println(declaredField);
-}
+        //获取所有成员变量，不被修饰符限制
+        Field[] declaredFields = personClass.getDeclaredFields();
+        for (Field declaredField : declaredFields) {
+            System.out.println(declaredField);
+        }
 		/*
-private java.lang.String com.mylifes1110.java.bean.Person.name
-public java.lang.Integer com.mylifes1110.java.bean.Person.age
-protected java.lang.Double com.mylifes1110.java.bean.Person.score
-*/
+          private java.lang.String com.mylifes1110.java.bean.Person.name
+          public java.lang.Integer com.mylifes1110.java.bean.Person.age
+          protected java.lang.Double com.mylifes1110.java.bean.Person.score
+         */
 
-//获取指定名称的成员变量，不被修饰符限制
-Field name = personClass.getDeclaredField("name");
-//忽略访问修饰符的安全检查
-name.setAccessible(true);           //暴力反射
-Object nameValue = name.get(person);
-System.out.println(nameValue);      //null
-}
+        //获取指定名称的成员变量，不被修饰符限制
+        Field name = personClass.getDeclaredField("name");
+        //忽略访问修饰符的安全检查
+        name.setAccessible(true);           //暴力反射
+        Object nameValue = name.get(person);
+        System.out.println(nameValue);      //null
+    }
 }
 ```
 
 
 
-#### <span id="head9">4.2 获取构造方法</span>
+#### 4.2 获取构造方法
 
 | 返回值           | 方法名称                                           | 描述                                                         |
 | ---------------- | -------------------------------------------------- | ------------------------------------------------------------ |
@@ -252,58 +251,58 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 class Person {
-private String   name;
-public Integer   age;
-protected Double score;
+    private String   name;
+    public Integer   age;
+    protected Double score;
 
-public Person() {}
+    public Person() {}
 
-public Person(String name, Integer age, Double score) {
-this.name  = name;
-this.age   = age;
-this.score = score;
-}
+    public Person(String name, Integer age, Double score) {
+        this.name  = name;
+        this.age   = age;
+        this.score = score;
+    }
 
-@Override
-public String toString() {
-return "Person{" + "name='" + name + '\'' + ", age=" + age + ", score=" + score + '}';
-}
+    @Override
+    public String toString() {
+        return "Person{" + "name='" + name + '\'' + ", age=" + age + ", score=" + score + '}';
+    }
 }
 
 public class TestReflectConstructor {
-public static void main(String[] args) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException {
-Person person = new Person();
-Class<? extends Person> personClass = person.getClass();
+    public static void main(String[] args) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException {
+        Person person = new Person();
+        Class<? extends Person> personClass = person.getClass();
 
-//获取 public 修饰的无参构造
-Constructor<? extends Person> constructor = personClass.getConstructor();
-System.out.println(constructor);    //public com.mylifes1110.java.bean.Person()
-//通过无参构造创建实例对象
-Person p1 = constructor.newInstance();
-System.out.println(p1);             //Person{name='null', age=null, score=null}
+        //获取 public 修饰的无参构造
+        Constructor<? extends Person> constructor = personClass.getConstructor();
+        System.out.println(constructor);    //public com.mylifes1110.java.bean.Person()
+        //通过无参构造创建实例对象
+        Person p1 = constructor.newInstance();
+        System.out.println(p1);             //Person{name='null', age=null, score=null}
 
-Constructor<? extends Person> constructor2 = personClass.getConstructor(String.class, Integer.class, Double.class);
-System.out.println(constructor2);   //public com.mylifes1110.java.bean.Person(java.lang.String,java.lang.Integer,java.lang.Double)
-Person p2 = constructor2.newInstance("Ziph", 18, 100.00);
-System.out.println(p2);             //Person{name='Ziph', age=18, score=100.0}
+        Constructor<? extends Person> constructor2 = personClass.getConstructor(String.class, Integer.class, Double.class);
+        System.out.println(constructor2);   //public com.mylifes1110.java.bean.Person(java.lang.String,java.lang.Integer,java.lang.Double)
+        Person p2 = constructor2.newInstance("Ziph", 18, 100.00);
+        System.out.println(p2);             //Person{name='Ziph', age=18, score=100.0}
 
 
-//获取 public 修饰的所有构造方法
-Constructor<?>[] constructors = personClass.getConstructors();
-for (Constructor<?> constructor1 : constructors) {
-System.out.println(constructor1);
-}
-/*
-public com.mylifes1110.java.bean.Person()
-public com.mylifes1110.java.bean.Person(java.lang.String,java.lang.Integer,java.lang.Double)
-*/
-}
+        //获取 public 修饰的所有构造方法
+        Constructor<?>[] constructors = personClass.getConstructors();
+        for (Constructor<?> constructor1 : constructors) {
+            System.out.println(constructor1);
+        }
+        /*
+          public com.mylifes1110.java.bean.Person()
+          public com.mylifes1110.java.bean.Person(java.lang.String,java.lang.Integer,java.lang.Double)
+         */
+    }
 }
 ```
 
 
 
-#### <span id="head10">4.3 获取方法</span>
+#### 4.3 获取方法
 
 | 返回值   | 方法名称                                                   | 描述                                             |
 | -------- | ---------------------------------------------------------- | ------------------------------------------------ |
@@ -328,78 +327,78 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 class Person {
-private String   name;
-public Integer   age;
-protected Double score;
+    private String   name;
+    public Integer   age;
+    protected Double score;
 
-public void jump() {
-System.out.println("跳起来。");
-}
+    public void jump() {
+        System.out.println("跳起来。");
+    }
 
-public void run(Integer meters) {
-System.out.println("我今天跑步跑了" + meters + "米。");
-}
+    public void run(Integer meters) {
+        System.out.println("我今天跑步跑了" + meters + "米。");
+    }
 
-@Override
-public String toString() {
-return "Person{" + "name='" + name + '\'' + ", age=" + age + ", score=" + score + '}';
-}
+    @Override
+    public String toString() {
+        return "Person{" + "name='" + name + '\'' + ", age=" + age + ", score=" + score + '}';
+    }
 }
 
 
 public class TestReflectMethod {
-public static void main(String[] args) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
-Person person = new Person();
-Class<? extends Person> personClass = person.getClass();
+    public static void main(String[] args) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+        Person person = new Person();
+        Class<? extends Person> personClass = person.getClass();
 
-//获取 public 修饰的jump无参方法
-Method jump = personClass.getMethod("jump");
-//执行获取到的jump无参方法
-jump.invoke(person);                //跳起来。
+        //获取 public 修饰的jump无参方法
+        Method jump = personClass.getMethod("jump");
+        //执行获取到的jump无参方法
+        jump.invoke(person);                //跳起来。
 
-//获取 public 修饰的run有参方法
-Method run = personClass.getMethod("run", Integer.class);
-//执行获取到的run有参方法
-run.invoke(person, 2000);    	    //我今天跑步跑了2000米。
+        //获取 public 修饰的run有参方法
+        Method run = personClass.getMethod("run", Integer.class);
+        //执行获取到的run有参方法
+        run.invoke(person, 2000);    	    //我今天跑步跑了2000米。
 
-//获取 public 修饰的所有方法
-Method[] methods = personClass.getMethods();
-for (Method method : methods) {
-System.out.println(method);
+        //获取 public 修饰的所有方法
+        Method[] methods = personClass.getMethods();
+        for (Method method : methods) {
+            System.out.println(method);
 			//获取方法名
-System.out.println(method.getName());
-}
-/*
-public void com.mylifes1110.java.bean.Person.run(java.lang.Integer)
-run
-public java.lang.String com.mylifes1110.java.bean.Person.toString()
-toString
-public void com.mylifes1110.java.bean.Person.jump()
-jump
-public final void java.lang.Object.wait() throws java.lang.InterruptedException
-wait
-public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
-wait
-public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
-wait
-public boolean java.lang.Object.equals(java.lang.Object)
-equals
-public native int java.lang.Object.hashCode()
-hashCode
-public final native java.lang.Class java.lang.Object.getClass()
-getClass
-public final native void java.lang.Object.notify()
-notify
-public final native void java.lang.Object.notifyAll()
-notifyAll
-*/
-}
+            System.out.println(method.getName());
+        }
+        /*
+            public void com.mylifes1110.java.bean.Person.run(java.lang.Integer)
+            run
+            public java.lang.String com.mylifes1110.java.bean.Person.toString()
+            toString
+            public void com.mylifes1110.java.bean.Person.jump()
+            jump
+            public final void java.lang.Object.wait() throws java.lang.InterruptedException
+            wait
+            public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+            wait
+            public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+            wait
+            public boolean java.lang.Object.equals(java.lang.Object)
+            equals
+            public native int java.lang.Object.hashCode()
+            hashCode
+            public final native java.lang.Class java.lang.Object.getClass()
+            getClass
+            public final native void java.lang.Object.notify()
+            notify
+            public final native void java.lang.Object.notifyAll()
+            notifyAll
+         */
+    }
 }
 ```
 
 
 
-#### <span id="head11">4.4 获取类名</span>
+#### 4.4 获取类名
 
 | 返回值 | 方法名称  | 描述                 |
 | ------ | --------- | -------------------- |
@@ -407,20 +406,20 @@ notifyAll
 
 ```java
 public class TestReflectClassName {
-public static void main(String[] args) {
-Person person = new Person();
-Class<? extends Person> personClass = person.getClass();
+    public static void main(String[] args) {
+        Person person = new Person();
+        Class<? extends Person> personClass = person.getClass();
 
-//获取全类名
-String className = personClass.getName();
-System.out.println(className);      //com.mylifes1110.java.bean.Person
-}
+        //获取全类名
+        String className = personClass.getName();
+        System.out.println(className);      //com.mylifes1110.java.bean.Person
+    }
 }
 ```
 
 
 
-#### <span id="head12">4.5 获取接口</span>
+#### 4.5 获取接口
 
 | 返回值     | 方法名称        | 描述                                   |
 | ---------- | --------------- | -------------------------------------- |
@@ -430,24 +429,24 @@ System.out.println(className);      //com.mylifes1110.java.bean.Person
 
 ```java
 public class TestReflectInterface {
-public static void main(String[] args) {
-Person person = new Person();
-Class<? extends Person> personClass = person.getClass();
+    public static void main(String[] args) {
+        Person person = new Person();
+        Class<? extends Person> personClass = person.getClass();
 
-Class<?>[] interfaces = personClass.getInterfaces();
-for (Class<?> anInterface : interfaces) {
-//获取接口
-System.out.println(anInterface);        		//interface com.mylifes1110.java.bean.A
-//判断是否为接口类型
-System.out.println(anInterface.isInterface());  //true
-}
-}
+        Class<?>[] interfaces = personClass.getInterfaces();
+        for (Class<?> anInterface : interfaces) {
+            //获取接口
+            System.out.println(anInterface);        		//interface com.mylifes1110.java.bean.A
+            //判断是否为接口类型
+            System.out.println(anInterface.isInterface());  //true
+        }
+    }
 }
 ```
 
 
 
-#### <span id="head13">4.6 获取包名</span>
+#### 4.6 获取包名
 
 | 返回值           | 方法名称        | 描述                         |
 | ---------------- | --------------- | ---------------------------- |
@@ -458,23 +457,23 @@ System.out.println(anInterface.isInterface());  //true
 package com.mylifes1110.java.bean;
 
 class Person {
-
+    
 }
 
 public class TestReflectPackage {
-public static void main(String[] args) {
-Person person = new Person();
-Class<? extends Person> personClass = person.getClass();
+    public static void main(String[] args) {
+        Person person = new Person();
+        Class<? extends Person> personClass = person.getClass();
 
-Package aPackage = personClass.getPackage();
-System.out.println(aPackage);               //package com.mylifes1110.java.bean
-}
+        Package aPackage = personClass.getPackage();
+        System.out.println(aPackage);               //package com.mylifes1110.java.bean
+    }
 }
 ```
 
 
 
-#### <span id="head14">4.7 获取父类</span>
+#### 4.7 获取父类
 
 | 返回值           | 方法名称        | 描述                                                         |
 | ---------------- | --------------- | ------------------------------------------------------------ |
@@ -482,13 +481,13 @@ System.out.println(aPackage);               //package com.mylifes1110.java.bean
 
 ```java
 public class TestReflectSuperClass {
-public static void main(String[] args) {
-Person person = new Person();
-Class<? extends Person> personClass = person.getClass();
+    public static void main(String[] args) {
+        Person person = new Person();
+        Class<? extends Person> personClass = person.getClass();
 
-Class<?> superclass = personClass.getSuperclass();
-System.out.println(superclass);             //class com.mylifes1110.java.bean.Animal
-}
+        Class<?> superclass = personClass.getSuperclass();
+        System.out.println(superclass);             //class com.mylifes1110.java.bean.Animal
+    }
 }
 
 class Animal {
@@ -496,13 +495,13 @@ class Animal {
 }
 
 class Person extends Animal {
-
+    
 }
 ```
 
 
 
-#### <span id="head15">4.8 判断注解</span>
+#### 4.8 判断注解
 
 | 返回值  | 方法名称                                                     | 描述                                                         |
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -512,19 +511,19 @@ class Person extends Animal {
 
 ```java
 public class TestReflectAnnotation {
-public static void main(String[] args) {
-Person person = new Person();
-Class<? extends Person> personClass = person.getClass();
+    public static void main(String[] args) {
+        Person person = new Person();
+        Class<? extends Person> personClass = person.getClass();
 
 		//判断abc注解是否在Person类上
-boolean flag = personClass.isAnnotationPresent(abc.class);
-System.out.println(flag);           //true
-}
+        boolean flag = personClass.isAnnotationPresent(abc.class);
+        System.out.println(flag);           //true
+    }
 }
 
 @abc
 class Person {
-
+    
 }
 ```
 
@@ -542,32 +541,32 @@ public @interface abc {
 
 
 
-### <span id="head16"> 五、对象和方法的代工厂</span>
+### 五、对象和方法的代工厂
 
-#### <span id="head17">5.1 创建对象的代工厂</span>
+#### 5.1 创建对象的代工厂
 
 > 使用Java反射机制实现通过全类名来创建实例对象
 
 ```java
 /**
-* 创建对象的工厂模式
-*/
+ * 创建对象的工厂模式
+ */
 public class TestFactory {
-public static void main(String[] args) {
-Object o = createObject("com.mylifes1110.java.bean.A");
-System.out.println(o.toString());
-}
+    public static void main(String[] args) {
+        Object o = createObject("com.mylifes1110.java.bean.A");
+        System.out.println(o.toString());
+    }
 
-/*创建对象的工厂*/
-public static Object createObject(String className) {
-try {
-Class c = Class.forName(className);
-return c.newInstance();
-} catch (Exception e) {
-e.printStackTrace();
-}
-return null;
-}
+    /*创建对象的工厂*/
+    public static Object createObject(String className) {
+        try {
+            Class c = Class.forName(className);
+            return c.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
 
 class A {
@@ -577,90 +576,90 @@ class A {
 
 
 
-#### <span id="head18">5.2 创建对象并执行方法的代工厂</span>
+#### 5.2 创建对象并执行方法的代工厂
 
 > 使用Java反射机制来创建对象并封装一个具有普适性的可以获取方法并执行方法的代工厂
 
 ```java
 public class TestInvokeAnything {
-public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
-Object o = createObject("com.mylifes1110.java.bean.Students");
+    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException {
+        Object o = createObject("com.mylifes1110.java.bean.Students");
+        
+        /*创建Students对象并调用exam三参方法*/
+        invokeAnything(o, "exam", new Class[] {int.class, double.class, String.class}, 10, 100, "Ziph");
 
-/*创建Students对象并调用exam三参方法*/
-invokeAnything(o, "exam", new Class[] {int.class, double.class, String.class}, 10, 100, "Ziph");
+        /*创建Students对象并调用study无参方法*/
+        invokeAnything(o, "study", null, null);
+        
+        /*创建Students对象并调用study一参方法*/
+        invokeAnything(o, "study", new Class[] {int.class}, 100);
+    }
 
-/*创建Students对象并调用study无参方法*/
-invokeAnything(o, "study", null, null);
+    /**
+     * 利用反射底层技术执行任何方法的通用编程（可以调用每一个方法）
+     * @param obj 对象
+     * @param methodName 方法名称
+     * @param types 方法的形参列表（注意：数组接收）
+     * @param args 需要传入的实参（注意：可变长参数）
+     */
+    public static void invokeAnything(Object obj, String methodName, Class[] types, Object... args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        /*类对象*/
+        Class c = obj.getClass();
+        /*获取方法的对象Method*/
+        Method method = c.getDeclaredMethod(methodName, types);
+        /*忽略修饰符安全检查*/
+        method.setAccessible(true);
+        /*执行方法*/
+        method.invoke(obj, args);
+    }
 
-/*创建Students对象并调用study一参方法*/
-invokeAnything(o, "study", new Class[] {int.class}, 100);
-}
-
-/**
-* 利用反射底层技术执行任何方法的通用编程（可以调用每一个方法）
-* @param obj 对象
-* @param methodName 方法名称
-* @param types 方法的形参列表（注意：数组接收）
-* @param args 需要传入的实参（注意：可变长参数）
-*/
-public static void invokeAnything(Object obj, String methodName, Class[] types, Object... args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-/*类对象*/
-Class c = obj.getClass();
-/*获取方法的对象Method*/
-Method method = c.getDeclaredMethod(methodName, types);
-/*忽略修饰符安全检查*/
-method.setAccessible(true);
-/*执行方法*/
-method.invoke(obj, args);
-}
-
-/**
-* 创建对象的工厂模式
-* @param className 需要传入的全类名
-* @return
-*/
-public static Object createObject(String className) {
-try {
-Class c = Class.forName(className);
-return c.newInstance();
-} catch (Exception e) {
-e.printStackTrace();
-}
-return null;
-}
+    /**
+     * 创建对象的工厂模式
+     * @param className 需要传入的全类名
+     * @return
+     */
+    public static Object createObject(String className) {
+        try {
+            Class c = Class.forName(className);
+            return c.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
 
 class Students {
-String name;
-Integer age;
-String sex;
-Double score;
+    String name;
+    Integer age;
+    String sex;
+    Double score;
 
-public Students() {
-}
+    public Students() {
+    }
 
-public Students(String name, Integer age, String sex, Double score) {
-this.name = name;
-this.age = age;
-this.sex = sex;
-this.score = score;
-}
+    public Students(String name, Integer age, String sex, Double score) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.score = score;
+    }
 
-public void study() {
-System.out.println("正在学习...");
-}
+    public void study() {
+        System.out.println("正在学习...");
+    }
 
-public int study(int hours) {
-System.out.println("学习了" + hours + "个小时");
-return 0;
-}
+    public int study(int hours) {
+        System.out.println("学习了" + hours + "个小时");
+        return 0;
+    }
 
-public void exam(int hours, double score, String name) {
-System.out.println(name + "做了" + hours + "小时的测验，考了" + score + "分");
-}
+    public void exam(int hours, double score, String name) {
+        System.out.println(name + "做了" + hours + "小时的测验，考了" + score + "分");
+    }
 
-public void calc() {
-System.out.println("Ziph正在计算...");
-}
+    public void calc() {
+        System.out.println("Ziph正在计算...");
+    }
 }
 ```
