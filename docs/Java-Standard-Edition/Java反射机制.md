@@ -128,14 +128,14 @@ System.out.println(clazz2 == clazz3);   //true
 * @return 以静态方法通过全类名获取类对象
 */
 public static Class getClassObject(String className) {
-Class clazz = null;
-try {
-clazz = Class.forName(className);
-} catch (ClassNotFoundException e) {
-e.printStackTrace();
-}
-return clazz;
-}
+	Class clazz = null;
+	try {
+		clazz = Class.forName(className);
+	} catch (ClassNotFoundException e) {
+		e.printStackTrace();
+	}
+		return clazz;
+	}
 }
 ```
 
@@ -179,8 +179,8 @@ protected Double score;
 
 @Override
 public String toString() {
-return "Person{" + "name='" + name + '\'' + ", age=" + age + ", score=" + score + '}';
-}
+	return "Person{" + "name='" + name + '\'' + ", age=" + age + ", score=" + score + '}';
+	}
 }
 
 
@@ -192,7 +192,7 @@ Class<? extends Person> personClass = person.getClass();
 //获取 public 修饰的所有成员变量
 Field[] fields = personClass.getFields();
 for (Field field : fields) {
-System.out.println(field);      //public java.lang.Integer com.mylifes1110.java.bean.Person.age
+	System.out.println(field);      //public java.lang.Integer com.mylifes1110.java.bean.Person.age
 }
 
 //获取 public 修饰的指定名称的成员变量
@@ -208,7 +208,7 @@ System.out.println(person);         //Person{name='null', age=18, score=null}
 //获取所有成员变量，不被修饰符限制
 Field[] declaredFields = personClass.getDeclaredFields();
 for (Field declaredField : declaredFields) {
-System.out.println(declaredField);
+	System.out.println(declaredField);
 }
 		/*
 private java.lang.String com.mylifes1110.java.bean.Person.name
