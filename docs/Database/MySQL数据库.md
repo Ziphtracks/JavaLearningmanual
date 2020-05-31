@@ -256,7 +256,7 @@
 >   - 创建MYSQL_HOME：C:\Program Files\MySQL\MySQL Server 5.7
 >   - 追加Path：%MYSQL_HOME%\bin;
 
-👉[教程地址：安装、配置环境变量以及彻底卸载MySQL服务详细教程图解](https://blog.csdn.net/weixin_44170221/article/details/105099931 )
+
 
 #### 4.4 MySQL的目录结构
 
