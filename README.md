@@ -44,8 +44,8 @@
 
 ## 🛢数据库
 
+- MySQL5.7解压版安装教程
 - [MySQL数据库基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md)
-
 - 待添加MySQL索引......
 
 ## 🎨前端开发
