@@ -69,7 +69,7 @@
 - [Servlet状态管理（Cookie、Session、ServletContext、Request）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Servlet状态管理.md)
 - [Filter过滤器](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Filter过滤器.md)
 - [Listener监听器](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Listener监听器.md)
-- [JSP（EL表达式、JSTL标签库）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSP.md)
+- [JSP（EL表达式、JSTL标签库、分页）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSP.md)
 - 文章虽在，需要时间添加......
 
 ## 📐设计模式
