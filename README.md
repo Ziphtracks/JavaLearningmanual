@@ -53,6 +53,7 @@
 
 - [HTML和CSS基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/HTML和CSS基础.md)
 - [正则表达式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/正则表达式.md)
+- [JavaScript基础之ECMAScript](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript基础之ECMAScript.md)
 - 待添加JavaScript......
 
 ## 💾服务器
