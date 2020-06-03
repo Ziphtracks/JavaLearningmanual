@@ -59,6 +59,7 @@
 - [jQuery（包含jQuery Ajax）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/jQuery.md)
 - [Bootstrap](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Bootstrap.md)
 - [BootstrapValidator校验](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/BootstrapValidator校验.md)
+- [Echarts统计图表](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Echarts.md)
 - 待添加......
 
 ## 💾服务器
