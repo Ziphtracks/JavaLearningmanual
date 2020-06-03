@@ -177,10 +177,10 @@
 >   - Development version - 用于测试和开发（未压缩，是可读的代码）
 >
 > - 从 CDN 中载入 jQuery，如从 Google 中加载 jQuery
->   - 百度 CDN - https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js
->   - 新浪 CDN - http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js
->   - Google CDN - http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
->   - Microsoft CDN - http://ajax.htmlnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js
+>   - 百度 CDN - `https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js`
+>   - 新浪 CDN - `http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js`
+>   - Google CDN - `http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js`
+>   - Microsoft CDN - `http://ajax.htmlnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js`
 
 
 
