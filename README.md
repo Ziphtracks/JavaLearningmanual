@@ -78,6 +78,7 @@
 - [JSP（EL表达式、JSTL标签库、分页）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSP.md)
 - [文件上传和文件下载](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/文件上传和文件下载.md)
 - [JSON](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSON.md)
+- [原生Ajax异步请求](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Ajax.md)
 - 文章虽在，需要时间添加......
 
 ## 📐设计模式
