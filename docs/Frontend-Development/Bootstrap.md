@@ -45,7 +45,7 @@
 
 **地址：** https://github.com/nghuuphuoc/bootstrapvalidator/archive/v0.4.5.zip
 
-**Bootstrap Validator详细使用教程请参考：** [Bootstrap Validator超详细详细使用说明书](https://blog.csdn.net/weixin_44170221/article/details/106390543)
+**Bootstrap Validator校验参考：**  [Bootstrap Validator校验步骤讲解](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/BootstrapValidator校验.md)
 
 
 
@@ -232,11 +232,12 @@ public class DemoServlet extends HttpServlet {
 
 
 
+
+
 ### 八、关于Bootstrap Validator的使用
 
 > 关于Bootstrap Validator我这里说一下，并分享他的官网，可以自行查找使用。如果感觉不太友好的话，也可以使用Validate！
 
 **官网地址：** https://formvalidation.io/
 
-**Bootstrap Validator详细使用教程请参考：** [Bootstrap Validator超详细详细使用说明书](https://blog.csdn.net/weixin_44170221/article/details/106390543)
-
+**Bootstrap Validator校验参考：**  [Bootstrap Validator校验步骤讲解](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/BootstrapValidator校验.md)
