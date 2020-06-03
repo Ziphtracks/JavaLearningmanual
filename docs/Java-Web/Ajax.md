@@ -1,4 +1,4 @@
-* [原生Ajax异步请求](#ajax)
+* [原生Ajax异步请求](#%E5%8E%9F%E7%94%9Fajax%E5%BC%82%E6%AD%A5%E8%AF%B7%E6%B1%82)
     * [一、了解Ajax](#%E4%B8%80%E4%BA%86%E8%A7%A3ajax)
       * [1\.1 什么是Ajax？](#11-%E4%BB%80%E4%B9%88%E6%98%AFajax)
     * [二、Ajax的工作原理](#%E4%BA%8Cajax%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86)
