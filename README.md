@@ -57,6 +57,8 @@
 - [JavaScript基础之ECMAScript](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript基础之ECMAScript.md)
 - [JavaScript之BOM和DOM操作](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript之BOM和DOM操作.md)
 - [jQuery（包含jQuery Ajax）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/jQuery.md)
+- [Bootstrap](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Bootstrap.md)
+- [BootstrapValidator校验](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/BootstrapValidator校验.md)
 - 待添加......
 
 ## 💾服务器
