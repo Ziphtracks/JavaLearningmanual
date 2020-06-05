@@ -49,7 +49,9 @@
 
 ![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530121427.png)
 
-5. 设置部署tomact项目中编码（注意：这里需要没建一个项目设置一次！）。选择项目部署的tomcat，在配置项`VM options`文本框中输入`-Dfile.encoding=UTF-8`
+5. 设置部署tomact项目中编码（注意：这里需要每建一个项目设置一次！）。选择项目部署的tomcat，在配置项`VM options`文本框中输入`-Dfile.encoding=UTF-8`
+
+![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200605113536.png)
 
 
 
