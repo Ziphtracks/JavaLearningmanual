@@ -448,10 +448,9 @@ public class TestReflectInterface {
 
 #### 4.6 获取包名
 
-| 返回值           | 方法名称        | 描述                         |
-| ---------------- | --------------- | ---------------------------- |
-| Package          | getPackage()    | 获取类所在包名（不含类本身） |
-| Class<? super T> | getSuperclass() |                              |
+| 返回值  | 方法名称     | 描述                         |
+| ------- | ------------ | ---------------------------- |
+| Package | getPackage() | 获取类所在包名（不含类本身） |
 
 ```java
 package com.mylifes1110.java.bean;
