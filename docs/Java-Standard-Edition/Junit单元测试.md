@@ -222,7 +222,7 @@ assertEquals(double expected, double actual, double delta);
 
 
 
-**目的： ** 完成自定义注解@MyTest，并实现标有注解的方法并启动它。（模拟@Test注解做单元测试）
+**目的：** 完成自定义注解@MyTest，并实现标有注解的方法并启动它。（模拟@Test注解做单元测试）
 
 **步骤：** 
 
