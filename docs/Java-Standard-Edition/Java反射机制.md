@@ -33,26 +33,26 @@
 >
 > 这里先想想我们的创建对象过程，创建对象过程需要写一个对象实体类，之后去new这个对象实体类，最后编译、运行文件。而这些过程，我们可以定义为三个重要的阶段。
 >
-> 此三阶段为 `编译期 -> 类加载 -> Runtime运行时`
+> 此三阶段为 `源码阶段 -> class类加载阶段 -> Runtime运行时阶段`
 
 > 这三个阶段是如何变化的呢？很简单。
 >
 > - 首先，我们去写一个Person类，也就是创建一个Person.java文件。其次再去写一个Test测试类，去new一个Person对象。
 >
-> - 我们知道，.java文件是需要有一个编译、运行的过程的。所以，我们使用javac命令去对它进行编译操作，这就使得.java文件编译出一个.class字节码文件并存入硬盘中。而这个时期叫做编译期。
+> - 我们知道，.java文件是需要有一个编译、运行的过程的。所以，我们使用javac命令去对它进行编译操作，这就使得.java文件编译出一个.class字节码文件并存入硬盘中。而这个时期叫做源码阶段。
 >
 > - 编译期过后，我们编译好的.class文件会通过类加载器（ClassLoader）加载到内存中。所以在内存中会描述这个字节码文件为Class类对象。而我们的.class文件中存储的成员变量、构造方法和成员方法等，它们分别有着不同的作用，比如成员变量可以去设置和获取值、构造方法可以去用它创建对象、成员方法可以去运行执行它。而它们会分别装在Filed[]、Constructor[]和Method[]中，那么为什么它们以数组形式存储的呢？那是因为.class文件中写入内存的成员变量、构造方法和成员方法有很多个，所以在内存中的存储方式是数组。
 >
 > - 类加载过后，就可以通过类对象的这些行为去创建真正的Person对象了。
 >
-> 这就是一个完整的创建对象的过程。至于上述多此强调`任意一个`是因为Java反射机制可以在程序的运行过程中（Runtime运行时期）操作这些对象，比如：操作FIled、Constructor和Method等对象。此时，反射机制的好处还不只这一个，它还有解耦的好处，可以大大降低程序的紧密程度和耦合性来提高程序的可扩展性。
+> 这就是一个完整的创建对象的过程。至于上述多此强调`任意一个`是因为Java反射机制可以在程序的运行过程中（Runtime运行时阶段）操作这些对象，比如：操作FIled、Constructor和Method等对象。此时，反射机制的好处还不只这一个，它还有解耦的好处，可以大大降低程序的紧密程度和耦合性来提高程序的可扩展性。
 
-|                                                              |                            编译期                            |                                                              |
+|                                                              |                           源码阶段                           |                                                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![image-20200530200512660](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530201717.png) | ![image-20200530200620787](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531133820.png) | ![image-20200530195610793](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530201728.png) |
-|                                                              |                   **ClassLoader类加载器**                    |                                                              |
+|                                                              |                     **class类加载阶段**                      |                                                              |
 | ![image-20200530195610793](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530201740.png) | ![image-20200530200727497](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531133823.png) | ![image-20200530203126841](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530203129.png) |
-|                                                              |                      **Runtime运行时**                       |                                                              |
+|                                                              |                    **Runtime运行时阶段**                     |                                                              |
 | ![image-20200530203126841](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530203141.png) | ![image-20200530201237748](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531133827.png) | ![image-20200530201620960](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530201747.png) |
 
 
