@@ -6,6 +6,7 @@
       * [3\.2 @Override注解](#32-override%E6%B3%A8%E8%A7%A3)
       * [3\.3 @Deprecated注解](#33-deprecated%E6%B3%A8%E8%A7%A3)
       * [3\.4 @SuppressWarnings注解](#34-suppresswarnings%E6%B3%A8%E8%A7%A3)
+      * [3\.5 @Repeatable注解](#35-repeatable%E6%B3%A8%E8%A7%A3)
     * [四、注解分类](#%E5%9B%9B%E6%B3%A8%E8%A7%A3%E5%88%86%E7%B1%BB)
       * [4\.1 注解分类](#41-%E6%B3%A8%E8%A7%A3%E5%88%86%E7%B1%BB)
       * [4\.2 标记注解](#42-%E6%A0%87%E8%AE%B0%E6%B3%A8%E8%A7%A3)
@@ -24,10 +25,10 @@
       * [6\.5 @Inherited](#65-inherited)
     * [七、使用反射机制解析注解](#%E4%B8%83%E4%BD%BF%E7%94%A8%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E8%A7%A3%E6%9E%90%E6%B3%A8%E8%A7%A3)
     * [八、自定义注解改变JDBC工具类](#%E5%85%AB%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3%E6%94%B9%E5%8F%98jdbc%E5%B7%A5%E5%85%B7%E7%B1%BB)
-      * [自定义注解](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3)
-      * [数据库连接工具类](#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7%E7%B1%BB)
-      * [测试类](#%E6%B5%8B%E8%AF%95%E7%B1%BB)
-      * [测试结果](#%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C)
+          * [自定义注解](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3)
+          * [数据库连接工具类](#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E5%B7%A5%E5%85%B7%E7%B1%BB)
+          * [测试类](#%E6%B5%8B%E8%AF%95%E7%B1%BB)
+          * [测试结果](#%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C)
     * [九、自定义@MyTest注解实现单元测试](#%E4%B9%9D%E8%87%AA%E5%AE%9A%E4%B9%89mytest%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
 
 # Java注解
@@ -146,6 +147,75 @@ OK！这也就是@Deprecated注解的作用了。
 然后，我们还见到上图，注解那一行出现了警告信息提示。这一行的意思是冗余的警告压制。这就是说我们压制以下的警告并没有什么意义而造成的冗余，但是如果我们使用了该类并做了点什么的话，压制注解的冗余警告就会消失，毕竟我们使用了该类，此时就不会早场冗余了。
 
 上述解释@SuppressWarnings注解也差不多就这些了。OK，继续向下看吧。持续为大家讲解。
+
+
+
+#### 3.5 @Repeatable注解
+
+> **@Repeatable** 表明标记的注解可以多次应用于相同的声明或类型，此注解由Java8版本引入。我们知道注解是不能重复定义的，其实该注解就是一个语法糖，它可以重复多此使用，更适用于我们的特殊场景。
+
+首先，我们先创建一个可以重复使用的注解。
+
+```java
+package com.mylifes1110.anno;
+
+import java.lang.annotation.Repeatable;
+
+@Repeatable(Hour.class)
+public @interface Hours {
+    double[] hours() default 0;
+}
+```
+
+你会发现注解要求传入的值是一个类对象，此类对象就需要传入另外一个注解，这里也就是另外一个注解容器的类对象。我们去创建一下。
+
+```java
+package com.mylifes1110.anno;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+//容器
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Hour {
+    Hours[] value();
+}
+```
+
+其实，这两个注解的套用，就是将一个普通的注解封装了一个可重复使用的注解，来达到注解的复用性。最后，我们创建一下测试类，随后带你去看一下源码。
+
+```java
+package com.mylifes1110.java;
+
+import com.mylifes1110.anno.Hours;
+
+@Hours(hours = 4)
+@Hours(hours = 4.5)
+@Hours(hours = 2)
+public class Worker {
+    public static void main(String[] args) {
+        //通过Hours注解类型来获取Worker中的值数组对象
+        Hours[] hours = Worker.class.getAnnotationsByType(Hours.class);
+        //遍历数组
+        for (Hours h : hours) {
+            System.out.println(h);
+        }
+    }
+}
+```
+
+测试类，是一个工人测试类，该工人使用注解记录早中晚的工作时间。测试结果如下：
+
+![image-20200606183652359](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200606184056.png)
+
+然后我们进入到源码一探究竟。
+
+![image-20200606183737877](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200606184053.png)
+
+我们发现进入到源码后，就只看见一个返回值为类对象的抽象方法。这也就验证了该注解只是一个可实现重复性注解的语法糖而已。
 
 
 
