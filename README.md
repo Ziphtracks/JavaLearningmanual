@@ -108,7 +108,6 @@
 - **开源中国：** [https://my.oschina.net/u/4548648](https://my.oschina.net/u/4548648)
 
 - **ProcessOn：** [https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile](https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile)
-- **思否：** [https://segmentfault.com/u/ziph](https://segmentfault.com/u/ziph)
 
 ## 🙏贡献者
 
