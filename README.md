@@ -84,10 +84,26 @@
 - [文件上传和文件下载](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/文件上传和文件下载.md)
 - [JSON](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSON.md)
 - [原生Ajax异步请求](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Ajax.md)
-- 文章虽在，需要时间添加......
+
+- 框架知识待添加......
 
 ## 📐设计模式
 
 - [00-设计模式基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/00.设计模式基础.md)
 - [01-单例设计模式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.单例设计模式.md)
 - 待添加第二设计模式......
+
+## 👣我的足迹
+
+> 以下足迹创建时间先后不一，所以文章也不太一致，最早的是CSDN。希望大家能多多关照！
+
+- **GitHub：** [https://github.com/Ziphtracks/JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)
+- **CSDN：** [https://blog.csdn.net/weixin_44170221](https://blog.csdn.net/weixin_44170221)
+- **掘金：** [https://juejin.im/user/5e89c749f265da47f256085e](https://juejin.im/user/5e89c749f265da47f256085e)
+- **知乎：** [https://www.zhihu.com/people/ziph](https://www.zhihu.com/people/ziph)
+- **博客园：** [https://www.cnblogs.com/ziph/](https://www.cnblogs.com/ziph/)
+- **简书：** 
+- **开源中国：** [https://my.oschina.net/u/4548648](https://my.oschina.net/u/4548648)
+
+- **ProcessOn：** [https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile](https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile)
+- **思否：** [https://segmentfault.com/u/ziph](https://segmentfault.com/u/ziph)
