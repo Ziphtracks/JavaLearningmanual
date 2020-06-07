@@ -95,7 +95,9 @@
 
 ## 👣我的足迹
 
-> 以下足迹创建时间先后不一，所以文章也不太一致，最早的是CSDN。希望大家能多多关照！
+> 以下足迹创建时间先后不一，所以文章也不太一致，最早的是**CSDN** ，大家可以去逛逛！
+>
+> 我会持续输出的，希望大家能多多关照，能够进去给我一个三连！
 
 - **GitHub：** [https://github.com/Ziphtracks/JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)
 - **CSDN：** [https://blog.csdn.net/weixin_44170221](https://blog.csdn.net/weixin_44170221)
@@ -107,3 +109,8 @@
 
 - **ProcessOn：** [https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile](https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile)
 - **思否：** [https://segmentfault.com/u/ziph](https://segmentfault.com/u/ziph)
+
+## 🙏贡献者
+
+> 如果[JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！
+
