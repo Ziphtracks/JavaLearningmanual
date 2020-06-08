@@ -66,6 +66,7 @@
 ## 💾服务器
 
 - [tomact服务器基础和开发步骤](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Server/tomact%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E5%92%8C%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4.md)
+
 - [解决tomact客户端与IDEA的一系列乱码问题](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Server/解决tomact客户端与IDEA的一系列乱码问题.md)
 
 ## 📡计算机网络
@@ -104,7 +105,6 @@
 - **掘金：** [https://juejin.im/user/5e89c749f265da47f256085e](https://juejin.im/user/5e89c749f265da47f256085e)
 - **知乎：** [https://www.zhihu.com/people/ziph](https://www.zhihu.com/people/ziph)
 - **博客园：** [https://www.cnblogs.com/ziph/](https://www.cnblogs.com/ziph/)
-- **简书：** 
 - **开源中国：** [https://my.oschina.net/u/4548648](https://my.oschina.net/u/4548648)
 
 - **ProcessOn：** [https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile](https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile)
