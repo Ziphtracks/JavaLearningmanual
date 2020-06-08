@@ -105,8 +105,6 @@
 - **掘金：** [https://juejin.im/user/5e89c749f265da47f256085e](https://juejin.im/user/5e89c749f265da47f256085e)
 - **知乎：** [https://www.zhihu.com/people/ziph](https://www.zhihu.com/people/ziph)
 - **博客园：** [https://www.cnblogs.com/ziph/](https://www.cnblogs.com/ziph/)
-- **开源中国：** [https://my.oschina.net/u/4548648](https://my.oschina.net/u/4548648)
-
 - **ProcessOn：** [https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile](https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile)
 
 ## 🙏贡献者
