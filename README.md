@@ -43,7 +43,7 @@
 - [Java反射机制](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java反射机制.md)
 - [Javadoc文档生成](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Javadoc文档生成.md)
 - [Java注解](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java注解.md)
-- 待添加枚举类......
+- [Java枚举](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java枚举.md)
 
 ## 🛢数据库
 
