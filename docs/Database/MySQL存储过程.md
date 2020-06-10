@@ -112,9 +112,7 @@
 
 > 英语好或者有能力的小伙伴可以去参考一下官方文档。如果不参考官方文档，没关系，我在下面也会详细讲述MySQL存储过程的各个知识点。
 
-```java
-https://dev.mysql.com/doc/refman/5.6/en/preface.html
-```
+**官方文档：** [https://dev.mysql.com/doc/refman/5.6/en/preface.html](https://dev.mysql.com/doc/refman/5.6/en/preface.html)
 
 
 
