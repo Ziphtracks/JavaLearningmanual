@@ -47,14 +47,15 @@
 
 ## 🛢数据库
 
-- [MySQL5.7解压版安装教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL5.7解压版安装教程.md)
-- [MySQL数据库基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md)
-- [MySQL存储过程编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL存储过程.md)
-- MySQL索引
-- MySQL触发器
-- 数据库的三大范式
-- 分布式索引
-- MySQL基础架构
+- MySQL数据库
+  - [MySQL5.7解压版安装教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL5.7解压版安装教程.md)
+  - [MySQL数据库基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md)
+  - [MySQL存储过程编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL存储过程.md)
+  - MySQL索引
+  - MySQL触发器（预计六月11日添加）
+  - 数据库的三大范式（预计六月11日添加）
+  - 分布式索引
+  - MySQL基础架构
 - 待添加......
 
 ## 🎨前端开发
