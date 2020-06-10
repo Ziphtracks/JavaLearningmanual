@@ -1084,7 +1084,7 @@ create temporary table 表名(
 )Engine=InnoDB default charset utf8;
 
 -- 需求：按照部门名称查询员工，通过select查看员工的编号、姓名、薪资。（注意，此处仅仅演示游标用法）
-delimiter $$
+delimiter //
 create procedure sp_create_table02(in dept_name varchar(32))
 begin
 	declare emp_no int;
@@ -1127,7 +1127,7 @@ begin
 	select @sex_res; -- 仅仅是看一下会不会执行到
 	close emp_cursor;
 	
-end$$
+end//
 
 call sp_create_table02('RESEARCH');
 ```
