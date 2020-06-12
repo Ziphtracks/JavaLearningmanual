@@ -47,7 +47,7 @@
 
 ## 🛢数据库
 
-- MySQL数据库
+- MySQL相关
   - [MySQL5.7解压版安装教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL5.7解压版安装教程.md)
   - [MySQL数据库基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md)
   - [MySQL存储过程编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL存储过程.md)
