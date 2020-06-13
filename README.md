@@ -52,7 +52,7 @@
   - [MySQL数据库基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md)
   - [MySQL存储过程编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL存储过程.md)
   - [MySQL触发器](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL触发器.md)
-  - 数据库的三大范式（预计六月12日下午添加）
+  - [数据库三大范式剖析](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/数据库范式.md)
   - MySQL索引
   - 分布式索引
   - MySQL基础架构
