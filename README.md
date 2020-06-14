@@ -1,7 +1,7 @@
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
 <p align="center">
   <a href="">
-		<img src="https://img.shields.io/badge/WeChat-apeng0418-right.svg" alt="License">
+		<img src="https://img.shields.io/badge/微信公众号-码出Offer-right.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/materials">
 		<img src="https://img.shields.io/badge/文档资料-downloads-green.svg" alt="License">
@@ -13,7 +13,10 @@
 		<img src="https://img.shields.io/badge/@Ziph-CSDN-red.svg" alt="License">
 	</a>
 </p>
+
 <br />
+
+
 
 <br />
 
@@ -109,6 +112,7 @@
 >
 > 我会持续输出的，希望大家能多多关照，能够进去给我一个三连！
 
+- **微信公众号：** 码出Offer
 - **GitHub：** [https://github.com/Ziphtracks/JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)
 - **CSDN：** [https://blog.csdn.net/weixin_44170221](https://blog.csdn.net/weixin_44170221)
 - **掘金：** [https://juejin.im/user/5e89c749f265da47f256085e](https://juejin.im/user/5e89c749f265da47f256085e)
@@ -120,3 +124,8 @@
 
 > 如果[JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！
 
+## 📩微信公众号
+
+> 关于阅读的所有PDF系列文章以及其他福利资料，请扫码关注微信公众号：**码出Offer** 
+
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号二维码"></p>
