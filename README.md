@@ -1,6 +1,6 @@
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
 <p align="center">
-  <a href="">
+  <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
 		<img src="https://img.shields.io/badge/微信公众号-码出Offer-right.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/materials">
@@ -15,8 +15,6 @@
 </p>
 
 <br />
-
-
 
 <br />
 
@@ -112,7 +110,7 @@
 >
 > 我会持续输出的，希望大家能多多关照，能够进去给我一个三连！
 
-- **微信公众号：** 码出Offer
+- **微信公众号：** [码出Offer](https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7)
 - **GitHub：** [https://github.com/Ziphtracks/JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)
 - **CSDN：** [https://blog.csdn.net/weixin_44170221](https://blog.csdn.net/weixin_44170221)
 - **掘金：** [https://juejin.im/user/5e89c749f265da47f256085e](https://juejin.im/user/5e89c749f265da47f256085e)
@@ -124,8 +122,19 @@
 
 > 如果[JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！
 
+暂无
+
 ## 📩微信公众号
 
-> 关于阅读的所有PDF系列文章以及其他福利资料，请扫码关注微信公众号：**码出Offer** 
+> 关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：**码出Offer** 
 
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号二维码"></p>
+
+## ⚡充电打赏
+
+> 如果大家觉得文章还觉得不错，对你有所帮助的话。可以请Z哥喝一杯速溶咖啡哦！礼轻情意重嘛对不对！你的充电打赏，将是我创作的一大动力！Thank You！
+>
+> **郑重声明：** Z哥，不接受没有收入来源的任何充电打赏，比如：还正在花着父母辛苦钱的学生，一旦打赏请速与我联系！
+
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614172548.jpg" alt="微信打赏二维码"></p>
+
