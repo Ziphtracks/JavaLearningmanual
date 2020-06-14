@@ -128,7 +128,7 @@
 
 > 关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：**码出Offer** 
 
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号二维码"></p>
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614174254.jpg" alt="微信公众号二维码"></p>
 
 ## ⚡充电打赏
 
@@ -136,5 +136,5 @@
 >
 > **郑重声明：** Z哥，不接受没有收入来源的任何充电打赏，比如：还正在花着父母辛苦钱的学生，一旦打赏请速与我联系！
 
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614172548.jpg" alt="微信打赏二维码"></p>
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614174007.jpg" alt="微信赞赏码"></p>
 
