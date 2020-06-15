@@ -4,13 +4,13 @@
 		<img src="https://img.shields.io/badge/微信公众号-码出Offer-right.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/materials">
-		<img src="https://img.shields.io/badge/文档资料-downloads-green.svg" alt="License">
+		<img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20package%20library">
-		<img src="https://img.shields.io/badge/jar包库-downloads-blue.svg" alt="License">
+		<img src="https://img.shields.io/badge/jar包库-下载-blue.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
-		<img src="https://img.shields.io/badge/@Ziph-CSDN-red.svg" alt="License">
+		<img src="https://img.shields.io/badge/CSDN-关注-red.svg" alt="License">
 	</a>
 </p>
 
@@ -50,7 +50,7 @@
 
 ## 🛢数据库
 
-- MySQL相关
+- **MySQL数据库** 
   - [MySQL5.7解压版安装教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL5.7解压版安装教程.md)
   - [MySQL数据库基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md)
   - [MySQL存储过程编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL存储过程.md)
@@ -124,7 +124,18 @@
 
 暂无
 
+## 🎁读者福利
 
+- **自制电子书：** 链接: [https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA](https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA) 提取码: sdby
+- **学习辅助资料：** 链接: [https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA](https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA) 提取码: chft
+- **PDF版书籍：** 链接: [https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA](https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA) 提取码: 3845
+- **其他资料：** 
+  - **丁奇MySQL实战45讲：** 链接: https://pan.baidu.com/s/1BQ4Eyv_hN5Jp6gVlrafqkA 提取码: s1ax
+  - **数据结构与算法之美：** 链接: [https://pan.baidu.com/s/1Z0KW2v03s3x4zBwL6N_ZYA](https://pan.baidu.com/s/1Z0KW2v03s3x4zBwL6N_ZYA) 提取码: pfsp
+  - **Java核心技术36讲：** 链接: [https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A](https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A) 提取码: x2ir
+  - **趣谈网络协议：** 链接: [https://pan.baidu.com/s/1bqKsGlLvhKfo8VSlbflNxw](https://pan.baidu.com/s/1bqKsGlLvhKfo8VSlbflNxw) 提取码: n5uj
+  - **马士兵-设计模式：** 链接: [https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g](https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g) 提取码: rr3d
+- 持续向网盘内添加更新福利资源（Star和微信公众号关注一波好吗？兄弟姐妹们~）......
 
 ## 📩微信公众号
 
