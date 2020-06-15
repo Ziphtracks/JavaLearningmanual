@@ -128,7 +128,7 @@
 - **自制电子书：** 链接: [https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA](https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA) 提取码: sdby
 - **学习辅助资料：** 链接: [https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA](https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA) 提取码: chft
 - **PDF版书籍：** 链接: [https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA](https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA) 提取码: 3845
-- **其他资料：** 
+- **优质资料：** 
   - **丁奇MySQL实战45讲：** 链接: https://pan.baidu.com/s/1BQ4Eyv_hN5Jp6gVlrafqkA 提取码: s1ax
   - **数据结构与算法之美：** 链接: [https://pan.baidu.com/s/1Z0KW2v03s3x4zBwL6N_ZYA](https://pan.baidu.com/s/1Z0KW2v03s3x4zBwL6N_ZYA) 提取码: pfsp
   - **Java核心技术36讲：** 链接: [https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A](https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A) 提取码: x2ir
