@@ -27,3 +27,22 @@
 ![image-20200616112800157](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200616112802.png)
 
 **jar包说明** 
+
+| 名称            | 描述                                                         |
+| --------------- | ------------------------------------------------------------ |
+| aliyun-java-SMS | 用于阿里云短信服务，除了导入阿里云的两个jar包外，还需要导入gosn的jar包联用 |
+| beanutils       | 用于后台封装JavaBean的Setter数据，其中beanutils是核心jar包，其他为辅助包，需要联用。使用时需要注意数据库与后端代码字段的一致 |
+| c3p0            | c3p0连接池，分为两个jar包，一般需要与dbutils和mysql驱动包联用 |
+| dbutils         | 封装好的JDBC的工具类库                                       |
+| druid           | druid连接池，一般需要与dbutils和mysql驱动包联用              |
+| fastjson        | 是一个可以实现Java 对象和JSON 格式互转的Java类库             |
+| fileupload      | 用于后端的文章上传操作，jar包分为两个，其中io包是必不可少的IO读写类库 |
+| gson            | Google公司提供，是一个可以实现Java 对象和JSON 格式互转的Java类库 |
+| jackson         | apache公司提供，是一个Java对象与json对象和xml文档互转的Java类库，被称为“最好的JavaJson解析类库” |
+| jstl            | JSTL标签库常用于JSP开发                                      |
+| junit           | Junit单元测试分为4和5两个版本，其中的jar包分为两个，需要联用 |
+| lombok          | 常用于IDEA插件lombok，其jar包内提供了Getter/Setter、有参/无参构造器、toString等等注解，由此使用注解就可以省略了大量编写，提高了开发效率 |
+| mysql           | JDBC数据库连接操作，所需要的mysql驱动包                      |
+| net             | Java编程思想一书中所引入的jar包                              |
+| jetbrains-agent | IntelliJ IDEA集成开发工具的破解包                            |
+
