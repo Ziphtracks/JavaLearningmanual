@@ -10,6 +10,8 @@
 
 **下载地址：** [https://mvnrepository.com/](https://mvnrepository.com/)
 
+
+
 **MVN PEPOSITORY下载jar文件使用说明：** 
 
 > 输入所需jar包名称到搜索框中，然后点击搜索按钮即可显示结果！
@@ -26,7 +28,40 @@
 
 ![image-20200616112800157](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200616112802.png)
 
+
+
+------
+
+
+
 **MVN PEPOSITORY查找Maven依赖使用说明：** 
+
+> 根据查找jar文件的方式，查找依赖坐标，查找后复制依赖坐标信息
+
+![image-20200617003002005](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200617003149.png)
+
+> 在项目的`pom.xml`文件中添加依赖
+>
+> - 首先添加\<dependencies>标签
+> - 最后添加复制好的依赖坐标
+>
+> **注意：** 导入依赖可以导入多个所需jar文件的依赖，依次在\<dependencies>标签内添加依赖坐标即可
+
+![image-20200617003853705](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200617003856.png)
+
+> 导入依赖后，你会发现`pom.xml`文件中的依赖坐标是红色报错的，而在IDEA的右下角有那么一个框。这时候需要点击框内提示信息在maven仓库中同步下载依赖到项目中
+
+![image-20200617004515463](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200617004827.png)
+
+> 导入并同步下载好的依赖，可以通过项目和IDEA中Maven控制面板查看
+
+![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200617005658.png)
+
+> 其他Maven操作，请参考[Maven教程]()
+
+
+
+------
 
 
 
