@@ -10,7 +10,7 @@
 
 **下载地址：** [MVN PEPOSITORY](https://mvnrepository.com/?__cf_chl_jschl_tk__=40858ed4a4edc4675d7cd3846706bd7c3349705f-1588992855-0-AU4GGv2A0WKuVaqwgvdScwDFOI3sh43FauPEECdkaP_h4w1sxHIRnmtmx387ADKgiEiBN-BEsBYbgDKD_5F64Sjg9pSyHGqTZMsJM49ZcXDb5JurSvfFb2uLXPWMQFOptziw5TBWmF1Qytw-2lAGJPGxrbUh9923MJDMBD94xhSljOF_mnScgf-DTYZ1fkfio8RGibc3DlcLOz5bfGxLg5JPxGqFsPYVyzUl18jWDHzAH3K2mnFKQxvUTz6026JpbxSbmmvoMdWblZvNNaRksUrR9uVwlv1p_8WX-4glep1cSWxehpnzV6I6r0OTmxGRVXqiqSKTWv2JksnuzJfVbtQ)
 
-**MVN PEPOSITORY使用说明：** 
+**MVN PEPOSITORY下载jar文件使用说明：** 
 
 > 输入所需jar包名称到搜索框中，然后点击搜索按钮即可显示结果！
 
@@ -25,6 +25,10 @@
 > 点击jar即可，后面的跟随的（2.6 MB）即是jar包的大小！下载后会弹出下载框，很快就能下载好！
 
 ![image-20200616112800157](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200616112802.png)
+
+**MVN PEPOSITORY查找Maven依赖使用说明：** 
+
+
 
 **jar包说明** 
 
