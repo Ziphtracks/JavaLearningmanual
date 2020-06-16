@@ -8,7 +8,7 @@
 
 **注意：** 如果你需要新版本或者其他版本jar包，请在下载网址中搜索jar包名称并下载，网址的使用说明放在了下方供大家参考。
 
-**下载地址：** [MVN PEPOSITORY](https://mvnrepository.com/?__cf_chl_jschl_tk__=40858ed4a4edc4675d7cd3846706bd7c3349705f-1588992855-0-AU4GGv2A0WKuVaqwgvdScwDFOI3sh43FauPEECdkaP_h4w1sxHIRnmtmx387ADKgiEiBN-BEsBYbgDKD_5F64Sjg9pSyHGqTZMsJM49ZcXDb5JurSvfFb2uLXPWMQFOptziw5TBWmF1Qytw-2lAGJPGxrbUh9923MJDMBD94xhSljOF_mnScgf-DTYZ1fkfio8RGibc3DlcLOz5bfGxLg5JPxGqFsPYVyzUl18jWDHzAH3K2mnFKQxvUTz6026JpbxSbmmvoMdWblZvNNaRksUrR9uVwlv1p_8WX-4glep1cSWxehpnzV6I6r0OTmxGRVXqiqSKTWv2JksnuzJfVbtQ)
+**下载地址：** [https://mvnrepository.com/](https://mvnrepository.com/)
 
 **MVN PEPOSITORY下载jar文件使用说明：** 
 
