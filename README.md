@@ -101,7 +101,7 @@
 >
 > 如果有需要下载jar包，点击Logo图标下的`jar包库下载`即可进入，也可以点击 [jar包库入口](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories) 进入！
 >
-> **声明：** 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，但是毕竟都有一个学习阶段，在没有使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧！
+> **声明：** 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！
 
 ## 🛠工具
 
