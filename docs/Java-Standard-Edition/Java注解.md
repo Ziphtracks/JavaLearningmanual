@@ -192,8 +192,8 @@ package com.mylifes1110.java;
 
 import com.mylifes1110.anno.Hours;
 
-@Hours(hours = 4)
-@Hours(hours = 4.5)
+@Hours(hours = 5)
+@Hours(hours = 6)
 @Hours(hours = 2)
 public class Worker {
     public static void main(String[] args) {
