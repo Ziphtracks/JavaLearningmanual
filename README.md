@@ -6,7 +6,7 @@
   <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E8%AF%BB%E8%80%85%E7%A6%8F%E5%88%A9">
 		<img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
 	</a>
-  <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20package%20library">
+  <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories">
 		<img src="https://img.shields.io/badge/jar包库-下载-blue.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
