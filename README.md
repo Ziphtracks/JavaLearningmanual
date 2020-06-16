@@ -94,7 +94,18 @@
 - [文件上传和文件下载](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/文件上传和文件下载.md)
 - [JSON](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSON.md)
 - [原生Ajax异步请求](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Ajax.md)
-- 框架知识待添加......
+
+## 🆒jar包库
+
+> 关于各个学习阶段与实际应用开发中使用的jar包，在此项目中建立了一个jar包库，里面存储了常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
+>
+> 如果有需要下载jar包，点击Logo图标下的`jar包库下载`即可进入，也可以点击 [jar包库入口](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories) 进入！
+
+## 🛠工具
+
+- Maven（打算这几天整理好添加）
+- Git（添加完Maven后添加）
+- 待添加......
 
 ## 📐设计模式
 
