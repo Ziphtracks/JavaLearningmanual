@@ -45,7 +45,7 @@
 >
 > - 类加载过后，就可以通过类对象的这些行为去创建真正的Person对象了。
 >
-> 这就是一个完整的创建对象的过程。至于上述多此强调`任意一个`是因为Java反射机制可以在程序的运行过程中（Runtime运行时阶段）操作这些对象，比如：操作FIled、Constructor和Method等对象。此时，反射机制的好处还不只这一个，它还有解耦的好处，可以大大降低程序的紧密程度和耦合性来提高程序的可扩展性。
+> 这就是一个完整的创建对象的过程。至于上述多次强调`任意一个`是因为Java反射机制可以在程序的运行过程中（Runtime运行时阶段）操作这些对象，比如：操作FIled、Constructor和Method等对象。此时，反射机制的好处还不只这一个，它还有解耦的好处，可以大大降低程序的紧密程度和耦合性来提高程序的可扩展性。
 
 |                                                              |                        Source源码阶段                        |                                                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -158,7 +158,7 @@ public class TestReflect {
 
 > 如下代码我写了详细的使用注释和结果注释，都是通过上述方法实现的。
 >
-> **注意：** 有一个特殊使用就是访问private修饰的成员变量，需要`setAccessible(true);` 做略成员变量访问修饰符的安全检查处理。如果不做处理的话，就会飘红报错。如下信息：
+> **注意：** 有一个特殊使用就是访问private修饰的成员变量，需要`setAccessible(true);` 忽略成员变量访问修饰符的安全检查处理。如果不做处理的话，就会飘红报错。如下信息：
 >
 > `Exception in thread "main" java.lang.IllegalAccessException: Class com.mylifes1110.java.bean.TestReflectFiled can not access a member of class com.mylifes1110.java.bean.Person with modifiers "private"`
 >
@@ -506,7 +506,7 @@ class Person extends Animal {
 | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | boolean | isAnnotationPresent(Class<? extends Annotation> annotationClass) | 如果指定类型的注释存在于此元素上，则返回 true，否则返回 false。 |
 
-> **注意：** 在判断注解是否在某个元素上时，如果时自定义注解，必须将注解的生命周期设置在Runtime运行时期`@Retention(RetentionPolicy.RUNTIME)`，如果不设置该注解无效，判断时则返回false。
+> **注意：** 在判断注解是否在某个元素上时，如果是自定义注解，必须将注解的生命周期设置在Runtime运行时期`@Retention(RetentionPolicy.RUNTIME)`，如果不设置该注解无效，判断时则返回false。
 
 ```java
 public class TestReflectAnnotation {
