@@ -106,7 +106,7 @@
 ## 🛠工具
 
 - Maven
-  - Maven应用
+  - [Maven应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md)
 - Git（添加完Maven后添加）
 - 待添加......
 
