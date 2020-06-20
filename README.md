@@ -99,13 +99,13 @@
 
 > 关于各个学习阶段与实际应用开发中使用的jar包，在此项目中建立了一个jar包库，里面存储了常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
 >
-> 如果有需要下载jar包，点击Logo图标下的`jar包库下载`即可进入，也可以[点击此处](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories)进入！
+> 如果有需要下载jar包，点击Logo图标下的`jar包库下载`即可进入，也可以[**点击此处**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories)进入！
 >
 > **声明：** 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！
 
 ## 🛠工具
 
-- Maven
+- **Maven** 
   - [Maven应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md)
 - Git（添加完Maven后添加）
 - 待添加......
@@ -130,11 +130,11 @@
 - **博客园：** [https://www.cnblogs.com/ziph/](https://www.cnblogs.com/ziph/)
 - **ProcessOn：** [https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile](https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile)
 
-## 🙏贡献者
+## 📩微信公众号
 
-> 如果[JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！
+> 关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：**码出Offer** 
 
-暂无
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号"></p>
 
 ## 🎁读者福利
 
@@ -149,12 +149,6 @@
   - **马士兵-设计模式：** 链接: [https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g](https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g) 提取码: rr3d
 - 持续向网盘内添加更新福利资源（Star和微信公众号关注一波好吗？兄弟姐妹们~）......
 
-## 📩微信公众号
-
-> 关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：**码出Offer** 
-
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号"></p>
-
 ## ⚡充电打赏
 
 > 如果大家觉得文章还觉得不错，对你有所帮助的话。可以请Z哥喝一杯速溶咖啡哦！礼轻情意重嘛对不对！你的充电打赏，将是我创作的一大动力！Thank You！
@@ -163,3 +157,8 @@
 
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614174007.jpg" alt="微信赞赏码"></p>
 
+## 🙏贡献者
+
+> 如果[JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！
+
+暂无
