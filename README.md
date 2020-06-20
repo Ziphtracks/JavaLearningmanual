@@ -99,7 +99,7 @@
 
 > 关于各个学习阶段与实际应用开发中使用的jar包，在此项目中建立了一个jar包库，里面存储了常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
 >
-> 如果有需要下载jar包，点击Logo图标下的`jar包库下载`即可进入，也可以点击 [jar包库入口](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories) 进入！
+> 如果有需要下载jar包，点击Logo图标下的`jar包库下载`即可进入，也可以[点击此处](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories)进入！
 >
 > **声明：** 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！
 
@@ -153,7 +153,7 @@
 
 > 关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：**码出Offer** 
 
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号二维码"></p>
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号"></p>
 
 ## ⚡充电打赏
 
