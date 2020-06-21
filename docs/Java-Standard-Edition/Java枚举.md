@@ -847,3 +847,8 @@ map.put(Week.THURSDAY, 4);
 System.out.println(map);			//{MONDAY=1, THURSDAY=4}
 ```
 
+
+
+> 上一章[【Java注解】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java注解.md)
+
+> JavaSE基础内容就此完结！感谢大家阅读！

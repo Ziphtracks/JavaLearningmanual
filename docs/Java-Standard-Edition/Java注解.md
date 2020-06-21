@@ -872,3 +872,9 @@ public class GetConnectionDemo {
 ### 九、自定义@MyTest注解实现单元测试
 
 > 我不清楚小伙伴们是否了解，Junit单元测试。@Test是单元测试的测试方法上方修饰的注解。此注解的核心原理也是由反射来实现的。如果有小伙伴不知道什么是单元测试或者对[自定义@MyTest注解实现单元测试](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Junit%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md#%E5%85%AB%E8%87%AA%E5%AE%9A%E4%B9%89mytest%E6%B3%A8%E8%A7%A3%E5%AE%9E%E7%8E%B0%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)感兴趣的话，可以点进来看看哦！
+
+
+
+> 上一章[【Javadoc文档生成】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Javadoc文档生成.md)
+
+> 下一章[【Java枚举】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java枚举.md)

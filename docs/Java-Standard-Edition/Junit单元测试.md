@@ -346,3 +346,9 @@ public class MyTestDemo {
 ###### 执行结果图
 
 ![在这里插入图片描述](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200531232623.png)
+
+
+
+> 上一章[【Java网络编程】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.md)
+
+> 下一章[【Java反射】](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.md)
