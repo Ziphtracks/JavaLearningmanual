@@ -103,12 +103,17 @@
 >
 > **声明：** 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！
 
-## 🛠工具
+## 🛠必会工具
 
 - **Maven** 
   - [Maven应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md)
 - Git（近三天内添加，目前正在写）
 - 待添加......
+
+## 🔧常用工具
+
+- IntelliJ IDEA集成开发工具
+  - IDEA的安装和破解（等待添加......）
 
 ## 📐设计模式
 
