@@ -1,5 +1,8 @@
 package com.mylifes1110.java.utils;
 
+import com.alibaba.druid.pool.DruidDataSource;
+
+import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -7,7 +10,16 @@ import java.sql.*;
 
 import java.util.Properties;
 
+/**
+ * @ClassName DruidUtils
+ * @Description Druid连接池工具类
+ * @Author Ziph
+ * @Date 2020/6/29
+ * @Since 1.8
+ * @Version 1.0
+ */
 public class DruidUtils {
+    private static DruidDataSource dataSource = null;
 
     /**
      * 新建Properties集合，存放配置信息，以便后续流的读取
@@ -44,6 +56,11 @@ public class DruidUtils {
             e.printStackTrace();
         }
     }
+
+    public static DataSource getDataSource() {
+        return dataSource;
+    }
+
 
     /**
      * 开启事务
