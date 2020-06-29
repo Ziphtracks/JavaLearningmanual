@@ -107,7 +107,7 @@
 
 - **Maven** 
   - [Maven应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md)
-- Git（近三天内添加，目前正在写）
+- Git（待添加......）
 - 待添加......
 
 ## 🔧常用工具
