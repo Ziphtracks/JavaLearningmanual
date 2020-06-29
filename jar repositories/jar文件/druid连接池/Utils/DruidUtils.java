@@ -1,6 +1,7 @@
 package com.mylifes1110.java.utils;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.pool.DruidDataSourceFactory;
 
 import javax.sql.DataSource;
 import java.io.IOException;
@@ -49,10 +50,17 @@ public class DruidUtils {
             PROPERTIES.load(inputStream);
 
             /**
+             * 初始化连接池
+             */
+            dataSource= (DruidDataSource) DruidDataSourceFactory.createDataSource(PROPERTIES);
+
+            /**
              * 注册加载驱动
              */
-            Class.forName(PROPERTIES.getProperty("driver"));
+            Class.forName(PROPERTIES.getProperty("driverClass"));
         } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
