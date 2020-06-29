@@ -1,3 +1,8 @@
+* [BaseServlet模板](#baseservlet%E6%A8%A1%E6%9D%BF)
+      * [为什么使用BaseServlet？](#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8baseservlet)
+* [JsonUtils摸板](#jsonutils%E6%91%B8%E6%9D%BF)
+* [自定义注解摸板](#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3%E6%91%B8%E6%9D%BF)
+
 # BaseServlet模板
 
 ###### 为什么使用BaseServlet？
@@ -103,6 +108,63 @@ public class BaseServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+}
+```
+
+
+
+# JsonUtils摸板
+
+```java
+package com.mylifes1110.java.utils;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletResponse;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+/**
+ * Json字符串转换工具类
+ */
+public class JsonUtils {
+
+    /**
+     * Java对象转换为Json字符串
+     * @param o Java对象
+     * @return Json字符串
+     */
+    public static String toJsonStr(Object o) throws JsonProcessingException {
+        return new ObjectMapper().writeValueAsString(o);
+    }
+
+    /**
+     * Json字符串响应到浏览器
+     * @param response 响应对象
+     * @param o Java对象
+     */
+    public static void writeJsonStr(HttpServletResponse response, Object o) throws IOException {
+        response.setContentType("application/json; charset=UTF-8");
+        response.getWriter().write(toJsonStr(o));
+    }
+}
+```
+
+# 自定义注解摸板
+
+```java
+package com.mylifes1110.java.annotation;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+/**
+ * 该注解起到标记作用
+ */
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ResponseBody {
+
 }
 ```
 
