@@ -121,6 +121,10 @@
 - [01-单例设计模式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.单例设计模式.md)
 - 待添加第二设计模式......
 
+## 🏆Project
+
+- [基于JavaWeb基础实现的“婚礼汇”项目（练习）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/JavaWeb%E5%A9%9A%E7%A4%BC%E6%B1%87)
+
 ## 👣我的足迹
 
 > 以下足迹创建时间先后不一，所以文章也不太一致，最早的是**CSDN** ，大家可以去逛逛！
