@@ -19,13 +19,13 @@
       * [5\.3 监听Request属性](#53-%E7%9B%91%E5%90%ACrequest%E5%B1%9E%E6%80%A7)
     * [六、三类监听器](#%E5%85%AD%E4%B8%89%E7%B1%BB%E7%9B%91%E5%90%AC%E5%99%A8)
     * [七、浏览器记录登录认数综合案例](#%E4%B8%83%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%B0%E5%BD%95%E7%99%BB%E5%BD%95%E8%AE%A4%E6%95%B0%E7%BB%BC%E5%90%88%E6%A1%88%E4%BE%8B)
-          * [login\.html登录页面](#loginhtml%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2)
-          * [EncodingFilter过滤器解决乱码问题的xml配置信息](#encodingfilter%E8%BF%87%E6%BB%A4%E5%99%A8%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84xml%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF)
-          * [EncodingFilter过滤器解决乱码问题代码](#encodingfilter%E8%BF%87%E6%BB%A4%E5%99%A8%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E4%BB%A3%E7%A0%81)
-          * [User实体类对象（三类监听器监听，控制在线人数）](#user%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%AF%B9%E8%B1%A1%E4%B8%89%E7%B1%BB%E7%9B%91%E5%90%AC%E5%99%A8%E7%9B%91%E5%90%AC%E6%8E%A7%E5%88%B6%E5%9C%A8%E7%BA%BF%E4%BA%BA%E6%95%B0)
-          * [LoginServlet登录处理](#loginservlet%E7%99%BB%E5%BD%95%E5%A4%84%E7%90%86)
-          * [ShowServlet响应展示页面](#showservlet%E5%93%8D%E5%BA%94%E5%B1%95%E7%A4%BA%E9%A1%B5%E9%9D%A2)
-          * [LogoutServlet注销功能](#logoutservlet%E6%B3%A8%E9%94%80%E5%8A%9F%E8%83%BD)
+      - [login\.html登录页面](#loginhtml%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2)
+      - [EncodingFilter过滤器解决乱码问题的xml配置信息](#encodingfilter%E8%BF%87%E6%BB%A4%E5%99%A8%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84xml%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF)
+      - [EncodingFilter过滤器解决乱码问题代码](#encodingfilter%E8%BF%87%E6%BB%A4%E5%99%A8%E8%A7%A3%E5%86%B3%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E4%BB%A3%E7%A0%81)
+      - [User实体类对象（三类监听器监听，控制在线人数）](#user%E5%AE%9E%E4%BD%93%E7%B1%BB%E5%AF%B9%E8%B1%A1%E4%B8%89%E7%B1%BB%E7%9B%91%E5%90%AC%E5%99%A8%E7%9B%91%E5%90%AC%E6%8E%A7%E5%88%B6%E5%9C%A8%E7%BA%BF%E4%BA%BA%E6%95%B0)
+      - [LoginServlet登录处理](#loginservlet%E7%99%BB%E5%BD%95%E5%A4%84%E7%90%86)
+      - [ShowServlet响应展示页面](#showservlet%E5%93%8D%E5%BA%94%E5%B1%95%E7%A4%BA%E9%A1%B5%E9%9D%A2)
+      - [LogoutServlet注销功能](#logoutservlet%E6%B3%A8%E9%94%80%E5%8A%9F%E8%83%BD)
 
 # Java Web之Listener监听器
 

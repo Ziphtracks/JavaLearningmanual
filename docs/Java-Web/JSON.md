@@ -1,3 +1,21 @@
+* [JSON](#json)
+    * [一、了解Json](#%E4%B8%80%E4%BA%86%E8%A7%A3json)
+      * [3\.1 什么是Json](#31-%E4%BB%80%E4%B9%88%E6%98%AFjson)
+    * [二、简单Json语法](#%E4%BA%8C%E7%AE%80%E5%8D%95json%E8%AF%AD%E6%B3%95)
+      * [2\.1 语法](#21-%E8%AF%AD%E6%B3%95)
+      * [3\.2\.1  Json语法记忆规则](#321--json%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BF%86%E8%A7%84%E5%88%99)
+    * [三、Json字符串的手写转换](#%E4%B8%89json%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%89%8B%E5%86%99%E8%BD%AC%E6%8D%A2)
+          * [JavaBean类对象](#javabean%E7%B1%BB%E5%AF%B9%E8%B1%A1)
+          * [Json简单手写转换](#json%E7%AE%80%E5%8D%95%E6%89%8B%E5%86%99%E8%BD%AC%E6%8D%A2)
+    * [四、了解Jackson工具](#%E5%9B%9B%E4%BA%86%E8%A7%A3jackson%E5%B7%A5%E5%85%B7)
+      * [4\.1 Jackson简介](#41-jackson%E7%AE%80%E4%BB%8B)
+      * [4\.2 jar包介绍](#42-jar%E5%8C%85%E4%BB%8B%E7%BB%8D)
+      * [4\.3 应用场景](#43-%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF)
+    * [五、Jackson解析](#%E4%BA%94jackson%E8%A7%A3%E6%9E%90)
+      * [5\.1 Java对象转换json字符串](#51-java%E5%AF%B9%E8%B1%A1%E8%BD%AC%E6%8D%A2json%E5%AD%97%E7%AC%A6%E4%B8%B2)
+      * [5\.2 json字符串转换Java对象](#52-json%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2java%E5%AF%B9%E8%B1%A1)
+    * [六、FastJson解析](#%E5%85%ADfastjson%E8%A7%A3%E6%9E%90)
+
 # JSON
 
 ------
