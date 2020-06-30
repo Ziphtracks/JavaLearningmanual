@@ -82,6 +82,8 @@
 | junit           | Junit单元测试分为4和5两个版本，其中的jar包分为两个，需要联用 |
 | lombok          | 常用于IDEA插件lombok，其jar包内提供了Getter/Setter、有参/无参构造器、toString等等注解，由此使用注解就可以省略了大量编写，提高了开发效率 |
 | mysql           | JDBC数据库连接操作，所需要的mysql驱动包                      |
+| mail            | 用于发送邮箱验证的jar文件                                    |
+| ValidateCode    | 该jar文件用于生成验证码                                      |
 | net             | Java编程思想一书中所引入的jar包                              |
 | jetbrains-agent | JetBrains公司产品最新破解包（支持IDEA2020 1.2和DataGrip2020 1.4版本及以下） |
 
