@@ -263,9 +263,9 @@ Cookie cookie = new Cookie(URLEncoder.encode("username", "utf-8"), URLEncoder.en
 
 ##### 2.5.2 Cookie的缺点
 
-> **大小受到限制：** 大多数浏览器对 Cookie 的大小有 4096 字节的限制，尽管在当今新的浏览器和客户端设备版本中，支持 8192 字节的 Cookie 大小已愈发常见。
-> **用户配置为禁用：** 有些用户禁用了浏览器或客户端设备接收 Cookie 的能力，因此限制了这一功能。
-> **潜在的安全风险：** Cookie 可能会被篡改。用户可能会操纵其计算机上的 Cookie，这意味着会对安全性造成潜在风险或者导致依赖于Cookie 的应用程序失败。
+> - **大小受到限制：** 大多数浏览器对 Cookie 的大小有 4096 字节的限制，尽管在当今新的浏览器和客户端设备版本中，支持 8192 字节的 Cookie 大小已愈发常见。
+> - **用户配置为禁用：** 有些用户禁用了浏览器或客户端设备接收 Cookie 的能力，因此限制了这一功能。
+> - **潜在的安全风险：** Cookie 可能会被篡改。用户可能会操纵其计算机上的 Cookie，这意味着会对安全性造成潜在风险或者导致依赖于Cookie 的应用程序失败。
 
 
 
@@ -1371,20 +1371,20 @@ public class ShowServlet extends HttpServlet {
 > 鉴于转发是服务器内部操作，我们用的时候即是当前的这一次请求。再想到Request域对象的声明周期的时候，正是符合转发操作。所以我们应用在转发中，可以正常存取数据。
 
 ```java
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        /**
-         * Reuqest域对象应用于转发
-         */
-        String message = "Ziph is Very Good!";
-        request.setAttribute("message", message);
-        request.getRequestDispatcher("/test5").forward(request, response);
-        /**
-         * Request域对象应用于重定向（不能正常存取）
-         * request.getContextPath()：获取根路径
-         * 根路径拼接Servlet中的urlPatterns即是需要重定向过去的路径
-         */
-        response.sendRedirect(request.getContextPath() + "/test5");
-    }
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+     /**
+     * Reuqest域对象应用于转发
+     */
+     String message = "Ziph is Very Good!";
+     request.setAttribute("message", message);
+     request.getRequestDispatcher("/test5").forward(request, response);
+     /**
+     * Request域对象应用于重定向（不能正常存取）
+     * request.getContextPath()：获取根路径
+     * 根路径拼接Servlet中的urlPatterns即是需要重定向过去的路径
+     */
+     response.sendRedirect(request.getContextPath() + "/test5");
+}
 ```
 
 
@@ -1540,12 +1540,14 @@ System.out.println(request.getServletContext().getAttribute("username"));
 > **Java代码：** 
 
 ```java
-	/**
-	 * 获取Servlet上下文参数
-	 */
-	String appname=application.getInitParameter("username");
-	String appversion=application.getInitParameter("password");
+/**
+* 获取Servlet上下文参数
+*/
+String appname=application.getInitParameter("username");
+String appversion=application.getInitParameter("password");
 ```
+
+
 
 > [**注意：**]()配置文件是随着项目初始化而初始化的，我们是不可以人工干预该Servlet上下文参数的，这里指定的不可以干预是不可以移除该参数！
 
