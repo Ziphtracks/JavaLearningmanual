@@ -866,7 +866,7 @@ writer.println("<a href='"+ s2 +"'>" + "跳转" + "</a>");
 
 > **本案例使用了c3p0连接池，大体框架结构如图所示：** （注意：验证码工具类和非工具类选其一即可）
 
-![1587480601527](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530123825.png)
+![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200701101755.png)
 
 ###### c3p0连接池配置文件
 
