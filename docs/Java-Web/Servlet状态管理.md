@@ -214,11 +214,11 @@ if (cookies != null && cookies.length != 0) {
 > 中文和英文字符不同，中文属于Unicode字符，在内存中占用4个字符，而英文属于ASCII字符，内存中只占2个字节。Cookie中使用Unicode字符时需要对Unicode字符进行编码，否则会出现乱码。编码可以使用java.net.URLEncoder类的encode(String str,String encoding)方法，解码使用java.net.URLDecoder类的decode(String str,String encoding)方法
 
 ```java
-		/**
-         * Cookie的编码
-         * URLEncoder.encode("username", "utf-8")
-         */
-        Cookie cookie = new Cookie(URLEncoder.encode("username", "utf-8"), URLEncoder.encode("ziph", "utf-8"));
+/**
+* Cookie的编码
+* URLEncoder.encode("username", "utf-8")
+*/
+Cookie cookie = new Cookie(URLEncoder.encode("username", "utf-8"), URLEncoder.encode("ziph", "utf-8"));
 ```
 
 ```java
@@ -255,9 +255,9 @@ if (cookies != null && cookies.length != 0) {
 
 ##### 2.5.1 Cookie的优点
 
-> **可配置到期规则：** Cookie 可以在浏览器会话结束时到期，或者可以在客户端计算机上无限期存在，这取决于客户端的到期规则，不需要任何服务器资源，Cookie 存储在客户端并在发送后由服务器读取。
-> **简单性：** Cookie 是一种基于文本的轻量结构，包含简单的键值对。
-> **数据持久性：**虽然客户端计算机上 Cookie 的持续时间取决于客户端上的 Cookie 过期处理和用户干预，Cookie 通常是客户端上持续时间最长的数据保留形式
+> - **可配置到期规则：** Cookie 可以在浏览器会话结束时到期，或者可以在客户端计算机上无限期存在，这取决于客户端的到期规则，不需要任何服务器资源，Cookie 存储在客户端并在发送后由服务器读取。
+> - **简单性：** Cookie 是一种基于文本的轻量结构，包含简单的键值对。
+> - **数据持久性：** 虽然客户端计算机上 Cookie 的持续时间取决于客户端上的 Cookie 过期处理和用户干预，Cookie 通常是客户端上持续时间最长的数据保留形式
 
 
 
