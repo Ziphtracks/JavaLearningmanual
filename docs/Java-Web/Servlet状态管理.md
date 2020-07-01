@@ -113,35 +113,37 @@
 #### 2.2 创建Cookie对象
 
 ```java
-		/**
-         * 创建一个Cookie对象
-         * 默认生命周期为：浏览器关闭
-         */
-        Cookie cookie = new Cookie("username", "ziph");
-        /**
-         * 更新Cookie的生命周期：负数->浏览器内存里  0->失效   正数->过期时间
-         * </p>
-         * 过期时间以秒为单位，如下表示：
-         * 浏览器请求后Cookie存活60秒，60秒过后就会过期
-         */
-        cookie.setMaxAge(60);
-        /**
-         * 设置Cookie的共享范围： 默认同一项目下   /->当前服务器下
-         */
-        cookie.setPath("/");
-        /**
-         * 将Cookie对象响应给浏览器
-         */
-        response.addCookie(cookie);
+/**
+* 创建一个Cookie对象
+* 默认生命周期为：浏览器关闭
+*/
+Cookie cookie = new Cookie("username", "ziph");
+/**
+* 更新Cookie的生命周期：负数->浏览器内存里  0->失效   正数->过期时间
+* </p>
+* 过期时间以秒为单位，如下表示：
+* 浏览器请求后Cookie存活60秒，60秒过后就会过期
+*/
+cookie.setMaxAge(60);
+/**
+* 设置Cookie的共享范围： 默认同一项目下   /->当前服务器下
+*/
+cookie.setPath("/");
+/**
+* 将Cookie对象响应给浏览器
+*/
+response.addCookie(cookie);
 ```
+
+
 
 > 还可以使用setHeader()方法来来创建并相应Cookie（一步完成，但是不推荐）
 
 ```java
-        /**
-         * 创建Cookie对象，名称为password，值为123456，并相应操作Cookie对象
-         */
-        response.setHeader("set-cookie", "password=123456");
+/**
+* 创建Cookie对象，名称为password，值为123456，并相应操作Cookie对象
+*/
+response.setHeader("set-cookie", "password=123456");
 ```
 
 
@@ -156,13 +158,13 @@
 >   * 负数：内存存储
 
 ```java
-		/** 
-         * 更新Cookie的生命周期：负数->浏览器内存里  0->失效   正数->过期时间
-         * </p>
-         * 过期时间以秒为单位，如下表示：
-         * 浏览器请求后Cookie存活60秒，60秒过后就会过期
-         */
-        cookie.setMaxAge(60);
+/** 
+* 更新Cookie的生命周期：负数->浏览器内存里  0->失效   正数->过期时间
+* </p>
+* 过期时间以秒为单位，如下表示：
+* 浏览器请求后Cookie存活60秒，60秒过后就会过期
+*/
+cookie.setMaxAge(60);
 ```
 
 
@@ -174,10 +176,10 @@
 > 关于Cookie的共享范围，默认是同一项目下。而设置"/"可以在同意服务器下共享
 
 ```java
-		/**
-         * 设置Cookie的共享范围： 默认同一项目下   /->当前服务器下
-         */
-        cookie.setPath("/");
+/**
+* 设置Cookie的共享范围： 默认同一项目下   /->当前服务器下
+*/
+cookie.setPath("/");
 ```
 
 
@@ -185,24 +187,24 @@
 ##### 2.2.3 遍历查询Cookie
 
 ```java
-        /**
-         * 1.获取所有Cookie
-         * 2.非空判断
-         * 3.遍历Cookies数组
-         * 4.检查遍历Cookie并获取name值是否为username
-         * 5.检查遍历Cookie并获取value值是否为ziph
-         * 6.两步检查都没有问题，则打印提示信息
-         */
-        Cookie[] cookies = request.getCookies();
-        if (cookies != null && cookies.length != 0) {
-            for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("username")) {
-                    if (cookie.getValue().equals("ziph")) {
-                        System.out.println("您已登录！不用重新登录！");
-                    }
-                }
+/**
+* 1.获取所有Cookie
+* 2.非空判断
+* 3.遍历Cookies数组
+* 4.检查遍历Cookie并获取name值是否为username
+* 5.检查遍历Cookie并获取value值是否为ziph
+* 6.两步检查都没有问题，则打印提示信息
+*/
+Cookie[] cookies = request.getCookies();
+if (cookies != null && cookies.length != 0) {
+    for (Cookie cookie : cookies) {
+        if (cookie.getName().equals("username")) {
+            if (cookie.getValue().equals("ziph")) {
+                System.out.println("您已登录！不用重新登录！");
             }
         }
+    }
+}
 ```
 
 
@@ -253,17 +255,17 @@
 
 ##### 2.5.1 Cookie的优点
 
-> **可配置到期规则：**Cookie 可以在浏览器会话结束时到期，或者可以在客户端计算机上无限期存在，这取决于客户端的到期规则，不需要任何服务器资源，Cookie 存储在客户端并在发送后由服务器读取。
-> **简单性：**Cookie 是一种基于文本的轻量结构，包含简单的键值对。
+> **可配置到期规则：** Cookie 可以在浏览器会话结束时到期，或者可以在客户端计算机上无限期存在，这取决于客户端的到期规则，不需要任何服务器资源，Cookie 存储在客户端并在发送后由服务器读取。
+> **简单性：** Cookie 是一种基于文本的轻量结构，包含简单的键值对。
 > **数据持久性：**虽然客户端计算机上 Cookie 的持续时间取决于客户端上的 Cookie 过期处理和用户干预，Cookie 通常是客户端上持续时间最长的数据保留形式
 
 
 
 ##### 2.5.2 Cookie的缺点
 
-> **大小受到限制：**大多数浏览器对 Cookie 的大小有 4096 字节的限制，尽管在当今新的浏览器和客户端设备版本中，支持 8192 字节的 Cookie 大小已愈发常见。
-> **用户配置为禁用：**有些用户禁用了浏览器或客户端设备接收 Cookie 的能力，因此限制了这一功能。
-> **潜在的安全风险：**Cookie 可能会被篡改。用户可能会操纵其计算机上的 Cookie，这意味着会对安全性造成潜在风险或者导致依赖于Cookie 的应用程序失败。
+> **大小受到限制：** 大多数浏览器对 Cookie 的大小有 4096 字节的限制，尽管在当今新的浏览器和客户端设备版本中，支持 8192 字节的 Cookie 大小已愈发常见。
+> **用户配置为禁用：** 有些用户禁用了浏览器或客户端设备接收 Cookie 的能力，因此限制了这一功能。
+> **潜在的安全风险：** Cookie 可能会被篡改。用户可能会操纵其计算机上的 Cookie，这意味着会对安全性造成潜在风险或者导致依赖于Cookie 的应用程序失败。
 
 
 
@@ -686,16 +688,16 @@ public class CookieUtils {
 > 使用HttpSession的setAttribute(属性名,Object)方法实现绑定对象
 
 ```java
-		//第一个Servlet代码
-		HttpSession session = request.getSession();
-        System.out.println("SessionID为：" + session.getId());
-		/**
-         * 使用Session来绑定对象
-         */
-        Test test = new Test();
-        test.name = "Ziph";
-        test.age = 18;
-        session.setAttribute("name", test);
+//第一个Servlet代码
+HttpSession session = request.getSession();
+System.out.println("SessionID为：" + session.getId());
+/**
+* 使用Session来绑定对象
+*/
+Test test = new Test();
+test.name = "Ziph";
+test.age = 18;
+session.setAttribute("name", test);
 
 //第一个Servlet代码中的测试类
 /**
@@ -714,11 +716,11 @@ class Test {
     }
 }
 
-		//第二个Servlet代码
-		HttpSession session = request.getSession();
-        System.out.println("SessionID为：" + session.getId());
-        Object name = session.getAttribute("name");
-        System.out.println(name);
+//第二个Servlet代码
+HttpSession session = request.getSession();
+System.out.println("SessionID为：" + session.getId());
+Object name = session.getAttribute("name");
+System.out.println(name);
 ```
 
 > 注意：结果可验证SessionID都是相同的，可以绑定对象
@@ -737,17 +739,17 @@ class Test {
 > 注意：Session对象删除之后，查看浏览器Cookie，Session并没有一下子删除消失掉，得等一段时间浏览器才会显示没有的！如果想验证Session是否被删除，你可以在项目中获取一下Session对象，查看是否为空！
 
 ```java
-		//第一个Servlet代码
-		HttpSession session = request.getSession();
-        System.out.println("SessionID为：" + session.getId());
-		/**
-         * 删除Session对象
-         */
-        session.invalidate();
+//第一个Servlet代码
+HttpSession session = request.getSession();
+System.out.println("SessionID为：" + session.getId());
+/**
+* 删除Session对象
+*/
+session.invalidate();
 
-		//第二个Servlet代码
-		HttpSession session = request.getSession();
-        System.out.println("SessionID为：" + session.getId());
+//第二个Servlet代码
+HttpSession session = request.getSession();
+System.out.println("SessionID为：" + session.getId());
 ```
 
 > **控制台获取SessionID如下：** （注意：所获取的SessionID不一样了，证明第一个Session对象被删除了！）
@@ -1369,7 +1371,7 @@ public class ShowServlet extends HttpServlet {
 > 鉴于转发是服务器内部操作，我们用的时候即是当前的这一次请求。再想到Request域对象的声明周期的时候，正是符合转发操作。所以我们应用在转发中，可以正常存取数据。
 
 ```java
-protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         /**
          * Reuqest域对象应用于转发
          */
@@ -1414,37 +1416,37 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 > 5. **注意的点，我写在了代码的注释中！**
 
 ```java
-		/**
-         * 通过ServletConfig获取
-         * 注意：ServletConfig是生命在GenericServlet类中
-         */
-        ServletContext servletContext1 = this.getServletConfig().getServletContext();
-        /**
-         * 通过GenericServlet获取（推荐使用）
-         * 注意：GenericServlet是HttpServlet的父类
-         */
-        ServletContext servletContext2 = this.getServletContext();
-        /**
-         * 通过HttpServletRequest对象获取（推荐使用）
-         * 注意：ServletRequest是HTTPServlet的父类
-         */
-        ServletContext servletContext3 = request.getServletContext();
-        /**
-         * 通过HttpSession对象获取
-         */
-        ServletContext servletContext4 = request.getSession().getServletContext();
-        /**
-         * 打印四个对象并查看是否获取的是同一对象（答案在下方）
-         * <p>
-         * org.apache.catalina.core.ApplicationContextFacade@74fd7a4f
-         * org.apache.catalina.core.ApplicationContextFacade@74fd7a4f
-         * org.apache.catalina.core.ApplicationContextFacade@74fd7a4f
-         * org.apache.catalina.core.ApplicationContextFacade@74fd7a4f
-         */
-        System.out.println(servletContext1);
-        System.out.println(servletContext2);
-        System.out.println(servletContext3);
-        System.out.println(servletContext4);
+/**
+* 通过ServletConfig获取
+* 注意：ServletConfig是生命在GenericServlet类中
+*/
+ServletContext servletContext1 = this.getServletConfig().getServletContext();
+/**
+* 通过GenericServlet获取（推荐使用）
+* 注意：GenericServlet是HttpServlet的父类
+*/
+ServletContext servletContext2 = this.getServletContext();
+/**
+* 通过HttpServletRequest对象获取（推荐使用）
+* 注意：ServletRequest是HTTPServlet的父类
+*/
+ServletContext servletContext3 = request.getServletContext();
+/**
+* 通过HttpSession对象获取
+*/
+ServletContext servletContext4 = request.getSession().getServletContext();
+/**
+* 打印四个对象并查看是否获取的是同一对象（答案在下方）
+* <p>
+* org.apache.catalina.core.ApplicationContextFacade@74fd7a4f
+* org.apache.catalina.core.ApplicationContextFacade@74fd7a4f
+* org.apache.catalina.core.ApplicationContextFacade@74fd7a4f
+* org.apache.catalina.core.ApplicationContextFacade@74fd7a4f
+*/
+System.out.println(servletContext1);
+System.out.println(servletContext2);
+System.out.println(servletContext3);
+System.out.println(servletContext4);
 ```
 
 
@@ -1472,48 +1474,48 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 > 4. **代码如下：**
 
 ```java
-		//第一个Servlet代码
-		/**
-		 * 获取ServletContext对象
-         */
-		ServletContext servletContext = request.getServletContext();
-        /**
-         * 获取当前项目的发布路径（这是我IDEA中的war包存放路径）
-         * D:\Code\web\testrequest\out\artifacts\reqweb_war_exploded\
-         */
-        System.out.println(servletContext.getRealPath("/"));
-        /**
-         * 获取容器的附加信息
-         * 1.获取Servlet信息 : Apache Tomcat/8.5.45
-         * 2.获取上下文路径 : /reqweb
-         * 3.获取请求路径 : /reqweb
-         */
-        System.out.println(servletContext.getServerInfo());
-        System.out.println(servletContext.getContextPath());
-        System.out.println(request.getContextPath());
-        /**
-         * 1.将数据存储到ServletContext域中
-         * 2.从域中获取数据并查看
-         * 3.从域中移除该数据并查看
-         */
-        servletContext.setAttribute("username", "ziph");
-        /**
-         * 移除ServletContext域中的数据
-         */
-        servletContext.removeAttribute("username");
+//第一个Servlet代码
+/**
+* 获取ServletContext对象
+*/
+ServletContext servletContext = request.getServletContext();
+/**
+* 获取当前项目的发布路径（这是我IDEA中的war包存放路径）
+* D:\Code\web\testrequest\out\artifacts\reqweb_war_exploded\
+*/
+System.out.println(servletContext.getRealPath("/"));
+/**
+* 获取容器的附加信息
+* 1.获取Servlet信息 : Apache Tomcat/8.5.45
+* 2.获取上下文路径 : /reqweb
+* 3.获取请求路径 : /reqweb
+*/
+System.out.println(servletContext.getServerInfo());
+System.out.println(servletContext.getContextPath());
+System.out.println(request.getContextPath());
+/**
+* 1.将数据存储到ServletContext域中
+* 2.从域中获取数据并查看
+* 3.从域中移除该数据并查看
+*/
+servletContext.setAttribute("username", "ziph");
+/**
+* 移除ServletContext域中的数据
+*/
+servletContext.removeAttribute("username");
 
-		//第二个Servlet代码
-		/**
-         * 获取ServletContext域中的数据
-         */
-        System.out.println(request.getServletContext().getAttribute("username"));
+//第二个Servlet代码
+/**
+* 获取ServletContext域中的数据
+*/
+System.out.println(request.getServletContext().getAttribute("username"));
 ```
 
 
 
 ##### 6.3.2 Servlet上下文的特点
 
-> **唯一性：**一个应用对应一个servlet上下文。
+> **唯一性：** 一个应用对应一个servlet上下文。
 >
 > **一直存在：**  只要服务器不关闭或者应用不卸载，Servlet上下文就一直存在。
 
