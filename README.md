@@ -7,7 +7,7 @@
 		<img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories">
-		<img src="https://img.shields.io/badge/jar包库-下载-blue.svg" alt="License">
+		<img src="https://img.shields.io/badge/jar包库-查看-blue.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
 		<img src="https://img.shields.io/badge/CSDN-关注-red.svg" alt="License">
