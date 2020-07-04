@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>订单详情</title>
+<link href="wedding-3.css" rel="stylesheet"/>
+<link href="wedding-2.css" rel="stylesheet"/>
+</head>
+<body>
+	<div id="public-navbar">
+    	<div class="layout_center layout_clear" style="overflow:visible">
+        	<div class="layout_fl">你好，欢迎来到 婚礼汇</div>
+        	<ul class="layout_fr fl_li">
+            	<li>
+                	<div class="use-layout">
+                    	<a>
+                    		<span class="use-status" id="member_center">会员中心</span>
+                        </a>
+                        <div class="use-option" id="login_register">
+                        	<a href="login.jsp">会员登录</a>
+                            <a href="register.jsp">免费注册</a>
+                        </div>
+                        <i class="use-arrow page_icon"></i>
+                    </div>
+                </li>
+                <li>
+                	<span class="use-hr"></span>
+                </li>
+                <li>
+                	<a href="ShowShoppingCartServlet.do">我的购物车</a>
+                </li>
+                <li>
+                	<span class="use-hr"></span>
+                </li>
+                <li>
+                	<div class="use-layout">
+                    	<a>
+                    		<span class="use-status">商户平台</span>
+                        </a>
+                       	<div class="use-option" style="display: none;">
+                       		<a>商户登录</a>
+                           	<a>免费入驻</a>
+                       	</div>
+                        <i class="use-arrow page_icon"></i>
+                    </div>
+                </li>
+                <li>
+                	<span class="use-hr"></span>
+                </li>
+                <li>
+                	<a>联系我们</a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+    <div id="public-toolbar" class="hidden_active">
+    	<div class="layout_center layout_clear">
+        	<div class="page-logo layout_fl"><a href="wedding.jsp"><img src="img/rxT54692503vu.jpg"></a></div>
+            <div class="page-search layout_fl">
+            	<div class="page-search-bar layout_clear">
+                	<div class="page-search-text layout_fl">
+                    	<input type="text" class="search-cover" placeholder="搜索产品或店铺">
+                    </div>
+                    <div class="page-search-btn layout_fl">
+                    	<input type="button" value="搜索" class="search-button">
+                    </div>
+                </div>
+                <ul class="page-search-key layout_clear fl_li" >
+                    <li class="search-key-ous">大家都在搜：</li>
+                    <li><a>酒店</a></li>
+                    <li><a>婚纱</a></li>
+                    <li><a>婚庆用车</a></li>
+                    <li><a>度假</a></li>
+                </ul>
+            </div>
+            <div class="page-tels layout_fr">
+            	<span class="tel-show">全国免费咨询热线</span>
+                <span class="tel-pink"><strong>023-6766-4541</strong></span>
+            </div>
+        </div>
+    </div>
+    <div id="page_Auser">
+        <div class="layout_center layout_clear">
+            <div id="us_fl" class="layout_fl">
+            	<div class="us_uint">
+                	<h4 class="us_uint_menu"></h4>
+                    <ul class="us_uint_list">
+                    	<li class="cur"><a>我的婚礼汇</a></li>
+                    </ul>
+                </div>
+                <div class="us_uint">
+                	<h4 class="us_uint_menu"></h4>
+                    <ul class="us_uint_list">
+                    	<li class=""><a>我的收藏</a></li>
+                    </ul>
+                </div>
+                <div class="us_uint">
+                	<h4 class="us_uint_menu">我的订制</h4>
+                    <ul class="us_uint_list">
+                    	<li><a>需求发布</a></li>
+                        <li><a href="ShowOrderServlet.do">我的订单</a></li>
+                        <li><a href="ShowShoppingCartServlet.do">我的购物车</a></li>
+                    </ul>
+                </div>
+                <div class="us_uint">
+                	<h4 class="us_uint_menu">我的账户</h4>
+                    <ul class="us_uint_list">
+                    	<li><a>个人信息</a></li>
+                        <li><a>账户安全</a></li>
+                        <li><a>收货地址</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="us_fr" class="layout_fl"> 
+      			<div class="us_ChildPage us_adjust_padding us2_PageUint7">
+                    <div class="us_Topbar layout_clear">
+                        <ul class="us_Topbar_list layout_fl">
+                            <li><a href="javascript:;">全部订单</a></li>
+                            <li><a href="javascript:;">订婚宴</a></li>
+                            <li><a href="javascript:;">婚嫁众包</a></li>
+                            <li><a href="javascript:;">私人订制</a></li>
+                            <li><a href="javascript:;">婚品商城</a></li>
+                        </ul>
+                    </div>
+                    <div class="leves-levesbar user-allorder">
+                        <div class="leves-levesbar-wrap">
+                            <div class="leves-levesbar-item leves-next-step"> <span class="leves-circles">1</span> <span class="leves-text">预约沟通</span> </div>
+                            <div class="leves-levesbar-item"> <span class="leves-circles">2</span> <span class="leves-text">立即预订</span> </div>
+                            <div class="leves-levesbar-item"> <span class="leves-circles">3</span> <span class="leves-text">提交订单</span> </div>
+                            <div class="leves-levesbar-item"> <span class="leves-circles">4</span> <span class="leves-text">下线服务</span> </div>
+                            <div class="leves-levesbar-item"> <span class="leves-circles">5</span> <span class="leves-text">资金托管</span> </div>
+                            <div class="leves-levesbar-item"> <span class="leves-circles">6</span> <span class="leves-text">交易完成</span> </div>
+                        </div>
+                    </div>
+                    <div class="us_unit_list">
+                        <h4 class="us_ChildHead">订单信息</h4>
+                        <table>
+                            <tbody>
+                                <tr>
+                                  <td>订单编号<span class="cos_span">84613667579418</span></td>
+                                  <td>订单类型<span class="cos_span">婚宴场地</span></td>
+                                </tr>
+                                <tr>
+                                  <td>预约时间<span class="cos_span">2017-05-05 20:31:02</span></td>
+                                  <td>联系电话<span class="cos_span"></span></td>
+                                </tr>
+                                <tr>
+                                  <td>收货人姓名<span class="cos_span"></span></td>
+                                  <td>收货人电话<span class="cos_span"></span></td>
+                                </tr>
+                                <tr>
+                                  <td>收货人区域<span class="cos_span">--</span></td>
+                                  <td>收货人详细地址<span class="cos_span"></span></td>
+                                </tr>
+                                <tr>
+                                  <td>订单金额<span class="cos_span">￥298.00</span></td>
+                                  <td>成交时间<span class="cos_span"></span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><span class="cos_span"><em>备注</em></span><span class="cos_span">暂无</span></td>
+                                </tr>
+                          </tbody>
+                      </table>
+                    </div>
+                    <div class="us_unit_list">
+                        <h4 class="us_ChildHead">卖家信息</h4>
+                        <table>
+                                <tbody>
+                                    <tr>
+                                        <td>公司名称<span class="cos_span">芸笙餐饮管理有限公司</span></td>
+                                        <td>联系电话<span class="cos_span">13696455323</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">联系地址<span class="cos_span">江北区观音桥盈嘉中心L7</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                	<div class="us_unit_table">
+                        <div class="us_order_line">
+                            <span></span>
+                            <span>订单号：84613667579418</span>
+                            <span></span>
+                        </div>
+                    	<table>
+                    	<tbody>
+                        	<tr>
+                                <th><span class="cos_span">商品</span></th>
+                                <th><span class="cos_span">属性</span></th>
+                                <th><span class="cos_span">数量</span></th
+                                <th><span class="cos_span">总金额</span></th>>
+                                <th><span class="cos_span">订单状态</span></th>
+                                <th><span class="cos_span">操作</span></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img">
+                                        <img src="http://www.119hqw.com/img/GoodsIco/JRW57000974Xz.jpg">
+                                        <span></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="cos_span"></span>
+                                </td>
+                                <td><span class="cos_span">1</span></td>
+                                <td><span class="cos_span"><em>298.00</em></span></td>
+                                <td><span class="cos_span"><a href="javascript:;">申请售后</a></span></td>
+                                <td>
+                                    <span class="cos_span">
+                                        <a href="javascript:;" class="us_button" style="background: #ccc;">已选定</a>			  
+                                    </span>
+                                </td>
+                            </tr>
+                    	</tbody>
+                	</table>
+                	</div> 
+    			</div>
+    			<div style="height:0"></div>
+  			</div>
+    	</div>
+        <div class="page-footer">
+    	<div class="layout_center">
+        	<div class="footer-list">
+            	<dl class="footer-item">
+                	<h3>新手上路</h3>
+                    <a  >
+                    	<dd><b></b>如何注册</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>如何登录</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>如何预订</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>购物流程</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>预订须知</dd>
+                    </a>
+                </dl>
+                <dl class="footer-item">
+                	<h3>公司信息</h3>
+                    <a  >
+                    	<dd><b></b>关于我们</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>用户协议</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>隐私申明</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>商家入驻协议</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>安全须知</dd>
+                    </a>
+                </dl>
+                <dl class="footer-item">
+                	<h3>合作联系</h3>
+                    <a  >
+                    	<dd><b></b>联系我们</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>招商加盟</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>商户平台</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>招聘信息</dd>
+                    </a>
+                </dl>
+                <dl class="footer-item">
+                	<h3>帮助中心</h3>
+                    <a  >
+                    	<dd><b></b>忘记密码</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>常见问题</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>在线客服</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>如何上传产品</dd>
+                    </a>
+                    <a  >
+                    	<dd><b></b>如何成为商家</dd>
+                    </a>
+                </dl>
+                <div class="footer-mobile">
+                	<img src="img/SVT58398773Nz.jpg">
+                    <h2>官方微信</h2>
+                </div>
+            </div>
+            <div class="footer-data0">
+            	<a><i class="footer-ad0" title="可信网站身份验证"></i></a>
+                <a><i class="footer-ad1" title="重庆网警备案"></i></a>
+                <a><i class="footer-ad2" title="重庆工商行政管理"></i></a>
+                <a><i class="footer-ad3" title="安全联盟认证"></i></a>
+            </div>
+            <div class="footer-data1">
+            	友情链接：
+            	<a href="https://www.baidu.com/" target="_blank">百度</a>
+                <em>|</em>
+                <a href="https://www.taobao.com/">淘宝</a>
+            </div>
+            <div class="footer-data2">
+            	 CopyRight 2016 婚礼汇 All Rights Reserved 
+                 <a href="Untitled-2.html">渝ICP备14001673号</a>
+            </div>
+        </div>
+    </div>
+    <a target="_blank" title="联系我们" href="Untitled-2.html">
+    	<span id="askus">&nbsp;</span>
+    </a>
+    <div id="gotop" title="返回顶部" style="display:block; background:url(img/gotop.png) -70px 0px no-repeat"></div>
+</body>
+</html>
