@@ -40,7 +40,7 @@
 | ![image-20200704122013814](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200704154340.png) |
 |             **提交订单成功（orderSuccess.jsp）**             |
 | ![image-20200704122033146](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200704154338.png) |
-|                **微信支付（payWeixin.jsp） **                |
+|                **微信支付（payWeixin.jsp）**                 |
 | ![image-20200704122527671](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200704154336.png) |
 |                 **支付成功（message.jsp）**                  |
 | ![支付成功](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200704154334.png) |
