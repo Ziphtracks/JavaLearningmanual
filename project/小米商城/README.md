@@ -6,8 +6,10 @@
 
 > **项目声明：** 该项目为小米商城项目，是一个基于Servlet+JSP开发项目，在此托管到GitHub以作记录，并提供给正在学习的小伙伴练习。此项目不是特别高级严谨的项目，只是一个简单的练习，所以有里面也有很多的不足之处，请谅解！谢谢！
 >
-> - 可以[**点击此处**]()来查看并Get该项目！
-> - 查看[项目思路分析]()
+> - 可以[**点击此处**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE%E4%B8%8B%E8%BD%BD%E5%85%A5%E5%8F%A3)来查看并Get该项目！
+> - 查看[**项目思路分析**]()来帮助你梳理思路！
+> - 参考[**项目需求分析**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E#%E5%9B%9B%E9%A1%B9%E7%9B%AE%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90) 告诉你此项目是考验你什么的！
+> - 了解本[**项目数据库分析**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E#%E4%B8%89%E6%95%B0%E6%8D%AE%E5%BA%93) 让你更理解各表之间的关联！
 
 
 
