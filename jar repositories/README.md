@@ -57,7 +57,7 @@
 
 ![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200617005658.png)
 
-> 其他Maven操作，请参考[Maven教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md)
+> 其他Maven操作，请参考[**Maven教程**](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md)
 
 
 
