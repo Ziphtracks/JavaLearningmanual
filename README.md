@@ -111,6 +111,7 @@
 - **版本控制工具** 
   - **Git** 
   - [Git应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Git应用.md)
+  - [.gitignore模板（Java）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/.gitignore模板.txt)
 - 待添加......
 
 ## 🔧IntelliJ IDEA
