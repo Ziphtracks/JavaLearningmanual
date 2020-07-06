@@ -105,9 +105,12 @@
 
 ## 🛠必会工具
 
-- **Maven** 
+- **项目构建工具** 
+  - **Maven** 
   - [Maven应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md)
-- Git（待添加......）
+- **版本控制工具** 
+  - **Git** 
+  - [Git应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Git应用.md)
 - 待添加......
 
 ## 🔧IntelliJ IDEA
