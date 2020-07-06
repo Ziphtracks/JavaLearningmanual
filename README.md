@@ -106,12 +106,11 @@
 ## 🛠必会工具
 
 - **项目构建工具** 
-  - **Maven** 
   - [Maven应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md)
 - **版本控制工具** 
-  - **Git** 
   - [Git应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Git应用.md)
   - [.gitignore模板（Java）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/.gitignore模板.txt)
+  - [解决GitHub各种缓慢问题方案](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/解决GitHub各种缓慢问题.md)
 - 待添加......
 
 ## 🔧IntelliJ IDEA
