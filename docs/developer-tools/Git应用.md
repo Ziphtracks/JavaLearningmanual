@@ -325,7 +325,7 @@
 
 |                           查看日志                           |
 | :----------------------------------------------------------: |
-| ![image-20200705134002824](Git.assets/image-20200705134002824.png) |
+| ![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200707082022.png) |
 
 
 
@@ -578,7 +578,7 @@
 
 |             右侧头像点击 + 后打开New repository              |
 | :----------------------------------------------------------: |
-| ![image-20200705185611385](Git.assets/image-20200705185611385.png) |
+| ![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200707082204.png) |
 |                         **创建仓库**                         |
 | ![image-20200705185948941](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200705185950.png) |
 |                 **本地仓库关联GitHub服务器**                 |
