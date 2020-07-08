@@ -145,7 +145,7 @@
 
 ## 📩微信公众号
 
-> 关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：**码出Offer** 
+> 关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：**码出Offer**  
 
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号"></p>
 
