@@ -182,7 +182,7 @@
 >
 > Git文档下载：[https://git-scm.com/book/zh/v2](https://git-scm.com/book/zh/v2)
 >
-> Git详细安装教程参考：<https://blog.csdn.net/weixin_44170221/article/details/104490352> 
+> Git详细安装教程参考：[Git安装教程详解](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Git安装教程.md)
 >
 > **注意：** 关于Git的可视化工具下载与否取决于自己，笔者不建议下载可视化工具，因为我们要大量使用并熟练使用命令来操作Git！
 
@@ -277,7 +277,7 @@
 >
 > **@提交所有文件：** 使用`git commit -m "本次提交的描述信息"`命令来提交文件，提交后的文件就由git来管理了。-m 后面双引号中的内容，这描述这次提交的信息，以便以后我们后续找到这次提交再做操作
 >
-> **@修补提交：** 提交后发现有问题，比如释忘记修改，⽐如提交描述不够详细等等。我们可以执行`git commit --amend -m"描述信息"`来再次提交替换上次提交
+> **@修补提交：** 提交后发现有问题，比如注释忘记修改，⽐如提交描述不够详细等等。我们可以执行`git commit --amend -m"描述信息"`来再次提交替换上次提交
 >
 > **@添加并提交文件：** 使用`git commit -a -m "本次添加并提交的描述信息"`命令来自动添加和提交所有文件
 >
