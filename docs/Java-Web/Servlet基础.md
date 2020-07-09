@@ -2111,7 +2111,7 @@ public class SafeServlet extends HttpServlet {
 
 ##### 6.2.2 实现SingleThreadModle接口
 
-> 实现SingleThreadModle接口来保证线程安全
+> 实现SingleThreadModle接口来保证线程安全 
 
 ![1586870763709](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530105417.png)
 
