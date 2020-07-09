@@ -3,7 +3,7 @@
       * [1\.1 Servlet概念](#11-servlet%E6%A6%82%E5%BF%B5)
       * [1\.2 Servlet的核心作用](#12-servlet%E7%9A%84%E6%A0%B8%E5%BF%83%E4%BD%9C%E7%94%A8)
       * [1\.3 Servlet核心目录结构](#13-servlet%E6%A0%B8%E5%BF%83%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84)
-        * [1\.3.1 IDEA工具内创建核心目录结构](#13-idea%E5%B7%A5%E5%85%B7%E5%86%85%E5%88%9B%E5%BB%BA%E6%A0%B8%E5%BF%83%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84)
+        * [1\.3\.1 IDEA工具内创建核心目录结构](#131-idea%E5%B7%A5%E5%85%B7%E5%86%85%E5%88%9B%E5%BB%BA%E6%A0%B8%E5%BF%83%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84)
       * [1\.4 Servlet的开发步骤](#14-servlet%E7%9A%84%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4)
         * [1\.4\.1 开发步骤](#141-%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4)
         * [1\.4\.2 web\.xml配置文件添加配置信息](#142-webxml%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF)
