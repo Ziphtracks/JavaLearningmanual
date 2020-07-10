@@ -160,6 +160,8 @@
   - **Java核心技术36讲：** 链接: [https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A](https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A) 提取码: x2ir
   - **趣谈网络协议：** 链接: [https://pan.baidu.com/s/1bqKsGlLvhKfo8VSlbflNxw](https://pan.baidu.com/s/1bqKsGlLvhKfo8VSlbflNxw) 提取码: n5uj
   - **马士兵老师讲解设计模式：** 链接: [https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g](https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g) 提取码: rr3d
+- **项目资源：** 
+  - **小米商城项目：** 链接: [https://pan.baidu.com/s/1LZQekIzA3KYjvwjy8hjIgA](https://pan.baidu.com/s/1LZQekIzA3KYjvwjy8hjIgA) 提取码: fa5g
 - 持续向网盘内添加更新福利资源（Star和微信公众号关注一波好吗？兄弟姐妹们~）......
 
 ## ⚡充电打赏
