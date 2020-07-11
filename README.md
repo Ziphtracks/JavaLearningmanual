@@ -118,6 +118,7 @@
 
 - **MyBatis** 
   - [MyBatis基础开发流程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/MyBatis%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.md)
+  - [MyBatis高级应用](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/MyBatis框架高级应用.md)
 
 ## 🔧IntelliJ IDEA
 
