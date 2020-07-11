@@ -114,6 +114,11 @@
   - [解决GitHub各种缓慢问题方案](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/解决GitHub各种缓慢问题.md)
 - 待添加......
 
+## 🗜框架
+
+- **MyBatis** 
+  - [MyBatis基础开发流程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/MyBatis%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.md)
+
 ## 🔧IntelliJ IDEA
 
 - 工具安装及破解（等待添加......）
