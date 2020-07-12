@@ -122,7 +122,7 @@
 - **Spring** 
   - [Spring概述和基本环境搭建](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/Spring基本环境搭建.md)
   - [Spring IOC（控制反转）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringIOC.md)
-  - Spring ID（依赖注入）
+  - Spring DI（依赖注入）
 
 ## 🔧IntelliJ IDEA
 
