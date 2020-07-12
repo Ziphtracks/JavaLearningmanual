@@ -56,9 +56,9 @@
   - [MySQL存储过程编程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL存储过程.md)
   - [MySQL触发器](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL触发器.md)
   - [数据库三大范式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/数据库范式.md)
+  - [MySQL基础架构](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL基础架构.md)
   - MySQL索引
-  - 分布式索引
-  - MySQL基础架构
+  - 
 - 待添加.....
 
 ## 🎨前端开发
