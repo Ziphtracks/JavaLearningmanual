@@ -126,7 +126,8 @@
 
 ## 🔧IntelliJ IDEA
 
-- 工具安装及破解（等待添加......）
+- [IDEA安装破解教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/IntelliJ-IDEA/IDEA%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E6%95%99%E7%A8%8B.md)
+- 等待添加各种快捷键、常用设置、插件教程等等......
 
 ## 📐设计模式
 
