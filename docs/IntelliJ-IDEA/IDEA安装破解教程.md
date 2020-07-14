@@ -4,7 +4,7 @@
 
 > 安装的IDEA虽然并不是2020年最新款，但是破解包可以在GitHub仓库的中获取最新的，目前支持破解IDEA2020年1.3版本，持续将最新的破解jar文件更新到仓库中......
 >
-> **IDEA破解jar文件下载：** [点击获取jetbrains-agent](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar repositories/jar文件/jetbrains-agent)
+> **IDEA破解jar文件下载：** [点击获取jetbrains-agent](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories/jar%E6%96%87%E4%BB%B6/jetbrains-agent)
 >
 > **声明：** 本项目只做学习研究之用，不得用于商业用途！
 >
