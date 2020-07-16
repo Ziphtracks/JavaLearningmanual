@@ -68,9 +68,9 @@
 - [正则表达式](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/正则表达式.md)
 - [JavaScript基础之ECMAScript](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript基础之ECMAScript.md)
 - [JavaScript之BOM和DOM操作](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript之BOM和DOM操作.md)
-- [jQuery（包含jQuery Ajax）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/jQuery.md)
 - [JSON](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JSON.md)
 - [原生Ajax异步请求](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Ajax.md)
+- [jQuery（包含jQuery Ajax）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/jQuery.md)
 - [Bootstrap](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Bootstrap.md)
 - [BootstrapValidator校验](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/BootstrapValidator校验.md)
 - [Echarts统计图表](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Echarts.md)
@@ -97,7 +97,7 @@
 - [文件上传和文件下载](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/文件上传和文件下载.md)
 - ......
 
-## 🆒jar包库
+## 🆒Maven仓库
 
 > 关于各个学习阶段与实际应用开发中使用的jar包，在此项目中建立了一个简单的jar包库，里面存储了常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
 >
