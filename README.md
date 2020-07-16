@@ -7,12 +7,13 @@
 		<img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories">
-		<img src="https://img.shields.io/badge/jar包库-查看-blue.svg" alt="License">
+		<img src="https://img.shields.io/badge/Maven仓库-查看-blue.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
 		<img src="https://img.shields.io/badge/CSDN-关注-red.svg" alt="License">
 	</a>
 </p>
+
 
 <br />
 
@@ -68,6 +69,8 @@
 - [JavaScript基础之ECMAScript](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript基础之ECMAScript.md)
 - [JavaScript之BOM和DOM操作](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript之BOM和DOM操作.md)
 - [jQuery（包含jQuery Ajax）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/jQuery.md)
+- [JSON](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JSON.md)
+- [原生Ajax异步请求](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Ajax.md)
 - [Bootstrap](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Bootstrap.md)
 - [BootstrapValidator校验](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/BootstrapValidator校验.md)
 - [Echarts统计图表](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Echarts.md)
@@ -92,14 +95,13 @@
 - [Listener监听器](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Listener监听器.md)
 - [JSP开发（EL表达式、JSTL标签库、分页）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSP.md)
 - [文件上传和文件下载](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/文件上传和文件下载.md)
-- [JSON](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSON.md)
-- [原生Ajax异步请求](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Ajax.md)
+- ......
 
 ## 🆒jar包库
 
-> 关于各个学习阶段与实际应用开发中使用的jar包，在此项目中建立了一个jar包库，里面存储了常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
+> 关于各个学习阶段与实际应用开发中使用的jar包，在此项目中建立了一个简单的jar包库，里面存储了常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
 >
-> 如果有需要下载jar包，点击Logo图标下的`jar包库下载`即可进入，也可以[**点击此处**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories)进入！
+> 如果有需要下载jar包，点击Logo图标下的`Maven仓库`即可进入，也可以[**点击此处**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories)进入！
 >
 > **声明：** 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！
 
