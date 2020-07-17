@@ -139,8 +139,8 @@
 
 ## 🏆Project
 
-- [基于JavaWeb基础实现的【婚礼汇】项目（练习）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/JavaWeb%E5%A9%9A%E7%A4%BC%E6%B1%87)
-- [基于JavaWeb基础实现的【小米商城】项目（练习）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E)
+- [【婚礼汇】（Servlet+JSP）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/JavaWeb%E5%A9%9A%E7%A4%BC%E6%B1%87)
+- [【小米商城】（Servlet+JSP）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E)
 
 ## 👣我的足迹
 
