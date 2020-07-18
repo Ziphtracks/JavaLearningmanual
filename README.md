@@ -7,12 +7,13 @@
 		<img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories">
-		<img src="https://img.shields.io/badge/Maven仓库-查看-blue.svg" alt="License">
+		<img src="https://img.shields.io/badge/Maven仓库-打包 | 查看-blue.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
 		<img src="https://img.shields.io/badge/CSDN-关注-red.svg" alt="License">
 	</a>
 </p>
+
 
 
 <br />
@@ -101,7 +102,7 @@
 
 ## 🆒Maven仓库
 
-> 关于各个学习阶段与实际应用开发中使用的jar包，在此项目中建立了一个简单的jar包库，里面存储了常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
+> 针对处在学习阶段的童鞋们，在此项目中建立了一个简单的jar包库，里面存储了学习阶段常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
 >
 > 如果有需要下载jar包，点击Logo图标下的`Maven仓库`即可进入，也可以[**点击此处**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories)进入！
 >
