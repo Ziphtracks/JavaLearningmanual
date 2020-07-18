@@ -107,6 +107,9 @@
 >
 > **声明：** 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！
 
+- **打包Maven本地仓库：** 链接：https://pan.baidu.com/s/1jT4v8089pn9My5NohnaECw 提取码：v9ew
+- **IDEA破解jar文件：** 链接：https://pan.baidu.com/s/1ixgXOqxsbieWd8W8sJ9fQw 提取码：xbmr
+
 ## 🛠必会工具
 
 - **项目构建工具Maven** 
@@ -133,7 +136,7 @@
 
 ## 🔧IntelliJ IDEA
 
-- [IDEA安装破解教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/IntelliJ-IDEA/IDEA%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E6%95%99%E7%A8%8B.md)
+- [IDEA安装破解教程（勿传播）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/IntelliJ-IDEA/IDEA%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E6%95%99%E7%A8%8B.md)
 - 等待添加各种快捷键、常用设置、插件教程等等......
 
 ## 📐设计模式
