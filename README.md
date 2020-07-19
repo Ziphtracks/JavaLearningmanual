@@ -30,7 +30,7 @@
 
 ***
 
-> **声明：** 微信公众号搜索关注【**码出Offer**】领取读者福利和各种学习资源！
+> **微信公众号** 搜索关注【[码出Offer](https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7)】领取读者福利和各种学习资源！
 
 ***
 
