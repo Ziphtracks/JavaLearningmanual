@@ -142,6 +142,8 @@
   - [Spring AOP](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringAOP.md)
 - **SpringMVC** 
   - SpringMVC执行流程
+- **SSM** 
+  - [SSM框架知识体系图](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SSM框架知识体系图.md)
 
 ## 🔧IntelliJ IDEA
 
