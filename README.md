@@ -1,4 +1,6 @@
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
+<br/>
+
 <p align="center">
   <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
 		<img src="https://img.shields.io/badge/微信公众号-码出Offer-right.svg" alt="License">
@@ -25,6 +27,12 @@
 **持续努力，变平凡为不凡：** 梦想与现实之间的巨大落差常令人烦躁不安。然而，人生就是”今天”的不断积累，就是“现在”这一刻的不断延续，如此而已。不错过今天，认真工作就能看清明天，明天再认真工作就能看清后面的一周，一周认真工作，就能看清后面的一月...就是说，即使不去探索遥远的未来，只要全身贯注于眼前的每一个瞬间，以前看不清楚的未来的景象就会自然地呈现在你眼前。 与其莫名其妙为明天而烦恼，与其苦思冥想去制定长远的计划，还不如全力过好今天这一天。这才是实现理想最切实的办法。 
 
 <p align="right">——稻盛和夫《活着》 </p>
+
+***
+
+> **声明：** 微信公众号搜索关注【**码出Offer**】领取读者福利和各种学习资源！
+
+***
 
 ## 📚  JavaSE基础
 
@@ -151,6 +159,12 @@
 - [【婚礼汇】（Servlet+JSP）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/JavaWeb%E5%A9%9A%E7%A4%BC%E6%B1%87)
 - [【小米商城】（Servlet+JSP）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E)
 
+## 📃LICENSE
+
+> 本仓库知识体系受版权保护，大多数知识体系和技术文章都是由个人总结、整理、发文。如果您想引用本仓库知识内容或者对本仓库知识内容做了修改演绎时，请在文章开头明显处标明作者和本仓库地址，整理总结发文不易，请尊重原创！谢谢！
+>
+> 公众号或与其他形式转载请联系**[邮箱：ziphtracks.@163.com]** 
+
 ## 👣我的足迹
 
 > 以下足迹创建时间先后不一，所以文章也不太一致，最早的是**CSDN** ，大家可以去逛逛！
@@ -173,6 +187,8 @@
 
 ## 🎁读者福利
 
+> 涉及到侵犯您的权力，请速与我联系，我将立即删除您的内容！**[邮箱：ziphtracks.@163.com]** 
+
 - **自制电子书：** 链接: [https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA](https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA) 提取码: sdby
 - **学习辅助资料：** 链接: [https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA](https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA) 提取码: chft
 - **PDF版书籍：** 链接: [https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA](https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA) 提取码: 3845
@@ -194,8 +210,8 @@
 
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614174007.jpg" alt="微信赞赏码"></p>
 
-## 🙏贡献者
+## 🙏鸣谢
 
-> 如果[JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！
+> 如果[JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！毕竟人无完人，也许写错别字或者知识琐碎问题对吧！期待你的来信！
 
 暂无
