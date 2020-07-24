@@ -9,12 +9,16 @@
 		<img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories">
-		<img src="https://img.shields.io/badge/Maven仓库-打包 | 查看-blue.svg" alt="License">
+		<img src="https://img.shields.io/badge/Maven仓库-打包 | 查看-MEDIUMSLATEBLUE.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
 		<img src="https://img.shields.io/badge/CSDN-关注-red.svg" alt="License">
 	</a>
+    <a href="https://github.com/Ziphtracks/JavaLearningmanual">
+		<img src="https://img.shields.io/badge/GitHub-努力建设中...-DARKVIOLET.svg" alt="License">
+	</a>
 </p>
+
 
 
 <br />
