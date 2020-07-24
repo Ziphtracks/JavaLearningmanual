@@ -143,7 +143,7 @@
 - **SpringMVC** 
   - [SpringMVC执行流程（源码分析）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringMVC执行流程.md)
 - **SSM** 
-  - [SSM框架知识体系图](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SSM框架知识体系图.md)
+  - [SSM框架整合](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SSM框架整合.md)
 
 ## 🔧IntelliJ IDEA
 
