@@ -24,6 +24,8 @@
 
 # SSM整合
 
+> **思维导图地址：** https://www.processon.com/view/5f126bd107912906d9ab3766
+
 ![SSM](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200724185557.png)
 
 ------
