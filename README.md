@@ -3,13 +3,13 @@
 
 <p align="center">
   <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
-		<img src="https://img.shields.io/badge/微信公众号-码出Offer-right.svg" alt="License">
+		<img src="https://img.shields.io/badge/微信公众号-码出Offer-blueviolet.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E8%AF%BB%E8%80%85%E7%A6%8F%E5%88%A9">
 		<img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories">
-		<img src="https://img.shields.io/Violet/Maven仓库-打包 | 查看-purple.svg" alt="License">
+		<img src="https://img.shields.io/badge/Maven仓库-打包 | 查看-9cf.svg" alt="License">
 	</a>
 	<a href="https://blog.csdn.net/weixin_44170221">
 		<img src="https://img.shields.io/badge/CSDN-关注-red.svg" alt="License">
@@ -18,6 +18,7 @@
 		<img src="https://img.shields.io/badge/本仓库-努力建设中...-orange.svg" alt="License">
 	</a>
 </p>
+
 
 
 
