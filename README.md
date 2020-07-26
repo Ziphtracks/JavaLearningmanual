@@ -151,6 +151,18 @@
 - **SSM** 
   - [SSM框架整合](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SSM框架整合.md)
 
+## 🔐并发编程
+
+- 多线程基础
+- ThreadLocal源码分析
+
+## ⌨操作系统
+
+- **Linux** 
+  - 虚拟机与Linux安装教程（待添加......）
+  - Linux基本使用
+  - Linux的高级应用
+
 ## 🔧IntelliJ IDEA
 
 - [IDEA安装破解教程（勿传播）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/IntelliJ-IDEA/IDEA%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E6%95%99%E7%A8%8B.md)
