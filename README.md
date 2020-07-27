@@ -146,15 +146,12 @@
   - [Spring IOC（控制反转）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringIOC.md)
   - [Spring DI（依赖注入）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringDI.md)
   - [Spring AOP（面向切面编程）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringAOP.md)
+  - 待添加......
 - **SpringMVC** 
   - [SpringMVC执行流程（源码分析）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringMVC执行流程.md)
+  - 待添加......
 - **SSM** 
   - [SSM框架整合](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SSM框架整合.md)
-
-## 🔐并发编程
-
-- 多线程基础
-- ThreadLocal源码分析
 
 ## ⌨操作系统
 
@@ -162,6 +159,24 @@
   - 虚拟机与Linux安装教程（待添加......）
   - Linux基本使用
   - Linux的高级应用
+
+## 🗡中间件
+
+- 待添加......
+
+## 🏹分布式架构
+
+- 待添加......
+
+## ⚔微服务架构
+
+- 待添加......
+
+## 🔐并发编程
+
+- **多线程基础** 
+  - 待添加......
+- ThreadLocal源码分析
 
 ## 🔧IntelliJ IDEA
 
@@ -178,6 +193,11 @@
 
 - [【婚礼汇】（Servlet+JSP）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/JavaWeb%E5%A9%9A%E7%A4%BC%E6%B1%87)
 - [【小米商城】（Servlet+JSP）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E)
+
+## ⏳数据结构与算法
+
+- 复杂度分析
+- 待添加......
 
 ## 📃LICENSE
 
