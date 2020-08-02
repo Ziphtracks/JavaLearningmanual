@@ -158,7 +158,7 @@
 
 - **Linux** 
   - 虚拟机与Linux安装教程（待添加......）
-  - Linux命令大全
+  - [Linux命令大全](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/operating-system/Linux%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.md)
   - 待添加......
 
 ## 🗡中间件
