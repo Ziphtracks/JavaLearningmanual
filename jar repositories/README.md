@@ -8,7 +8,7 @@
 
 **注意：** 如果你需要新版本或者其他版本jar包，请在下载网址中搜索jar包名称并下载，网址的使用说明放在了下方供大家参考。
 
-> **打包Maven本地仓库：** 链接：https://pan.baidu.com/s/1jT4v8089pn9My5NohnaECw 提取码：v9ew
+> **打包Maven本地仓库：** 链接：https://pan.baidu.com/s/1pURaTi6RI3RGjgf7vgfIwQ 提取码：hk17
 
 > **下载地址：** [https://mvnrepository.com/](https://mvnrepository.com/)
 
