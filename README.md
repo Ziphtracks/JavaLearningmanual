@@ -3,11 +3,15 @@
 	</a>
 
 <p align="left">
+    <a href="https://github.com/Ziphtracks/JavaLearningmanual">
 <img src="https://img.shields.io/badge/License-Apache 2.0-blue.svg" alt="License">
+	</a>
     <a href="https://github.com/Ziphtracks/JavaLearningmanual">
 		<img src="https://img.shields.io/badge/Interview bible-面试突击-blue.svg" alt="License">
 	</a>
+    <a href="https://github.com/Ziphtracks/JavaLearningmanual">
 <img src="https://img.shields.io/github/stars/Ziphtracks/JavaLearningmanual?style=social" alt="License">
+	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
 		<img src="https://img.shields.io/badge/微信公众号-码出Offer-brightgreen.svg" alt="License">
 	</a>
@@ -18,8 +22,6 @@
 		<img src="https://img.shields.io/badge/读者福利-Come on-brightgreen.svg" alt="License">
 	</a>
 </p>
-
-<br>
 
 ------
 
