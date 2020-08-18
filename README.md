@@ -1,31 +1,32 @@
-![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/2/20200818111643.gif)
-
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
-<br/>
-
-<p align="center">
-  <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
-		<img src="https://img.shields.io/badge/*微信公众号-码出Offer-yellow.svg" alt="License">
+<a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
+		<img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/2/20200818111643.gif" alt="Java Learning manual">
 	</a>
-  <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E8%AF%BB%E8%80%85%E7%A6%8F%E5%88%A9">
-		<img src="https://img.shields.io/badge/*读者福利-领取-green.svg" alt="License">
-	</a>
-	<a href="https://blog.csdn.net/weixin_44170221">
-		<img src="https://img.shields.io/badge/*CSDN-关注-red.svg" alt="License">
+
+<p align="left">
+    <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
+		<img src="https://img.shields.io/badge/License-Apache 2.0-blue.svg" alt="License">
 	</a>
     <a href="https://github.com/Ziphtracks/JavaLearningmanual">
-		<img src="https://img.shields.io/badge/*面试宝典-突击面试-important.svg" alt="License">
+		<img src="https://img.shields.io/badge/Interview bible-面试突击-blue.svg" alt="License">
+	</a>
+  <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
+		<img src="https://img.shields.io/badge/微信公众号-码出Offer-brightgreen.svg" alt="License">
+	</a>
+    <a href="https://blog.csdn.net/weixin_44170221">
+		<img src="https://img.shields.io/badge/CSDN-Follow-brightgreen.svg" alt="License">
+	</a>
+  <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E8%AF%BB%E8%80%85%E7%A6%8F%E5%88%A9">
+		<img src="https://img.shields.io/badge/读者福利-Come on-brightgreen.svg" alt="License">
 	</a>
 </p>
 
 
 
+<br>
 
+------
 
-
-<br />
-
-<br />
+<br>
 
 ## 📌**送给大家的一段话** 
 
