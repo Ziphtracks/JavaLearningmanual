@@ -1,4 +1,4 @@
-<a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
+<a href="https://github.com/Ziphtracks/JavaLearningmanual">
 		<img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/2/20200818111643.gif" alt="Java Learning manual">
 	</a>
 
@@ -28,7 +28,7 @@
 
 <br>
 
-**邮箱：** ziphtracks@163.com/mylifes1110@163.com（using）
+**邮箱：** ziphtracks@163.com
 
 **QQ：** 896988359（请注明来意）
 
