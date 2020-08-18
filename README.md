@@ -1,3 +1,5 @@
+![](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/2/20200818111643.gif)
+
 <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
 <br/>
 
@@ -15,7 +17,6 @@
 		<img src="https://img.shields.io/badge/*面试宝典-突击面试-important.svg" alt="License">
 	</a>
 </p>
-
 
 
 
