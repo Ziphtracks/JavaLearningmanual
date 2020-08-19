@@ -42,10 +42,6 @@
 
 ## 📔Java Learning manual
 
-<br>
-
-### 📌**送给大家的一段话** 
-
 **持续努力，变平凡为不凡：** 梦想与现实之间的巨大落差常令人烦躁不安。然而，人生就是”今天”的不断积累，就是“现在”这一刻的不断延续，如此而已。不错过今天，认真工作就能看清明天，明天再认真工作就能看清后面的一周，一周认真工作，就能看清后面的一月...就是说，即使不去探索遥远的未来，只要全身贯注于眼前的每一个瞬间，以前看不清楚的未来的景象就会自然地呈现在你眼前。 与其莫名其妙为明天而烦恼，与其苦思冥想去制定长远的计划，还不如全力过好今天这一天。这才是实现理想最切实的办法。 
 
 <p align="right">——稻盛和夫《活着》 </p>
@@ -125,6 +121,7 @@
   - [解决tomact客户端与IDEA的一系列乱码问题](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Server/解决tomact客户端与IDEA的一系列乱码问题.md)
 - **网络协议** 
   - [HTTP网络协议](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Computer-Networks/HTTP网络协议.md)
+  - TCP三次握手，四次挥手
 - **Servlet** 
   - [Servlet基础](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Servlet基础.md)
   - [Servlet状态管理（Cookie、Session、ServletContext、Request）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Servlet状态管理.md)
@@ -251,8 +248,11 @@
   - MQ消息可靠性
   - MQ避免重复消费
   - 如何保证顺序消费
+  - RabbitMQ消息总线集群
   - 其他
 - **Kafka** 
+  - 其他
+- **swaggerAPI文档** 
   - 其他
 
 ### 🥡Spring全家桶
