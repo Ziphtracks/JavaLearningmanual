@@ -18,10 +18,17 @@
   <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E8%AF%BB%E8%80%85%E7%A6%8F%E5%88%A9">
 		<img src="https://img.shields.io/badge/读者福利-Come on-brightgreen.svg" alt="License">
 	</a>
+</p>
+
+<p align="left">
     <a href="https://github.com/Ziphtracks/JavaLearningmanual">
 <img src="https://img.shields.io/github/stars/Ziphtracks/JavaLearningmanual?style=social" alt="License">
 	</a>
+    <a href="https://github.com/Ziphtracks/JavaLearningmanual">
+<img src="https://img.shields.io/github/forks/Ziphtracks/JavaLearningmanual?style=social" alt="License">
+	</a>
 </p>
+
 
 
 ------
@@ -37,6 +44,12 @@
 **个人声明：** 本仓库记录所学Java不归路中的`知识体系`、`知识扩展进阶`、`数据结构与算法`、`面试经验`、`技术分享`、`第三方优质学习资源`、`互联网行业技术交流`、`互联网大厂技术动态`以及`我的生活`，我将以通俗易懂的讲解为大家呈现一种良好的Java学习体系教程。大家有问题，欢迎与我交流、分享，我期待你的来电！
 
 **LICENSE：** 本仓库知识体系受开源项目版权保护，大多数知识体系和技术文章都是由个人总结、整理、发文。如果您想引用本仓库知识内容或者对本仓库知识内容做了修改演绎时，请在文章开头明显处标明作者和本仓库地址，知识仓库总结不易，希望大家尊重每个人的劳动成果！在此感谢！（**公众号或其他形式转载请联系Ziph！** ）
+
+***敬请期待：*** *抽时间我会新建一个只存储面试题的仓库，我将坚持从Java基础到核心源码面试题等纷纷存储，以便突击面试！（Interview bible）* 
+
+***注意：*** *没有超链接的文章标题即是没有发布的技术文章，因为时间有限嘛，干这一行你懂得，所以我会尽可能的抽出时间来完善此仓库的技术文，理解万岁！！！* 
+
+
 
 ------
 
@@ -130,7 +143,7 @@
 
 > 针对处在学习阶段的童鞋们，在此项目中建立了一个简单的jar包库，里面存储了学习阶段常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。
 >
-> 如果有需要下载jar包，点击Logo图标下的`Maven仓库`即可进入，也可以[**点击此处**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories)进入！
+> 可以[**点击此处**](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories)进入仓库！
 >
 > **声明：** 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！
 
