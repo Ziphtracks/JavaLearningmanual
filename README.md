@@ -194,16 +194,11 @@
 
 ### 🏹分布式架构
 
-- 架构演进过程
-
-- **分布式架构** 
-  - 分布式架构基础
-  - 分布式锁
-  - 分布式任务
-  - 分布式事务
-  - 其他
-- **微服务架构** 
-  - 微服务架构概述
+- [架构演进过程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/distributed-architecture/%E6%9E%B6%E6%9E%84%E6%BC%94%E8%BF%9B%E8%BF%87%E7%A8%8B.md)
+- 分布式锁
+- 分布式任务
+- 分布式事务
+- 其他
 
 ### ⌨操作系统
 
