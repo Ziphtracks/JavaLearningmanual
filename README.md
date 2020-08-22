@@ -6,7 +6,7 @@
     <a href="https://github.com/Ziphtracks/JavaLearningmanual">
 <img src="https://img.shields.io/badge/License-Apache 2.0-blue.svg" alt="License">
 	</a>
-    <a href="https://github.com/Ziphtracks/JavaLearningmanual">
+    <a href="https://github.com/Ziphtracks/InterviewBible">
 		<img src="https://img.shields.io/badge/Interview bible-面试突击-blue.svg" alt="License">
 	</a>
   <a href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
@@ -20,14 +20,6 @@
 	</a>
 </p>
 
-<p align="left">
-    <a href="https://github.com/Ziphtracks/JavaLearningmanual">
-<img src="https://img.shields.io/github/stars/Ziphtracks/JavaLearningmanual?style=social" alt="License">
-	</a>
-    <a href="https://github.com/Ziphtracks/JavaLearningmanual">
-<img src="https://img.shields.io/github/forks/Ziphtracks/JavaLearningmanual?style=social" alt="License">
-	</a>
-</p>
 
 
 
@@ -45,7 +37,7 @@
 
 **LICENSE：** 本仓库知识体系受开源项目版权保护，大多数知识体系和技术文章都是由个人总结、整理、发文。如果您想引用本仓库知识内容或者对本仓库知识内容做了修改演绎时，请在文章开头明显处标明作者和本仓库地址，知识仓库总结不易，希望大家尊重每个人的劳动成果！在此感谢！（**公众号或其他形式转载请联系Ziph！** ）
 
-***敬请期待：*** *抽时间我会新建一个只存储面试题的仓库，我将坚持从Java基础到核心源码面试题等纷纷存储，以便突击面试！！！（Interview bible）* 
+***面试突击：*** 点击上方蓝色小徽章 或 [点击链接](https://github.com/Ziphtracks/InterviewBible/)跳转和我一起突击面试吊打面试官！
 
 ***注意：*** *没有超链接的文章标题即是没有发布的技术文章，因为时间有限嘛，干这一行你懂得，所以我会尽可能的抽出时间来完善此仓库的技术文，理解万岁！！！* 
 
