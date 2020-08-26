@@ -150,7 +150,7 @@
   - [解决GitHub各种缓慢问题方案](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/解决GitHub各种缓慢问题.md)
   - 其他
 - **IntelliJ IDEA** 
-  - [IDEA安装破解教程（勿传播）](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/IntelliJ-IDEA/IDEA%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E6%95%99%E7%A8%8B.md)
+  - [IDEA安装教程](https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/IntelliJ-IDEA/IDEA安装教程.md)
   - 等待添加各种快捷键、常用设置、插件教程等等......
 - JVM排查工具
   - 其他

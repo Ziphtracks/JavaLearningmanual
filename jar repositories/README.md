@@ -87,5 +87,4 @@
 | mail            | 用于发送邮箱验证的jar文件                                    |
 | ValidateCode    | 该jar文件用于生成验证码                                      |
 | net             | Java编程思想一书中所引入的jar包                              |
-| jetbrains-agent | JetBrains公司产品最新破解包（支持IDEA2020 1.3和DataGrip2020 1.5版本及以下） |
 
