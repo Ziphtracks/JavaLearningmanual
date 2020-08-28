@@ -434,6 +434,8 @@ class DefaultAopProxyFactory{
 #### 8.6 JDK动态代理
 
 > JDK动态代理是JDK底层基于接口实现的，也就是说我们必须通过实现JDK动态代理的接口并覆盖方法来完成
+>
+> JDK动态代理是通过实现InvocationHandler接口，利用反射来创建代理类的一个过程！
 
 ```java
 package com.mylifes1110.advice2;
@@ -493,6 +495,8 @@ public class ProxyTest {
 #### 8.7 CGLIB动态代理
 
 > CGLIB动态代理是Spring底层基于继承父类实现的，也就是说我们必须通过继承所指定的父类并覆盖其方法来完成
+>
+> CGLIB动态代理是继承所指定的父类，利用了ASM开源包，对代理对象类的class文件进行加载后，通过修改其字节码生成子类来处理的过程！
 
 ```java
 package com.mylifes1110.advice3;
