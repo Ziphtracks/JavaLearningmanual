@@ -1428,7 +1428,7 @@ index.html页面（添加用户页面）
 
 > 客户浏览器发送http请求 - > web服务器接受后发送302状态码响应及对应新的location给客户浏览器 - > 客户浏览器发现是302响应，则自动再发送一个新的http请求，请求url是新的location地址 - > 服务器根据此请求寻找资源并发送给客户。在这里location可以重定向到任意URL，既然是浏览器重新发出了请求，则就没有什么request传递的概念了。在客户浏览器路径栏显示的是其重定向的路径，客户可以观察到地址的变化的。
 
-![1586843659077](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530105414.png)
+![1586912403335](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530105415.png)
 
 
 
@@ -1573,7 +1573,7 @@ public class InsertUserServlet extends HttpServlet {
 
 > **注意：内部转发检验是否登录京东账号。是，发出响应显示收藏夹页面。否，发出相应显示登录页面**
 
-![1586912403335](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200530105415.png)
+![1586912403335](https://gitee.com/Ziphtracks/Figurebed/raw/master/img/2/20200829180025.png)
 
 
 
