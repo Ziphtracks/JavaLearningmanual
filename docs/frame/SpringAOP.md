@@ -517,6 +517,8 @@ public class ProxyTest {
 #### 8.7 CGLIB动态代理
 
 > CGLIB动态代理是利用了ASM开源包，对代理对象类的class文件进行加载后，通过修改其字节码生成子类来处理的过程！
+>
+> CGLIB是针对类实现代理，主要是对指定的类生成一个子类，覆盖其中的方法。因为是继承，所以该类或方法最好不要声明成final。
 
 ```java
 package com.mylifes1110.advice3;
