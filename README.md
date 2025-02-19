@@ -366,16 +366,6 @@
 - 如何在公司内长久发展
 - 其他
 
-### 🏆Project
-
-- **Servlet+JSP** 
-  - [【婚礼汇】（Servlet+JSP）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/JavaWeb%E5%A9%9A%E7%A4%BC%E6%B1%87)
-  - [【小米商 城】（Servlet+JSP）](https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E)
-- **SSM** 
-  - 其他
-- **Springboot（分布式）** 
-  - 其他
-
 ### 👨‍🎓mylife
 
 - 我的大学生活
@@ -389,22 +379,6 @@
 
 ------
 
-### 👣关于我
-
-- **微信公众号：** [码出Offer](https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7)
-- **GitHub：** [https://github.com/Ziphtracks/JavaLearningmanual](https://github.com/Ziphtracks/JavaLearningmanual)
-- **CSDN：** [https://blog.csdn.net/weixin_44170221](https://blog.csdn.net/weixin_44170221)
-- **掘金：** [https://juejin.im/user/5e89c749f265da47f256085e](https://juejin.im/user/5e89c749f265da47f256085e)
-- **知乎：** [https://www.zhihu.com/people/ziph](https://www.zhihu.com/people/ziph)
-- **博客园：** [https://www.cnblogs.com/ziph/](https://www.cnblogs.com/ziph/)
-- **ProcessOn：** [https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile](https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile)
-
-### 📩微信公众号
-
-> 关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：**码出Offer**  
-
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号"></p>
-
 ### 🎁读者福利
 
 > 涉及到侵犯您的版权，请速与我联系，我将立即删除您的内容！
@@ -413,19 +387,7 @@
 - **学习辅助资料：** 链接: https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA 提取码: chft
 - **PDF版书籍：** 链接: https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA 提取码: 3845
 - **优质资料：** 
-  - 微信公众号获取
-- **项目资源：** 
-  - **小米商城项目：** 链接: https://pan.baidu.com/s/1LZQekIzA3KYjvwjy8hjIgA 提取码: fa5g
-  - 其他
 - 持续向网盘内添加更新福利资源（Star和微信公众号关注一波好吗？兄弟姐妹们~）......
-
-### ⚡充电打赏
-
-> 如果大家觉得文章还觉得不错，对你有所帮助的话。可以请Z哥喝一杯速溶咖啡哦！礼轻情意重嘛对不对！你的充电打赏，将是我创作的一大动力！Thank You！
->
-> **郑重声明：** Z哥，不接受没有收入来源的任何充电打赏，比如：还正在花着父母辛苦钱的学生，一旦打赏请速与我联系！
-
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614174007.jpg" alt="微信赞赏码"></p>
 
 ### 🙏鸣谢
 
